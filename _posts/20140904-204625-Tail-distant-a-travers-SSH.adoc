@@ -1,0 +1,23 @@
+= Tail distant à travers SSH
+:published_at: 2014/09/04 20:46:25
+:hp-tags: Tail,SSH,Putty,Linux
+
+== Objectif
+
+Notre but est de scruter un fichier de log hébergé sur un serveur Linux. De plus, pour plus de confort, nous souhaitons utiliser un outil de monitoring de fichier de log en temps réel https://www.baremetalsoft.com/baretail/[BareTail] (vous pouvez tout autant utiliser un autre logiciel ou la ligne de commande)
+
+== Solution
+
+Nous allons utiliser http://www.putty.org/[Putty] pour créer un tunnel ssh.
+Nous allons ouvrir une session non intéractive avec plink pour laisser la main au tail distant. Nous dirigerons le flux du fichier de log sur le disque local que nous traiterons avec notre logiciel de tail sous Windows.
+
+[source,bash]
+plink.exe" -pw %PW% %USER%@SERVER tail -F my.log > %TEMP%\my.log|"D:\util\Chocolatey\bin\baretail.exe" %TEMP%\my.log
+
+
+Nous pouvons donc lire en temps les logs distants ainsi que mettre en place des filtres ou de la coloration syntaxique.
+
+== Ressources
+
+http://bravedavesmusings.blogspot.fr/2012/12/tailing-logs-over-ssh.html[Article de référence]
+

@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "Malys",
-    "repositoryName": "malys.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"Malys","repositoryName":"malys.github.io","branch":"master"},"site":{"title":"Malys Blog","description":"","postsPerPage":"","googleAnalytics":"UA-60775657-1","disqus":"disqus_ajBhJDV6Q5","url":"https://Malys.github.io"},"socialnetwork":{"email":"malys[at]mageos.com","github":"https://github.com/malys"},"theme":{"name":"Casper","url":"//Malys.github.io/themes/Casper"}}
