@@ -1,5 +1,5 @@
 = Lenteur de saisie avec ConEmu
-:published_at: 2014/05/10 20:46:25
+:published_at: 2014-05-10 20:46:25
 :hp-tags: ConEmu
 
 https://code.google.com/p/conemu-maximus5/[ConEmu] est un formidable émulateur de console sous Windows.
