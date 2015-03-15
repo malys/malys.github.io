@@ -4,7 +4,7 @@
 
 = Définition 
 
-La redirection de port ou port forwarding ou port mapping en anglais, consiste à rediriger des paquets réseaux reçus sur un port donné d'un ordinateur ou un équipement réseau vers un autre ordinateur ou équipement réseau sur un port donné. Cela permet entre autres de proposer à des ordinateurs extérieurs à un réseau d'accéder à des services répartis sur plusieurs ordinateurs de ce réseau. Voir [Wikipedia](http://fr.wikipedia.org/wiki/Redirection_de_port).
+La redirection de port ou port forwarding ou port mapping en anglais, consiste à rediriger des paquets réseaux reçus sur un port donné d'un ordinateur ou un équipement réseau vers un autre ordinateur ou équipement réseau sur un port donné. Cela permet entre autres de proposer à des ordinateurs extérieurs à un réseau d'accéder à des services répartis sur plusieurs ordinateurs de ce réseau. Voir http://fr.wikipedia.org/wiki/Redirection_de_port[Wikipedia].
 
 = Objectif
 
@@ -13,7 +13,7 @@ Nous souhaitons via une connexion SSH comsommer des services hébergées en loca
 Dans notre cas, nous aurons un serveur Proxmox qui mettra à disposition des containers ou des machines virtuelles.
 
 
-image:https://github.com/malys/malys.github.io/blob/master/images/portforwarding.png[]
+image:portforwarding.png[]
 
 
 = Redirection de port
@@ -24,11 +24,11 @@ Dans ce cas, nous voulons avoir accès au port 80 de la VM sous CentOS avec le s
 
 Pour cela, nous devons créer un tunnel SSH. Dans notre cas, nous utiliserons Putty comme client SSH (les commandes ssh sous Windows ou Linux sont quasiment identiques).
 
-image:https://github.com/malys/malys.github.io/blob/master/images/Putty1.png[img]
+image:Putty1.png[img]
 
 et configurer le tunnel dans SSH/Tunnels
 
-image:https://github.com/malys/malys.github.io/blob/master/images/Putty2.png[img]
+image:Putty2.png[img]
 
 [source]
 -----------------
@@ -41,7 +41,7 @@ Local: Permet de définir le sens de la redirection du port dans ce cas là dist
 
 Il faut sauvegarder la configuration.
 
-image: Putty3.png[img]
+image:Putty3.png[img]
 
 == Ligne de commande
 [source,bash]
@@ -82,7 +82,7 @@ Pour cela, nous devons créer un tunnel SSH. Nous allons utliser celui que nous 
 
 Configurons le tunnel dans SSH/Tunnels 
 
-image:https://github.com/malys/malys.github.io/blob/master/images/Putty4.png[img]
+image:Putty4.png[img]
 
 [source,bash]
 -----------------
@@ -95,7 +95,7 @@ Remote: Permet de définir le sens de la redirection du port dans ce cas là  lo
 
 Il faut sauvegarder la configuration.
 
-image:https://github.com/malys/malys.github.io/blob/master/images/Putty3.png[img]
+image:Putty3.png[img]
 
 == Ligne de commande
 [source,bash]
@@ -139,7 +139,7 @@ Exemple:
 
 Avec le bridge Proxmox configuré ainsi:
 
-image:https://github.com/malys/malys.github.io/blob/master/images/Putty5.png[img]
+image:Putty5.png[img]
 
 
 
