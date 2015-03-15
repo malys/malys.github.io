@@ -33,7 +33,7 @@
     <meta property="og:description" content="Définition La redirection de port ou port forwarding ou port mapping en anglais, consiste à rediriger des paquets réseaux reçus sur un port donné d&amp;#8217;un ordinateur ou un équipement réseau vers un autre ordinateur ou équipement réseau sur..." />
     <meta property="og:url" content="https://Malys.github.io2014805-070000-Redirection-de-port-en-SSH.adoc" />
     <meta property="article:published_time" content="2014-08-05T05:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-03-15T17:29:05.481Z" />
+    <meta property="article:modified_time" content="2015-03-15T17:30:40.145Z" />
     <meta property="article:tag" content="SSH" />
     <meta property="article:tag" content="ProxMox" />
     
@@ -55,7 +55,7 @@
     "headline": "Redirection de port en SSH",
     "url": "https://Malys.github.io2014805-070000-Redirection-de-port-en-SSH.adoc",
     "datePublished": "2014-08-05T05:00:00.000Z",
-    "dateModified": "2015-03-15T17:29:05.481Z",
+    "dateModified": "2015-03-15T17:30:40.145Z",
     "keywords": "SSH, ProxMox",
     "description": "Définition La redirection de port ou port forwarding ou port mapping en anglais, consiste à rediriger des paquets réseaux reçus sur un port donné d&amp;#8217;un ordinateur ou un équipement réseau vers un autre ordinateur ou équipement réseau sur..."
 }
@@ -145,11 +145,17 @@
             <span class="post-meta label"><time datetime="2014-08-05">05 Aug 2014</time></span>
 
             <section class="post-content">
-                <h1 id="_d_finition" class="sect0">Définition</h1>
+                <div class="sect1">
+<h2 id="_d_finition">Définition</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>La redirection de port ou port forwarding ou port mapping en anglais, consiste à rediriger des paquets réseaux reçus sur un port donné d&#8217;un ordinateur ou un équipement réseau vers un autre ordinateur ou équipement réseau sur un port donné. Cela permet entre autres de proposer à des ordinateurs extérieurs à un réseau d&#8217;accéder à des services répartis sur plusieurs ordinateurs de ce réseau. Voir <a href="http://fr.wikipedia.org/wiki/Redirection_de_port">Wikipedia</a>.</p>
 </div>
-<h1 id="_objectif" class="sect0">Objectif</h1>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_objectif">Objectif</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Nous souhaitons via une connexion SSH comsommer des services hébergées en local et des services locaux à distance</p>
 </div>
@@ -159,10 +165,13 @@
 <div class="paragraph">
 <p><span class="image"><img src="/images/portforwarding.png" alt="portforwarding.png"></span></p>
 </div>
-<h1 id="_redirection_de_port" class="sect0">Redirection de port</h1>
+</div>
+</div>
 <div class="sect1">
-<h2 id="_putty">Putty</h2>
+<h2 id="_redirection_de_port">Redirection de port</h2>
 <div class="sectionbody">
+<div class="sect3">
+<h4 id="_putty">Putty</h4>
 <div class="paragraph">
 <p>Dans ce cas, nous voulons avoir accès au port 80 de la VM sous CentOS avec le serveur web.</p>
 </div>
@@ -194,10 +203,8 @@ Local: Permet de définir le sens de la redirection du port dans ce cas là dist
 <p><span class="image"><img src="/images/Putty3.png" alt="img"></span></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_ligne_de_commande">Ligne de commande</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_ligne_de_commande">Ligne de commande</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">plink.exe -ssh proxmoxPublicIP -P 22 -l user -L 8080:CentOSLocalIP:80 -N</code></pre>
@@ -225,20 +232,20 @@ plink.exe -ssh proxmoxPublicIP -P 22 -l user -L 33389:CentOSLocalIP:3389 -N</cod
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_utilisation">Utilisation</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_utilisation">Utilisation</h4>
 <div class="paragraph">
 <p>Ouvrons sur votre poste votre navigateur préféré à l&#8217;adresse suivante:
 <strong><a href="http://localhost:8080" class="bare">http://localhost:8080</a></strong></p>
 </div>
 </div>
 </div>
-<h1 id="_redirection_inverse_de_port" class="sect0">Redirection inverse de port</h1>
+</div>
 <div class="sect1">
-<h2 id="_putty_2">Putty</h2>
+<h2 id="_redirection_inverse_de_port">Redirection inverse de port</h2>
 <div class="sectionbody">
+<div class="sect3">
+<h4 id="_putty_2">Putty</h4>
 <div class="paragraph">
 <p>Dans ce cas, nous voulons avoir accès au port 80 de notre poste sur le serveur Windows 2003 avec IE8.
 Nous pourrons alors tester notre site web avec IE8 par exemple.</p>
@@ -268,10 +275,8 @@ Remote: Permet de définir le sens de la redirection du port dans ce cas là  lo
 <p><span class="image"><img src="/images/Putty3.png" alt="img"></span></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_ligne_de_commande_2">Ligne de commande</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_ligne_de_commande_2">Ligne de commande</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">plink.exe -ssh proxmoxPublicIP -P 22 -l user -R *:1080:localhost:80 -N</code></pre>
@@ -284,10 +289,8 @@ Remote: Permet de définir le sens de la redirection du port dans ce cas là  lo
 <p>-R peuvent être multiple pour ajouter autant de port que vous souhaitez.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_configuration_du_serveur_ssh">Configuration du serveur SSH</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_configuration_du_serveur_ssh">Configuration du serveur SSH</h4>
 <div class="paragraph">
 <p>Il faut préciser au serveur proxmox que le port redirigé sera accessible sur toutes les interfaces si le client le demande (<strong>*:1080</strong> de la ligne de commande)</p>
 </div>
@@ -317,10 +320,8 @@ Remote: Permet de définir le sens de la redirection du port dans ce cas là  lo
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_utilisation_2">Utilisation</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_utilisation_2">Utilisation</h4>
 <div class="paragraph">
 <p>Ouvrons sur le serveur Win 2003 avec IE8 l&#8217;adresse suivante:</p>
 </div>
@@ -340,10 +341,8 @@ Remote: Permet de définir le sens de la redirection du port dans ce cas là  lo
 <p><span class="image"><img src="/images/Putty5.png" alt="img"></span></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_ressources">Ressources</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_ressources">Ressources</h4>
 <div class="paragraph">
 <p><a href="http://askubuntu.com/questions/50064/reverse-port-tunnelling">Reverse Forwarding</a></p>
 </div>
@@ -351,10 +350,11 @@ Remote: Permet de définir le sens de la redirection du port dans ce cas là  lo
 <p><a href="http://www.cyberciti.biz/faq/howto-restart-ssh/">Reload SSH</a></p>
 </div>
 <div class="paragraph">
-<p><a href="http://marc.terrier.free.fr/docputty/Chapter3.html=using-cmdline">Tutoriel Putty</a></p>
+<p><a href="http://marc.terrier.free.fr/docputty/Chapter3.html==using-cmdline">Tutoriel Putty</a></p>
 </div>
 <div class="paragraph">
 <p><a href="http://serverfault.com/questions/387772/ssh-reverse-port-forwarding-with-putty-how-to-specify-bind-address">Check Reverse Port Forwarding</a></p>
+</div>
 </div>
 </div>
 </div>
