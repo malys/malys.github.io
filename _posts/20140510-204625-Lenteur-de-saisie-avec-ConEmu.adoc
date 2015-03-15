@@ -1,0 +1,10 @@
+= Lenteur de saisie avec ConEmu
+:published_at: 2014/05/10 20:46:25
+:hp-tags: ConEmu
+
+https://code.google.com/p/conemu-maximus5/[ConEmu] est un formidable émulateur de console sous Windows.
+
+Il peut arriver que la saisie soit ralentie.
+La solution est de désactiver l'option _Change prompt_:
+
+image:conEmu_bug.png[img]
