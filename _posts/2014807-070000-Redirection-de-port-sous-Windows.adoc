@@ -2,7 +2,9 @@
 :published_at: 2014/8/07 07:00:00
 :hp-tags: Windows,Ports
 
+
 == Objectif
+
 Dans notre cas, nous souhaitons rediriger une requête vers un autre serveur.
 
 	https://localhost:8443/monsite -> https://serveur_de_test/monsite
