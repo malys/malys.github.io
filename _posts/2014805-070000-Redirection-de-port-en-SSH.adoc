@@ -2,11 +2,11 @@
 :published_at: 2014/8/05 07:00:00
 :hp-tags: SSH,ProxMox
 
-= Définition 
+== Définition 
 
 La redirection de port ou port forwarding ou port mapping en anglais, consiste à rediriger des paquets réseaux reçus sur un port donné d'un ordinateur ou un équipement réseau vers un autre ordinateur ou équipement réseau sur un port donné. Cela permet entre autres de proposer à des ordinateurs extérieurs à un réseau d'accéder à des services répartis sur plusieurs ordinateurs de ce réseau. Voir http://fr.wikipedia.org/wiki/Redirection_de_port[Wikipedia].
 
-= Objectif
+== Objectif
 
 Nous souhaitons via une connexion SSH comsommer des services hébergées en local et des services locaux à distance
 
@@ -16,9 +16,9 @@ Dans notre cas, nous aurons un serveur Proxmox qui mettra à disposition des con
 image:portforwarding.png[]
 
 
-= Redirection de port
+== Redirection de port
 
-== Putty
+==== Putty
 
 Dans ce cas, nous voulons avoir accès au port 80 de la VM sous CentOS avec le serveur web.
 
@@ -43,7 +43,7 @@ Il faut sauvegarder la configuration.
 
 image:Putty3.png[img]
 
-== Ligne de commande
+==== Ligne de commande
 [source,bash]
 plink.exe -ssh proxmoxPublicIP -P 22 -l user -L 8080:CentOSLocalIP:80 -N
 
@@ -65,15 +65,15 @@ rem RDP Bureau distant Windows
 plink.exe -ssh proxmoxPublicIP -P 22 -l user -L 33389:CentOSLocalIP:3389 -N
 -----------------
 
-== Utilisation
+==== Utilisation
 
 Ouvrons sur votre poste votre navigateur préféré à l'adresse suivante:
 *http://localhost:8080*
 
 
-= Redirection inverse de port
+== Redirection inverse de port
 
-== Putty
+==== Putty
 
 Dans ce cas, nous voulons avoir accès au port 80 de notre poste sur le serveur Windows 2003 avec IE8.
 Nous pourrons alors tester notre site web avec IE8 par exemple.
@@ -97,7 +97,7 @@ Il faut sauvegarder la configuration.
 
 image:Putty3.png[img]
 
-== Ligne de commande
+==== Ligne de commande
 [source,bash]
 plink.exe -ssh proxmoxPublicIP -P 22 -l user -R *:1080:localhost:80 -N
 
@@ -106,7 +106,7 @@ plink.exe -ssh proxmoxPublicIP -P 22 -l user -R *:1080:localhost:80 -N
 -R peuvent être multiple pour ajouter autant de port que vous souhaitez.
 
 
-== Configuration du serveur SSH
+==== Configuration du serveur SSH
 
 Il faut préciser au serveur proxmox que le port redirigé sera accessible sur toutes les interfaces si le client le demande (**:1080* de la ligne de commande)
 
@@ -127,7 +127,7 @@ Recharger la configuration du serveur SSH
 /etc/init.d/ssh reload 
 
 
-== Utilisation
+==== Utilisation
 
 Ouvrons sur le serveur Win 2003 avec IE8 l'adresse suivante:
 
@@ -143,13 +143,13 @@ image:Putty5.png[img]
 
 
 
-== Ressources
+==== Ressources
 
 http://askubuntu.com/questions/50064/reverse-port-tunnelling[Reverse Forwarding]
 
 http://www.cyberciti.biz/faq/howto-restart-ssh/[Reload SSH]
 
-http://marc.terrier.free.fr/docputty/Chapter3.html=using-cmdline[Tutoriel Putty]
+http://marc.terrier.free.fr/docputty/Chapter3.html==using-cmdline[Tutoriel Putty]
 
 http://serverfault.com/questions/387772/ssh-reverse-port-forwarding-with-putty-how-to-specify-bind-address[Check Reverse Port Forwarding]
 
