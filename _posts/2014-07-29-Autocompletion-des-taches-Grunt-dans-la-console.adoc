@@ -1,5 +1,5 @@
 = Autocompletion des tâches Grunt dans la console
-:published_at: 2014/7/29 07:00:00
+:published_at: 2014-07-29
 :hp-tags: NodeJS,Grunt
 
 == Solution
