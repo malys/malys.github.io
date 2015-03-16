@@ -1,5 +1,5 @@
 = Tail avec coloration syntaxique
-:published_at: 2014/09/04
+:published_at: 2014-09-04
 :hp-tags: Tail,SSH,Putty,Linux
 
 
