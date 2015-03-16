@@ -9,9 +9,8 @@ Parfois, le firewall bloque l'accès à ce port.
 
 La solution est de convertir à la volet l'adresse *git:/*/ en *https://*.
 
-Elle est décrite sur le wiki suivant : [Firewall_Blocks_Port_9418](http://http://www.itk.org/Wiki/Git/Trouble#Firewall_Blocks_Port_9418)
+Elle est décrite sur le wiki suivant : http://http://www.itk.org/Wiki/Git/Trouble#Firewall_Blocks_Port_9418[Firewall_Blocks_Port_9418]
 
 Voici, la ligne de commande pour github :
-``` bash
-$ git config --global url.https://github.com/.insteadOf git://github.com/
-```
+[source,bash]
+git config --global url.https://github.com/.insteadOf git://github.com/
