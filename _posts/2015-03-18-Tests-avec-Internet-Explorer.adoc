@@ -97,13 +97,11 @@ il faut copier le contenu du zip dans _D:\Vms\VirtualBox_ et dans _cygwin\bin_
 
 ----
 
-rem liste des versions
-
-set IEVMS_VERSIONS=6 7 8 9 10
-
+set IEVMS_VERSIONS=7 8 9 10
 set INSTALL_PATH=D:\\Vms\\VirtualBox\\ievms
-
-bash ievms.s
+del /S/Q %INSTALL_PATH%\*.vmdk
+bash ievms.sh
+exit
 
 ----
 
@@ -215,6 +213,37 @@ IE 9.0.0 (Windows 7): Executed 236 of 236 SUCCESS (1.626 secs / 1.485 secs)
 
 ...
 
+----
+
+== Planification
+
+Une tâche planifiée va supprimer et recréer les vms.
+
+[source,dos]
+
+----
+cmd /C uninstall.cmd
+cmd /C launch.cmd
+exit
+----
+
+[source,dos]
+
+----
+Rem uninstall.cmd
+Rem Remove VMS
+@ECHO OFF
+SET LIST="IE8 - WinXP","IE9 - Win7","IE10 - Win7"
+
+SET LIST=ECHO %LIST:,=^^^&ECHO %
+
+FOR /F "delims=" %%i IN ('%LIST%') DO (
+	echo iectrl stop %%i
+	cmd /C "iectrl stop %%i"
+	echo iectrl uninstall %%i
+	cmd /C "iectrl uninstall %%i"
+)
+exit
 ----
 
 
