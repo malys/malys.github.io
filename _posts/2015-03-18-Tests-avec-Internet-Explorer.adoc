@@ -107,6 +107,23 @@ exit
 
 * lancer _D:\Vms\VirtualBox\launch.cmd_
 
+== Compatiblité Windows
+
+Pour ajouter la compatiblité avec Windows, j'ai créé un https://github.com/malys/iectrl.git[fork] avec le https://github.com/xdissent/iectrl/pull/22[pull request] associé.
+
+Il faut appliquer manuellement les correctifs sur ievms.js si le pull request n'a pas été intégré.
+
+Cette modification impacte le project IECTRL et Karma-IEVMS.
+
+[source,dos]
+
+----
+npm install -g iectrl
+
+rem dans le project
+
+----
+
 
 
 == Contrôle des vms
@@ -114,7 +131,6 @@ exit
 [source,dos]
 
 ----
-
 iectrl --help
 
   Usage: iectrl [options] [command]
@@ -252,13 +268,10 @@ exit
 https://www.modern.ie[ModernIE]
 
 
-
 https://github.com/xdissent/ievms[IEVMS]
 
 
-
 https://github.com/xdissent/iectrl/[IECTRL] 
-
 
 
 https://github.com/xdissent/karma-ievms[Karma-IEVMS] 
