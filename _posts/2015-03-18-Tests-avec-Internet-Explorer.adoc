@@ -121,7 +121,7 @@ Cette modification impacte le project IECTRL et Karma-IEVMS.
 npm install -g iectrl
 
 rem dans le project
-
+npm install karma-ievms --save-dev
 ----
 
 
