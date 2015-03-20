@@ -1,0 +1,5 @@
+= Git Blame
+
+recursive-blame main package.json
+
+http://bassistance.de/2013/10/18/how-to-be-a-more-effective-git-historian-with-recursive-blame/[Article]
