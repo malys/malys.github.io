@@ -33,7 +33,7 @@
     <meta property="og:description" content="Objectif Nous avons actuellement une batterie de tests se lançant grâce à Karma sur différents navigateurs. Nous souhaiterions pouvoir valdier nos tests sur l&amp;#8217;ensemble des versions d&amp;#8217;Internet Explorer que nous supportons. Prérequis Microfost fournit des machines..." />
     <meta property="og:url" content="https://malys.github.io/2015/03/18/Tests-avec-Internet-Explorer.html" />
     <meta property="article:published_time" content="2015-03-17T23:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-03-22T14:42:28.073Z" />
+    <meta property="article:modified_time" content="2015-03-22T17:56:14.855Z" />
     <meta property="article:tag" content="NodeJS" />
     <meta property="article:tag" content="Karma" />
     <meta property="article:tag" content="JasmineJS" />
@@ -60,7 +60,7 @@
     "headline": "Tests avec Internet Explorer",
     "url": "https://malys.github.io/2015/03/18/Tests-avec-Internet-Explorer.html",
     "datePublished": "2015-03-17T23:00:00.000Z",
-    "dateModified": "2015-03-22T14:42:28.073Z",
+    "dateModified": "2015-03-22T17:56:14.855Z",
     "keywords": "NodeJS, Karma, JasmineJS, ModernIE, Windows",
     "description": "Objectif Nous avons actuellement une batterie de tests se lançant grâce à Karma sur différents navigateurs. Nous souhaiterions pouvoir valdier nos tests sur l&amp;#8217;ensemble des versions d&amp;#8217;Internet Explorer que nous supportons. Prérequis Microfost fournit des machines..."
 }
@@ -106,7 +106,7 @@
         <div class="site-head-content inner">
             <ul class="side-nav blog-menu show-for-large-up">
                 <li><a class="fi-home" href="https://malys.github.io"></a></li>
-             <!-- <li><a class="fi-torso" href="https://malys.github.io/about"></a></li>-->
+                <li><a class="fi-torso" href="https://malys.github.io/about"></a></li>
                 <li><a class="fi-mail" href="https://malys.github.io/contact"></a></li>
             </ul>
             <a class="blog-logo" href="https://malys.github.io"><img alt="Des outils et des développeurs..." src="https://www.gravatar.com/avatar/c738c1bff9731c9cf6dccd5cc1270e94.png" alt="Blog Logo" /></a>
@@ -166,19 +166,13 @@ Nous souhaiterions pouvoir valdier nos tests sur l&#8217;ensemble des versions d
 <p>Microfost fournit des machines virtuelles contenant différentes versions de systême d&#8217;exploitation avec leur version d&#8217;Internet Explorer associée.</p>
 </div>
 <div class="paragraph">
-<p>Vous les trouverez sur ce site: <a href="https://www.modern.ie">ModernIE</a></p>
+<p>Vous les trouverez sur ce site: <a href="https://www.modern.ie">ModernIE</a>
+Pour automatiser la manipulation des vms,nous allons utiliser les outils suivant:</p>
 </div>
 <div class="paragraph">
-<p>Pour automatiser la manipulation des vms,nous allons utiliser les outils suivant:</p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/xdissent/ievms">IEVMS</a> pour l&#8217;installation des vms</p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/xdissent/iectrl/">IECTRL</a> pour la gestion des vms</p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/xdissent/karma-ievms">Karma-IEVMS</a> pour utiliser Karma et les ModernIE</p>
+<p><a href="https://github.com/xdissent/ievms">IEVMS</a> pour l&#8217;installation des vms
+<a href="https://github.com/xdissent/iectrl/">IECTRL</a> pour la gestion des vms
+<a href="https://github.com/xdissent/karma-ievms">Karma-IEVMS</a> pour utiliser Karma et les ModernIE</p>
 </div>
 <div class="paragraph">
 <p>L&#8217;ensemble des outils a été développé par <a href="https://github.com/xdissent">xdissent</a> pour des Unix like OS.</p>
@@ -206,7 +200,7 @@ Nous souhaiterions pouvoir valdier nos tests sur l&#8217;ensemble des versions d
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash"># Dans le main à la fin du fichier
+<pre class="highlight"><code class="language-bash" data-lang="bash"># Dans le 'main' à la fin du fichier
 
 check_system
 
@@ -216,31 +210,18 @@ check_unar</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">#Modifier la fonction check_md5
-
 check_md5() {
-
     # local md5
-
     # case $kernel in
-
         # Darwin) md5=`md5 "${1}" | rev | cut -c-32 | rev` ;;
-
         # Linux) md5=`md5sum "${1}" | cut -c-32` ;;
-
     # esac
-
     # if [ "${md5}" != "${2}" ]
-
     # then
-
         # log "MD5 check failed for ${1} (wanted ${2}, got ${md5})"
-
         # return 1
-
     # fi
-
     log "MD5 check succeeded for "
-
 }</code></pre>
 </div>
 </div>
@@ -286,10 +267,8 @@ exit</code></pre>
 <p>Pour ajouter la compatiblité avec Windows, j&#8217;ai créé un <a href="https://github.com/malys/iectrl.git">fork</a> avec le <a href="https://github.com/xdissent/iectrl/pull/22">pull request</a> associé.</p>
 </div>
 <div class="paragraph">
-<p>Il faut appliquer manuellement les correctifs sur ievms.js si le pull request n&#8217;a pas été intégré.</p>
-</div>
-<div class="paragraph">
-<p>Cette modification impacte le project IECTRL et Karma-IEVMS.</p>
+<p>Il faut appliquer manuellement les correctifs sur ievms.js si le pull request n&#8217;a pas été intégré.
+Cette modification impacte le project IECTRL et Karma-IEVMS.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -311,42 +290,24 @@ npm install karma-ievms --save-dev</code></pre>
   Usage: iectrl [options] [command]
 
   Commands:
-
     clean [names] restore virtual machines to the clean snapshot
-
     close [names] close all running IE processes in virtual machines
-
     install [options] [names] install virtual machines with ievms
-
     nuke [names] remove all traces of virtual machines
-
     list         list available virtual machines
-
     open [options] [names] [url] open a URL in IE
-
     rearm [options] [names] rearm virtual machines
-
     reinstall [options] [names] reinstall virtual machines
-
     restart [options] [names] restart virtual machines
-
     screenshot [names] [output] save screenshots for virtual machines
-
     shrink [options] [names] shrink disk usage for virtual machines
-
     start [options] [names] start virtual machines
-
     status [options] [names] report the status of one or more vms
-
     stop [options] [names] stop virtual machines
-
     uninstall [options] [names] uninstall virtual machines
-
     uploaded [names] report the last time the VM was uploaded to modern.ie
-
   Options:
     -h, --help     output usage information
-
     -V, --version  output the version number</code></pre>
 </div>
 </div>
@@ -374,10 +335,8 @@ rem les vms doivent démarrer et le IE doit se lancer</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Les outils utilisent la librairie <a href="https://github.com/visionmedia/debug">debug</a>.</p>
-</div>
-<div class="paragraph">
-<p>Pour activer le mode <em>debug</em>, il faut déclarer:</p>
+<p>Les outils utilisent la librairie <a href="https://github.com/visionmedia/debug">debug</a>.
+Pour activer le mode <em>debug</em>, il faut déclarer:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -389,13 +348,9 @@ rem les vms doivent démarrer et le IE doit se lancer</code></pre>
 <pre class="highlight"><code class="language-dos" data-lang="dos">...
 
 IE 9.0.0 (Windows 7): Executed 236 of 236 SUCCESS (1.84 secs / 15 mins 14.946 secs)
-
 IE 9.0.0 (Windows 7): Executed 236 of 236 SUCCESS (1.626 secs / 1.485 secs)
-
   iectrl:IE10 - Win7 waitForRunning +368ms
-
   iectrl:IE10 - Win7 _waitForStatus: RUNNING +1ms
-
 ...</code></pre>
 </div>
 </div>
@@ -438,16 +393,10 @@ exit</code></pre>
 <h2 id="_ressources">Ressources</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="https://www.modern.ie">ModernIE</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/xdissent/ievms">IEVMS</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/xdissent/iectrl/">IECTRL</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/xdissent/karma-ievms">Karma-IEVMS</a></p>
+<p><a href="https://www.modern.ie">ModernIE</a>
+<a href="https://github.com/xdissent/ievms">IEVMS</a>
+<a href="https://github.com/xdissent/iectrl/">IECTRL</a>
+<a href="https://github.com/xdissent/karma-ievms">Karma-IEVMS</a></p>
 </div>
 </div>
 </div>
