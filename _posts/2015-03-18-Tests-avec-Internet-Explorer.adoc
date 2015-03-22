@@ -1,13 +1,10 @@
 = Tests avec Internet Explorer 
-
 :published_at: 2015-03-18
-
 :hp-tags: NodeJS,Karma,JasmineJS,ModernIE,Windows
 
 == Objectif
 
 Nous avons actuellement une batterie de tests se lançant grâce à https://karma-runner.github.io[Karma] sur différents navigateurs.
-
 Nous souhaiterions pouvoir valdier nos tests sur l'ensemble des versions d'Internet Explorer que nous supportons.
 
 == Prérequis
