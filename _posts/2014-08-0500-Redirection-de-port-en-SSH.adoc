@@ -1,6 +1,5 @@
 = Redirection de port en SSH
-:hp-alt-title: Redirection de port en SSH
-:published_at: 2014-08-0500
+:published_at: 2014-08-05
 :hp-tags: SSH,ProxMox
 
 == Définition 
