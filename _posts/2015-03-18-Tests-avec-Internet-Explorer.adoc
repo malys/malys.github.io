@@ -15,8 +15,11 @@ Vous les trouverez sur ce site: https://www.modern.ie[ModernIE]
 Pour automatiser la manipulation des vms,nous allons utiliser les outils suivant:
 
 https://github.com/xdissent/ievms[IEVMS] pour l'installation des vms
+
 https://github.com/xdissent/iectrl/[IECTRL] pour la gestion des vms
+
 https://github.com/xdissent/karma-ievms[Karma-IEVMS] pour utiliser Karma et les ModernIE
+
 
 L'ensemble des outils a été développé par https://github.com/xdissent[xdissent] pour des Unix like OS.
 
