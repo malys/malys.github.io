@@ -1,0 +1,56 @@
+= Débogueur avec NodeJS
+:published_at: 2015-10-24
+:hp-tags: NodeJS,Intellij,WebStorm,Windows,Grunt
+
+
+
+== Objectif
+
+Notre but est d'utiliser un debugeur dans l'écosystème NodeJS sous Windows.
+
+Je souhaitais surtout pouvoir déboguer du code lié à de l'outillage.
+
+Dans la suite de l'article, nous prendrons comme cas d'utilisation le débogage du tâche Grunt.
+
+== Solution
+
+Après avoir fait plusieurs tentatives infructueuses en me basant sur la lecture de cet http://www.nearform.com/nodecrunch/node-js-develop-debugging-techniques/[article].
+
+Je me suis orienté sur l'utilisation du débogueur de Webstorm.
+
+=== WebStorm
+
+Pour cela, il faut créer une nouvelle _Run/Debug Configuration_ de type __Nodejs__.
+
+
+image:DebugConfigurations1.png[img]
+
+
+Remplir les champs suivants:
+
+__Name__: Nom de votre configuration
+
+__Configuration/Node interpreter__: Chemin absolue de l'exécutable *node.exe*
+
+_Working directotry_: Répertoire du projet contenant la tâche *Grunt*
+
+__JavaScript file__: [underline]##Chemin absolue du script grunt (.../grunt-cli/bin/grunt) qui sera lancé par la commande grunt##
+
+__Application parameters__: Nom de la tâche Grunt à exécuter  
+
+
+Placer vos points d'arrêt dans votre code et lancer cette configuration en mode __debug__ .
+
+Et voilà !!! Le débogeur est opérationnel.
+
+image:DebugConfigurations2.png[img]
+
+
+== Ressources
+
+http://www.nearform.com/nodecrunch/node-js-develop-debugging-techniques/[Article de référence]
+
+https://www.jetbrains.com/webstorm/help/running-and-debugging-node-js.html[Debugging with Webstorm]
+
+
+
