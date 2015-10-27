@@ -3,13 +3,9 @@
 :hp-tags: NodeJS,Intellij,WebStorm,Windows,Grunt
 
 
-
 == Objectif
 
-Notre but est d'utiliser un debugeur dans l'écosystème NodeJS sous Windows.
-
-Je souhaitais surtout pouvoir déboguer du code lié à de l'outillage.
-
+Notre but est d'utiliser un debogueur dans l'écosystème NodeJS sous Windows.Je souhaitais surtout pouvoir déboguer du code lié à de l'outillage.
 Dans la suite de l'article, nous prendrons comme cas d'utilisation le débogage du tâche Grunt.
 
 == Solution
