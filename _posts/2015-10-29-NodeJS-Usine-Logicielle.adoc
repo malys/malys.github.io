@@ -1,0 +1,10 @@
+= Usine logicielle avec NodeJS
+:published_at: 2015-10-29
+:hp-tags: NodeJS
+
+
+MapMind:
+
+++++
+<iframe  style="border: 0; width: 70%; height: 500px;" src="https://atlas.mindmup.com/2015/10/c1afa9b05f860133287f0eb733197517/nodejs_software_factory/index.html"></iframe>
+++++
