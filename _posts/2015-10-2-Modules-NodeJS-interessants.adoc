@@ -1,9 +1,0 @@
-= Modules NodeJS intéressants
-:published_at: 2015-10-2
-:hp-tags: NodeJS,
-
-
-++++
-<iframe  style="border: 0; width: 75%; height: 500px;" src="https://atlas.mindmup.com/2015/10/306d64305f7f0133287f0eb733197517/npm/index.html"></iframe>
-++++
-
