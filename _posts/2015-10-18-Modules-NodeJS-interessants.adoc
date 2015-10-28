@@ -1,7 +1,9 @@
 = Modules NodeJS intéressants
 :published_at: 2015-10-18
-:hp-tags: NodeJS,
+:hp-tags: NodeJS
 
+
+MapMind
 
 ++++
 <iframe  style="border: 0; width: 100%; height: 400px;" src="https://atlas.mindmup.com/2015/10/306d64305f7f0133287f0eb733197517/npm/index.html"></iframe>
