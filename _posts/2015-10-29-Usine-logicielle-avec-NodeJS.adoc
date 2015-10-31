@@ -6,7 +6,7 @@
 MapMind:
 
 ++++
-<iframe  style="border: 0; width: 100%; height: 600px;" src="https://www.mindmup.com/#m:h1malys/mindmup:master:/softwareFactory"></iframe>
+<iframe  style="border: 0; width: 100%; height: 600px;" src="https://atlas.mindmup.com/2015/10/c1afa9b05f860133287f0eb733197517/nodejs_software_factory/index.html"></iframe>
 ++++
 
 
