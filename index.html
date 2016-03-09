@@ -108,6 +108,21 @@
 <main class="content" role="main">
 
 
+    <article class="post tag-docker tag-Windows">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="2016-03-09">09 Mar 2016</time> </span>
+            <h2 class="post-title"><a href="https://malys.github.io/2016/03/09/Deplacement-du-disque-virtuel-diskvmdk-de-Docker.html">Déplacement du disque virtuel disk.vmdk de Docker</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>Objectif Sous Windows, docker (ex: Boot2Docker ) installe le disque virtuel sous %USERPROFILE%/.docker. Il arrive parfois que le lecteur  C: soit saturé. Il se pose alors la question de déplacer le disque virtuel disk.vmdk vers un autre lecteur. Solution Nous devons suivre les étapes suivantes: Arrêter docker docker-machine stop default Dans Virtual Box,il faut s&#8217;assurer que la VM default e&hellip;</p>
+        </section>
+        <a class="button read-more right small" href="https://malys.github.io/2016/03/09/Deplacement-du-disque-virtuel-diskvmdk-de-Docker.html">Read more</a>
+        <aside class="tags fi-pricetag-multiple">Posted on <a href="https://malys.github.io/tag/docker">docker</a>, <a href="https://malys.github.io/tag/Windows">Windows</a></aside>
+        <div class="clearfix"></div>
+    </article>
+
+
     <article class="post tag-blog">
         <header class="post-header">
             <span class="post-meta"><time datetime="2015-11-01">01 Nov 2015</time> </span>
@@ -193,21 +208,6 @@
             <p>Objectif Notre but est de scruter un fichier de log hébergé sur un serveur Linux. De plus, pour plus de confort, nous souhaitons utiliser un outil de monitoring de fichier de log en temps réel BareTail (vous pouvez tout autant utiliser un autre logiciel ou la ligne de commande) Solution Nous allons utiliser Putty pour créer un tunnel ssh. Nous allons ouvrir une session non intéractive avec plink&hellip;</p>
         </section>
         <a class="button read-more right small" href="https://malys.github.io/2014/09/04/Tail-distant-a-travers-SSH.html">Read more</a>
-        <aside class="tags fi-pricetag-multiple">Posted on <a href="https://malys.github.io/tag/Tail">Tail</a>, <a href="https://malys.github.io/tag/SSH">SSH</a>, <a href="https://malys.github.io/tag/Putty">Putty</a>, <a href="https://malys.github.io/tag/Linux">Linux</a></aside>
-        <div class="clearfix"></div>
-    </article>
-
-
-    <article class="post tag-Tail tag-SSH tag-Putty tag-Linux">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="2014-09-04">04 Sep 2014</time> </span>
-            <h2 class="post-title"><a href="https://malys.github.io/2014/09/04/Tail-avec-coloration-syntaxique.html">Tail avec coloration syntaxique</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-            <p>Objectif Nous avons lancé une commande tail sur le serveur et nous souhaiterions colorer les lignes de log selon leur catégorie (par exemple, lecture d’un fichier de log généré par Log4J. Solution Nous allons donc lancer la commande tail et utiliser AWK pour appliquer une couleur contenant un mot-clé. tail -F myLog.log | awk '/INFO/ {print "\033[32m" $0 "\033[39m"}/ERROR/ {print "\033[31m" $0 "\0&hellip;</p>
-        </section>
-        <a class="button read-more right small" href="https://malys.github.io/2014/09/04/Tail-avec-coloration-syntaxique.html">Read more</a>
         <aside class="tags fi-pricetag-multiple">Posted on <a href="https://malys.github.io/tag/Tail">Tail</a>, <a href="https://malys.github.io/tag/SSH">SSH</a>, <a href="https://malys.github.io/tag/Putty">Putty</a>, <a href="https://malys.github.io/tag/Linux">Linux</a></aside>
         <div class="clearfix"></div>
     </article>
