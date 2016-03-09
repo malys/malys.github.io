@@ -1,5 +1,5 @@
 = Déplacement du disque virtuel disk.vmdk de Docker
-:published_at: 2014-09-04
+:published_at: 2016-03-09
 :hp-tags: docker,Windows
 
 
