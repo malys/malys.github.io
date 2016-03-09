@@ -55,7 +55,7 @@ Dans VirtualBox, __CTRL+D__ pour ouvrir le gestionnaire des médias.
 Clic droit sur le disque pour le supprimer.
 
 == Ressources
-http://stackoverflow.com/questions/33392133/move-boot2docker-and-docker-folder-in-other-drive [Article de référence]
+http://stackoverflow.com/questions/33392133/move-boot2docker-and-docker-folder-in-other-drive[Stackoverflow]
 
 
 
