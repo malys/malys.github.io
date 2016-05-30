@@ -1,0 +1,27 @@
+= ConEmu: Trucs et astuces
+
+:published_at: 2016-05-10
+
+:hp-tags: ConEmu
+
+
+
+https://conemu.github.io/[ConEmu] est un formidable émulateur de console sous Windows.
+
+
+
+
+
+# Astuces
+
+
+
+* Insertion multi fenêtrage: [APPS] [G]
+
+* Création d'un nouvel onglet avec une séparation verticale: [Ctrl][Shift][O]
+
+* Création d'un nouvel onglet avec une séparation horizontale: [Ctrl][Shift][E]
+
+* Aide sur les raccourcis: [Win][Alt][K]
+
+* Envoyer un signal d'arrêt au process en cours sans tuer l'onglet: créer un raccourci [CTRL][X] pour la fonction "Terminale active process in the current console"
