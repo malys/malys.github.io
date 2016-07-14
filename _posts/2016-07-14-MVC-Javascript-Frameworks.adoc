@@ -1,0 +1,60 @@
+= MVC Javascript Frameworks
+:published_at: 2016-07-14
+:hp-tags: MVC,Javascript,Framework
+
+
+== Liste des frameworks
+
+++++
+
+<script type="text/javascript">
+window.listMVC=[
+	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs']},
+	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2']},
+    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['react']},
+    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs']},
+    {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia']}];
+
+</script>
+++++
+
+[options="header,footer"]
+|=======================
+|Nom |Site      
+|Angular    |https://angularjs.org/     
+|Angular2   |https://angularjs.org/     
+|ReactJS    |https://facebook.github.io/react/     
+|VueJS      |https://vuejs.org/
+|AureliaJS  |http://aurelia.io/
+|=======================
+
+== Tendances 
+
+=== Stackoverflow
+
+
+++++
+
+
+<script type="text/javascript">
+var iframe = this.createElement('iframe');
+iframe.style.display = "border: 0; width: 100%; height: 600px;";
+iframe.src = 'http://sotagtrends.com/?tags=[';
+iframe.src += window.listMVC.map(function(it) {
+  return it.keywords;
+}).join(',') +  ']';
+console.error(iframe.src) ;
+this.body.appendChild(iframe);
+</script>
+++++
+
+MapMind:
+
++++
+<iframe  style="border: 0; width: 100%; height: 600px;" src="https://atlas.mindmup.com/2015/10/1ccd2a8062300133757909da45f6e798/articles/index.html"></iframe>
+++++
+
+
+https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
+
+https://webandmobiletech.wordpress.com/2016/05/12/best-javascript-frameworks-and-libraries-for-development-in-2016/ 
