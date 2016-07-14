@@ -11,7 +11,7 @@
 window.listMVC=[
 	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs']},
 	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2']},
-    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['react']},
+    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs']},
     {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs']},
     {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia']}];
 
@@ -34,17 +34,16 @@ window.listMVC=[
 
 
 ++++
-
+<iframe id="stof" style="border: 0; width: 100%; height: 600px;" src=""></iframe>
 
 <script type="text/javascript">
-var iframe = this.createElement('iframe');
-iframe.style.display = "border: 0; width: 100%; height: 600px;";
+var iframe =  document.getElementById('stof')
 iframe.src = 'http://sotagtrends.com/?tags=[';
 iframe.src += window.listMVC.map(function(it) {
   return it.keywords;
 }).join(',') +  ']';
-console.error(iframe.src) ;
-this.body.appendChild(iframe);
+
+
 </script>
 ++++
 
