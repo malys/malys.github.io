@@ -38,19 +38,13 @@ window.listMVC=[
 
 <script type="text/javascript">
 var iframe =  document.getElementById('stof')
-iframe.src = 'http://sotagtrends.com/?tags=[';
+iframe.src = 'https://www.google.com/search?q=%http://sotagtrends.com/?tags=[';
 iframe.src += window.listMVC.map(function(it) {
   return it.keywords;
 }).join(',') +  ']';
 
 
 </script>
-++++
-
-MapMind:
-
-+++
-<iframe  style="border: 0; width: 100%; height: 600px;" src="https://atlas.mindmup.com/2015/10/1ccd2a8062300133757909da45f6e798/articles/index.html"></iframe>
 ++++
 
 
