@@ -11,7 +11,7 @@ window.listMVC=[
 	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs','angular+angularjs']},
 	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2','angularjs2','angular2+angularjs2']},
     {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs','reactjs','reactjs+reactjs']},
-    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs',''vuejs']},
+    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs','vuejs']},
     {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia','aurelia','aurelia+aureliajs']}
     ];
 
@@ -75,21 +75,19 @@ for(i=0;i<5;i++){
 
 
 
-
 === Google
 
 ++++
 
-<a id='goo' href="" target="_blank">Google trends</a>
-<br>
+<a id='goo1' href="" target="_blank">Google trends</a>
 
 <script type="text/javascript">
-  var a =  document.getElementById('goo')
-  a.href='https://www.google.com/trends/explore#cat=0-5&q=';
-  a.href= window.listMVC.map(function(it) {
+  var a =  document.getElementById('goo1')
+  a.href ='https://www.google.com/trends/explore#cat=0-5&q=';
+  a.href += encodeURIComponent(window.listMVC.map(function(it) {
   return it.keywords[2];
-}).join(', ')
-  a.href+='&date=today%2012-m&cmpt=q&tz=Etc%2FGMT-2'
+}).join(', '));
+  a.href +='&date=today%2012-m&cmpt=q&tz=Etc%2FGMT-2';
 
 </script>
 ++++
