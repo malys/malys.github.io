@@ -34,7 +34,7 @@ window.listMVC=[
 
 
 ++++
-<iframe id="stof" style="border: 0; width: 100%; height: 600px;" src=""></iframe>
+<iframe id="stof" style="border: 0; width: 90%; height: 90%;" src=""></iframe>
 
 <script type="text/javascript">
 var iframe =  document.getElementById('stof')
@@ -42,6 +42,8 @@ iframe.src = 'http://sotagtrends.com/?tags=[';
 iframe.src += window.listMVC.map(function(it) {
   return it.keywords;
 }).join(',') +  ']';
+
+<a id="stof" style="border: 0; width: 90%; height: 600px;" src=""></iframe>
 
 
 </script>
