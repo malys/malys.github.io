@@ -5,6 +5,18 @@
 
 == Liste des frameworks
 
+[options="header,footer"]
+|=======================
+|Nom |Site      
+|Angular    |https://angularjs.org/     
+|Angular2   |https://angularjs.org/     
+|ReactJS    |https://facebook.github.io/react/     
+|VueJS      |https://vuejs.org/
+|AureliaJS  |http://aurelia.io/
+|=======================
+
+== Tendances 
+
 ++++
 <script type="text/javascript">
 window.listMVC=[
@@ -17,18 +29,6 @@ window.listMVC=[
 
 </script>
 ++++
-
-[options="header,footer"]
-|=======================
-|Nom |Site      
-|Angular    |https://angularjs.org/     
-|Angular2   |https://angularjs.org/     
-|ReactJS    |https://facebook.github.io/react/     
-|VueJS      |https://vuejs.org/
-|AureliaJS  |http://aurelia.io/
-|=======================
-
-== Tendances 
 
 === Stackoverflow
 
@@ -91,6 +91,9 @@ for(i=0;i<5;i++){
 
 </script>
 ++++
+
+
+
 
 === Articles
 
