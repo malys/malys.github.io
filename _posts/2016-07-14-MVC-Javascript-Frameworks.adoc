@@ -8,7 +8,7 @@
 ++++
 <script type="text/javascript">
 window.listMVC=[
-	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs"]},
+	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs']},
 	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2','angularjs2']},
     {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs','reactjs']},
     {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs']},
@@ -56,11 +56,11 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 <a id='red5h' href="" target="_blank">_</a>
 
 <script type="text/javascript">
-i=1
-var a =  document.getElementById('red'+ i +'h')
-a.href="https://www.reddit.com/r/"+window.listMVC[i].keywords[1]+ "/about/traffic";
-a.innerHTML = 'Reddit for ' + window.listMVC[i].name
-
+for(i=1;i<6;i++){
+  var a =  document.getElementById('red'+ i +'h')
+  a.href="https://www.reddit.com/r/"+window.listMVC[i].keywords[1]+ "/about/traffic";
+  a.innerHTML = 'Reddit for ' + window.listMVC[i].name
+}
 
 </script>
 ++++
