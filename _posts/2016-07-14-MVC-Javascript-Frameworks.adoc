@@ -38,7 +38,7 @@ window.listMVC=[
 
 <script type="text/javascript">
 var iframe =  document.getElementById('stof')
-iframe.src = 'http://sotagtrends.com/?tags=[';
+iframe.src = 'https://www.google.com/search?q=%http://sotagtrends.com/?tags=[';
 iframe.src += window.listMVC.map(function(it) {
   return it.keywords;
 }).join(',') +  ']';
