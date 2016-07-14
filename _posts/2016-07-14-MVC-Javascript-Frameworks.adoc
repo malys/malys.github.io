@@ -8,11 +8,12 @@
 ++++
 <script type="text/javascript">
 window.listMVC=[
-	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs']},
-	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2','angularjs2']},
-    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs','reactjs']},
-    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs']},
-    {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia','aurelia']}];
+	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs','angular+angularjs']},
+	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2','angularjs2','angular2+angularjs2']},
+    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs','reactjs','reactjs+reactjs']},
+    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs',''vuejs']},
+    {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia','aurelia','aurelia+aureliajs']}
+    ];
 
 </script>
 ++++
@@ -36,6 +37,7 @@ window.listMVC=[
 <a id='stofh' href="" target="_blank">
 Stackoverflow Trends
 </a>
+<p>
 
 <script type="text/javascript">
 var a =  document.getElementById('stofh')
@@ -46,24 +48,53 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 </script>
 ++++
 
+
+
 === Reddit
 
 ++++
-<a id='red1h' href="" target="_blank">_</a>
-<a id='red2h' href="" target="_blank">_</a>
-<a id='red3h' href="" target="_blank">_</a>
-<a id='red4h' href="" target="_blank">_</a>
-<a id='red5h' href="" target="_blank">_</a>
+
+<a id='redh0' href="" target="_blank">_</a>
+<br>
+<a id='redh1' href="" target="_blank">_</a>
+<br>
+<a id='redh2' href="" target="_blank">_</a>
+<br>
+<a id='redh3' href="" target="_blank">_</a>
+<br>
+<a id='redh4' href="" target="_blank">_</a>
 
 <script type="text/javascript">
-for(i=1;i<6;i++){
-  var a =  document.getElementById('red'+ i +'h')
+for(i=0;i<5;i++){
+  var a =  document.getElementById('redh'+ i)
   a.href="https://www.reddit.com/r/"+window.listMVC[i].keywords[1]+ "/about/traffic";
   a.innerHTML = 'Reddit for ' + window.listMVC[i].name
 }
+</script>
+++++
+
+
+
+
+=== Google
+
+++++
+
+<a id='goo' href="" target="_blank">Google trends</a>
+<br>
+
+<script type="text/javascript">
+  var a =  document.getElementById('goo')
+  a.href='https://www.google.com/trends/explore#cat=0-5&q=';
+  a.href= window.listMVC.map(function(it) {
+  return it.keywords[2];
+}).join(', ')
+  a.href+='&date=today%2012-m&cmpt=q&tz=Etc%2FGMT-2'
 
 </script>
 ++++
+
+=== Articles
 
 https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
 
