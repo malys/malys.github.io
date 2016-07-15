@@ -95,7 +95,6 @@ for(i=0;i<5;i++){
 === GitHub/NPM
 
 ++++
-
 <a id='npm' href="" target="_blank">NPM trends</a>
 
 <script type="text/javascript">
@@ -106,7 +105,6 @@ for(i=0;i<5;i++){
 }).join('-vs-');
 </script>
 ++++
-
 
 
 
