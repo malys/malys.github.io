@@ -103,7 +103,7 @@ for(i=0;i<5;i++){
   a.href ='http://www.npmtrends.com/';
   a.href += window.listMVC.map(function(it) {
   return it.keywords[3];
-}).join('_vs_');
+}).join('-vs-');
 </script>
 ++++
 
