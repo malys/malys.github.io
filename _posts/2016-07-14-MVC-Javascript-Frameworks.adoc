@@ -92,6 +92,22 @@ for(i=0;i<5;i++){
 </script>
 ++++
 
+=== GitHub/NPM
+
+++++
+
+<a id='npm' href="" target="_blank">Google trends</a>
+
+<script type="text/javascript">
+  var a =  document.getElementById('npm')
+  a.href ='http://www.npmtrends.com/';
+  a.href += window.listMVC.map(function(it) {
+  return it.keywords[0];
+}).join('_vs_');
+console.info(a.href)
+</script>
+++++
+
 
 
 
