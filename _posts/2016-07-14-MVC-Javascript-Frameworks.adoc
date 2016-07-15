@@ -20,11 +20,11 @@
 ++++
 <script type="text/javascript">
 window.listMVC=[
-	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs','angular+angularjs']},
-	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2','angularjs2','angular2+angularjs2']},
-    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs','reactjs','reactjs+reactjs']},
-    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs','vuejs']},
-    {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia','aurelia','aurelia+aureliajs']}
+	{name:'Angular',url:'https://angularjs.org/',keywords:['angularjs','angularjs','angular+angularjs','angular']},
+	{name:'Angular2',url:'https://angularjs.org/',keywords:['angular2','angularjs2','angular2+angularjs2','angular2']},
+    {name:'ReactJS',url:'https://facebook.github.io/react/',keywords:['reactjs','reactjs','reactjs+reactjs','react']},
+    {name:'VueJS',url:'https://vuejs.org/',keywords:['vuejs','vuejs','vuejs','vue']},
+    {name:'AureliaJS',url:'http://aurelia.io/',keywords:['aurelia','aurelia','aurelia+aureliajs','aurelia']}
     ];
 
 </script>
@@ -96,15 +96,14 @@ for(i=0;i<5;i++){
 
 ++++
 
-<a id='npm' href="" target="_blank">Google trends</a>
+<a id='npm' href="" target="_blank">NPM trends</a>
 
 <script type="text/javascript">
   var a =  document.getElementById('npm')
   a.href ='http://www.npmtrends.com/';
   a.href += window.listMVC.map(function(it) {
-  return it.keywords[0];
+  return it.keywords[3];
 }).join('_vs_');
-console.info(a.href)
 </script>
 ++++
 
