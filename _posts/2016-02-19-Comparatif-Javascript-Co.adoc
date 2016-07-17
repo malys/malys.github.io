@@ -1,6 +1,6 @@
-= Javascript Killers
+= Comparatif: Javascript & Co
 :published_at: 2016-02-19
-:hp-tags: build,Javascript,tools
+:hp-tags: langage,Javascript,comparatif
 
 
 == Liste des langages
