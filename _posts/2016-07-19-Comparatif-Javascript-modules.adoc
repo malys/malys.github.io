@@ -1,5 +1,5 @@
 = Comparatif: Javascript modules
-:published_at: 2016-02-19
+:published_at: 2016-07-19
 :hp-tags: langage,Javascript,comparatif
 
 
