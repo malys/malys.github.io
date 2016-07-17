@@ -1,4 +1,4 @@
-= Javascript build tools
+= Comparatif: Javascript build tools
 :published_at: 2016-02-15
 :hp-tags: build,Javascript,tools
 
