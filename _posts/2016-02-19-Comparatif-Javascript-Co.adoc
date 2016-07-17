@@ -24,7 +24,7 @@ window.listMVC=[
 	{name:'CoffeeScript',url:'http://coffeescript.org/',keywords:['coffeescript','coffeescript','coffeescript','coffeescript']},
     {name:'Rust',url:'https://www.rust-lang.org/en-US/ ',keywords:['rust','rust','rust','rust']},
     {name:'Dart',url:'https://www.dartlang.org/',keywords:['dart','dart','dart','dart']},
-    {name:'ES6',url:'http://es6-features.org/',keywords:['es6','es6','es6','es6']}
+    {name:'ES6',url:'http://es6-features.org/',keywords:['ecmascript-6','es6','es6','es6']}
     ];
 
 </script>
