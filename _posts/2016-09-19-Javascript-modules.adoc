@@ -2,8 +2,11 @@
 :published_at: 2016-09-19
 :hp-tags: langage,Javascript,modules
 
-
+# Pattern
 https://amethyste16.wordpress.com/2016/03/01/le-pattern-module-en-javascript/
+
+Definition closure
+IIFE https://amethyste16.wordpress.com/2014/01/12/les-expressions-de-fonction-immediatement-invoquees-en-javascript/
 
 [source,javascript]
 ----
