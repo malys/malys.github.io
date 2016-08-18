@@ -1,0 +1,19 @@
+= Javascript modules
+:published_at: 2016-09-19
+:hp-tags: langage,Javascript,modules
+
+
+https://amethyste16.wordpress.com/2016/03/01/le-pattern-module-en-javascript/
+
+[source,javascript]
+----
+for(var i=0;i<5;i++){
+  (function(){
+    var j=i;
+    setTimeout(function(){
+        console.log(j);
+    }
+    )}
+  )();
+}
+----
