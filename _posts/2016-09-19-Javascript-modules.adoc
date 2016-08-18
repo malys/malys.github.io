@@ -22,3 +22,7 @@ for(var i=0;i<5;i++){
 ----
 
 https://tech.mozfr.org/category/JavaScript
+
+https://tech.mozfr.org/post/2015/08/21/ES6-en-details-%3A-les-modules
+
+https://nolanlawson.com/2016/08/15/the-cost-of-small-modules/
