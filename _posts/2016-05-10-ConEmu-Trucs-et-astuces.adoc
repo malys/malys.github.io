@@ -18,6 +18,10 @@ https://conemu.github.io/[ConEmu] est un formidable émulateur de console sous W
 
 * Insertion multi fenêtrage: [APPS] [G]
 
+image::http://conemu.github.io/img/KeyboardAppsKey.png[]
+
+* Désactiver multi fenêtrage: [APPS] [G] +  [G]
+
 * Création d'un nouvel onglet avec une séparation verticale: [Ctrl][Shift][O]
 
 * Création d'un nouvel onglet avec une séparation horizontale: [Ctrl][Shift][E]
