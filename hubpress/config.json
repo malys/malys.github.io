@@ -20,5 +20,21 @@
   },
   "theme": {
     "name": "ichi"
+  },
+  "urls": {
+    "site": "https://malys.github.io",
+    "hubpress": "http://malys.github.io",
+    "theme": "//malys.github.io/themes/ichi",
+    "images": "https://malys.github.io/images"
+  },
+  "initialisationConfigComponent": {
+    "name": "initialise-configuration",
+    "computed": {},
+    "methods": {},
+    "staticRenderFns": [
+      null,
+      null,
+      null
+    ]
   }
 }
