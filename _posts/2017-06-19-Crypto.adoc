@@ -1,0 +1,10 @@
+= Crypto
+:published_at: 2017-06-19
+:hp-tags: sécurite,ssl,certificat
+
+# Pattern
+
+http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases
+
+video::jMIAoAVbcsw[youtube]
+video::FSq-FXx5dxU[youtube]
