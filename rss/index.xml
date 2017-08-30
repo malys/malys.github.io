@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 17:06:25 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 18:14:32 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -44,8 +44,99 @@
 window.listMVC=[
 	{name:'JAAS',url:'https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html',keywords:['jaas','jaas','jaas','jaas']},
 	{name:'Keycloak',url:'http://www.keycloak.org/ ',keywords:['keycloak','keycloak','keycloak','keycloak']},
-    {name:'Spring Security',url:https://projects.spring.io/spring-security/',keywords:['spring security','spring security','spring security','spring security']},
+    {name:'Spring Security',url:https://projects.spring.io/spring-security/',keywords:['spring','spring','spring','spring']},
     {name:'Apache Shiro',url:'https://shiro.apache.org/',keywords:['shiro','shiro','shiro','shiro']}
+    ];
+
+</script>
+<div class="sect2">
+<h3 id="_stackoverflow">Stackoverflow</h3>
+<a id='stofh' href="" target="_blank">
+Stackoverflow Trends
+</a>
+<p>
+
+<script type="text/javascript">
+var a =  document.getElementById('stofh')
+a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
+  return it.keywords[0];
+}).join(',') +  ']';
+
+</script>
+<p>
+</div>
+<div class="sect2">
+<h3 id="_google">Google</h3>
+<a id='goo1' href="" target="_blank">Google trends</a>
+
+<script type="text/javascript">
+  var a =  document.getElementById('goo1')
+  a.href ='https://www.google.com/trends/explore#cat=0-5&q=';
+  a.href += encodeURIComponent(window.listMVC.map(function(it) {
+  return it.keywords[2];
+}).join(', '));
+  a.href +='&date=today%2012-m&cmpt=q&tz=Etc%2FGMT-2';
+
+</script>
+<p>
+</div>
+<div class="sect2">
+<h3 id="_articles">Articles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://are-you-ready.de/blog/2017/01/25/apache-shiro-part-1-selecting-a-java-security-framework/">Blog</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>]]></description><link>https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</link><guid isPermaLink="true">https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</guid><category><![CDATA[security]]></category><category><![CDATA[java]]></category><category><![CDATA[framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Java build tools]]></title><description><![CDATA[<div class="sect1">
+<h2 id="_liste_des_outils">Liste des outils</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Nom</th>
+<th class="tableblock halign-left valign-top">Site</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ivy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ant.apache.org/ivy/" class="bare">https://ant.apache.org/ivy/</a></p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maven</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://maven.apache.org/" class="bare">https://maven.apache.org/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gradle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://gradle.org/" class="bare">https://gradle.org/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ant.apache.org/" class="bare">https://ant.apache.org/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tendances">Tendances</h2>
+<div class="sectionbody">
+<script type="text/javascript">
+window.listMVC=[
+	{name:'Maven',url:'https://maven.apache.org/',keywords:['maven','maven','maven','maven']},
+	{name:'Gradle',url:'https://gradle.org/ ',keywords:['gradle','gradle','gradle','gradle']},
+    {name:'Ant',url:'https://ant.apache.org/',keywords:['ant','ant','ant','ant']},
+    {name:'Ivy',url:'https://ant.apache.org/ivy/',keywords:['ivy','ivy','ivy','ivy']}
     ];
 
 </script>
@@ -78,18 +169,8 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 
 </script>
 </div>
-<div class="sect2">
-<h3 id="_articles">Articles</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="http://are-you-ready.de/blog/2017/01/25/apache-shiro-part-1-selecting-a-java-security-framework/">Blog</a></p>
-</li>
-</ul>
 </div>
-</div>
-</div>
-</div>]]></description><link>https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</link><guid isPermaLink="true">https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</guid><category><![CDATA[security]]></category><category><![CDATA[java]]></category><category><![CDATA[framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io2017-0-15-Comparatif-Java-build-tools.adoc</link><guid isPermaLink="true">https://malys.github.io2017-0-15-Comparatif-Java-build-tools.adoc</guid><category><![CDATA[build]]></category><category><![CDATA[java]]></category><category><![CDATA[tools]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_langages">Liste des langages</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
