@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 17:05:49 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 17:06:25 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -62,26 +62,6 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
   return it.keywords[0];
 }).join(',') +  ']';
 
-</script>
-</div>
-<div class="sect2">
-<h3 id="_reddit">Reddit</h3>
-<a id='redh0' href="" target="_blank">_</a>
-<br>
-<a id='redh1' href="" target="_blank">_</a>
-<br>
-<a id='redh2' href="" target="_blank">_</a>
-<br>
-<a id='redh3' href="" target="_blank">_</a>
-<br>
-
-
-<script type="text/javascript">
-for(i=0;i<5;i++){
-  var a =  document.getElementById('redh'+ i)
-  a.href="https://www.reddit.com/r/"+window.listMVC[i].keywords[1]+ "/about/traffic";
-  a.innerHTML = 'Reddit for ' + window.listMVC[i].name
-}
 </script>
 </div>
 <div class="sect2">
