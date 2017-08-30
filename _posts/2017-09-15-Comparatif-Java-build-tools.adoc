@@ -1,0 +1,66 @@
+= Comparatif: Java build tools
+:published_at: 2017-0-15
+:hp-tags: build,java,tools,comparatif
+
+
+== Liste des outils
+
+[options="header,footer"]
+|=======================
+|Nom |Site      
+|Maven    |https://maven.apache.org/   
+|Gradle   |https://gradle.org/    
+|Ant    |https://ant.apache.org/
+|Ivy	|https://ant.apache.org/ivy/
+|=======================
+
+== Tendances 
+
+++++
+<script type="text/javascript">
+window.listMVC=[
+	{name:'Maven',url:'https://maven.apache.org/',keywords:['maven','maven','maven','maven']},
+	{name:'Gradle',url:'https://gradle.org/ ',keywords:['gradle','gradle','gradle','gradle']},
+    {name:'Ant',url:'https://ant.apache.org/',keywords:['ant','ant','ant','ant']},
+    {name:'Ivy',url:'https://ant.apache.org/ivy/',keywords:['ivy','ivy','ivy','ivy']}
+    ];
+
+</script>
+++++
+
+=== Stackoverflow
+
+++++
+
+<a id='stofh' href="" target="_blank">
+Stackoverflow Trends
+</a>
+<p>
+
+<script type="text/javascript">
+var a =  document.getElementById('stofh')
+a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
+  return it.keywords[0];
+}).join(',') +  ']';
+
+</script>
+++++
+
+
+=== Google
+
+++++
+
+<a id='goo1' href="" target="_blank">Google trends</a>
+
+<script type="text/javascript">
+  var a =  document.getElementById('goo1')
+  a.href ='https://www.google.com/trends/explore#cat=0-5&q=';
+  a.href += encodeURIComponent(window.listMVC.map(function(it) {
+  return it.keywords[2];
+}).join(', '));
+  a.href +='&date=today%2012-m&cmpt=q&tz=Etc%2FGMT-2';
+
+</script>
+++++
+
