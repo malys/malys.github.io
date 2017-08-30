@@ -1,5 +1,5 @@
 = Comparatif: Java build tools
-:published_at: 2017-0*-15
+:published_at: 2017-0-15
 :hp-tags: build,java,tools,comparatif
 
 
@@ -60,7 +60,7 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 <br>
 <a id='redh3' href="" target="_blank">_</a>
 <br>
-<a id='redh4' href="" target="_blank">_</a>
+
 
 <script type="text/javascript">
 for(i=0;i<5;i++){
