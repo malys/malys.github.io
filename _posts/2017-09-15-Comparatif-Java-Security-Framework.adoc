@@ -21,7 +21,7 @@
 window.listMVC=[
 	{name:'JAAS',url:'https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html',keywords:['jaas','jaas','jaas','jaas']},
 	{name:'Keycloak',url:'http://www.keycloak.org/ ',keywords:['keycloak','keycloak','keycloak','keycloak']},
-    {name:'Spring Security',url:'https://projects.spring.io/spring-security/',keywords:['spring security','spring security','spring security','spring security']},
+    {name:'Spring Security',url:'https://projects.spring.io/spring-security/',keywords:['spring-security','spring-security','spring-security','spring-security']},
     {name:'Apache Shiro',url:'https://shiro.apache.org/',keywords:['shiro','shiro','shiro','shiro']}
     ];
 
