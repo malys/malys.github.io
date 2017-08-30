@@ -46,31 +46,6 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 </script>
 ++++
 
-
-
-=== Reddit
-
-++++
-
-<a id='redh0' href="" target="_blank">_</a>
-<br>
-<a id='redh1' href="" target="_blank">_</a>
-<br>
-<a id='redh2' href="" target="_blank">_</a>
-<br>
-<a id='redh3' href="" target="_blank">_</a>
-<br>
-
-
-<script type="text/javascript">
-for(i=0;i<5;i++){
-  var a =  document.getElementById('redh'+ i)
-  a.href="https://www.reddit.com/r/"+window.listMVC[i].keywords[1]+ "/about/traffic";
-  a.innerHTML = 'Reddit for ' + window.listMVC[i].name
-}
-</script>
-++++
-
 === Google
 
 ++++
