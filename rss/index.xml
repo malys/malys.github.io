@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 16:57:11 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 16:58:32 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -695,19 +695,7 @@ for(i=0;i<5;i++){
 </div>
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</guid><category><![CDATA[MVC]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[Framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Articles intéressants]]></title><description><![CDATA[<div class="paragraph">
-<p>MapMind:</p>
-</div>
-<iframe  style="border: 0; width: 100%; height: 600px;" src="https://atlas.mindmup.com/2015/10/1ccd2a8062300133757909da45f6e798/articles/index.html"></iframe>
-<div class="paragraph">
-<p><a href="https://www.mindmup.com/#m:h1malys/mindmup:master:/articles.mup" class="bare">https://www.mindmup.com/#m:h1malys/mindmup:master:/articles.mup</a></p>
-</div>]]></description><link>https://malys.github.io/2015/11/01/Articles-interessants.html</link><guid isPermaLink="true">https://malys.github.io/2015/11/01/Articles-interessants.html</guid><category><![CDATA[blog]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Modules NodeJS intéressants]]></title><description><![CDATA[<div class="paragraph">
-<p>MapMind:</p>
-</div>
-<iframe  style="border: 0; width: 100%; height: 500px;" src="https://atlas.mindmup.com/2015/10/306d64305f7f0133287f0eb733197517/npm/index.html"></iframe>
-<div class="paragraph">
-<p><a href="https://www.mindmup.com/#m:a1850aef005f89013334ef5b6eee98a99f" class="bare">https://www.mindmup.com/#m:a1850aef005f89013334ef5b6eee98a99f</a></p>
-</div>]]></description><link>https://malys.github.io/2015/10/28/Modules-NodeJS-interessants.html</link><guid isPermaLink="true">https://malys.github.io/2015/10/28/Modules-NodeJS-interessants.html</guid><category><![CDATA[NodeJS]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Wed, 28 Oct 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Débogueur avec NodeJS]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</guid><category><![CDATA[MVC]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[Framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Débogueur avec NodeJS]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_objectif">Objectif</h2>
 <div class="sectionbody">
 <div class="paragraph">
