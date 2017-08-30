@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 28 Jun 2017 18:35:40 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Crypto]]></title><description><![CDATA[<h1 id="_pattern" class="sect0">Pattern</h1>
-<div class="paragraph">
-<p><a href="http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases" class="bare">http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases</a></p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/jMIAoAVbcsw?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/FSq-FXx5dxU?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>]]></description><link>https://malys.github.io/2017/06/19/Crypto.html</link><guid isPermaLink="true">https://malys.github.io/2017/06/19/Crypto.html</guid><category><![CDATA[sécurite]]></category><category><![CDATA[ssl]]></category><category><![CDATA[certificat]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 19 Jun 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 16:38:55 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_langages">Liste des langages</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
