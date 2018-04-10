@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Apr 2018 07:08:44 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cryptography glossary]]></title><description><![CDATA[<h1 id="_pki" class="sect0">PKI</h1>
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Apr 2018 07:09:20 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cryptography glossary]]></title><description><![CDATA[<h1 id="_pki" class="sect0">PKI</h1>
 <div class="ulist">
 <ul>
 <li>
@@ -83,7 +83,7 @@
 <h1 id="_algorithms" class="sect0">Algorithms</h1>
 
 <h1 id="_idm" class="sect0">IDM</h1>
-]]></description><link>https://malys.github.io/2018/08/19/Cryptography-glossary.html</link><guid isPermaLink="true">https://malys.github.io/2018/08/19/Cryptography-glossary.html</guid><category><![CDATA[sécurite]]></category><category><![CDATA[ssl]]></category><category><![CDATA[certificat]]></category><category><![CDATA[security]]></category><category><![CDATA[glossaire]]></category><category><![CDATA[certificate]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 19 Aug 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io/2018/04/19/Cryptography-glossary.html</link><guid isPermaLink="true">https://malys.github.io/2018/04/19/Cryptography-glossary.html</guid><category><![CDATA[sécurite]]></category><category><![CDATA[ssl]]></category><category><![CDATA[certificat]]></category><category><![CDATA[glossaire]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Thu, 19 Apr 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
