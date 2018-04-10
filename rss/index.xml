@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Apr 2018 07:09:20 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cryptography glossary]]></title><description><![CDATA[<h1 id="_pki" class="sect0">PKI</h1>
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Apr 2018 07:09:59 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cryptography ressources]]></title><description><![CDATA[<h1 id="_tools" class="sect0">Tools</h1>
+<div class="sect1">
+<h2 id="_generic">Generic</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.openssl.org/">Openssl</a></p>
+</li>
+<li>
+<p><a href="https://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html">Keytool</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_windows">Windows</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://keystore-explorer.org/features.html">Keystore Explorer</a></p>
+</li>
+<li>
+<p><a href="http://hohnstaedt.de/xca/">XCA</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h1 id="_libraries" class="sect0">Libraries</h1>
+<div class="sect1">
+<h2 id="_blog_posts">Blog posts</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases">Pattern</a></p>
+</li>
+<li>
+<p><a href="https://cryptosense.com/whitepapers/">Cryptosense whitepaper</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_videos">Videos</h2>
+<div class="sectionbody">
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/jMIAoAVbcsw?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/FSq-FXx5dxU?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>]]></description><link>https://malys.github.io/2018/04/19/Cryptography-ressources.html</link><guid isPermaLink="true">https://malys.github.io/2018/04/19/Cryptography-ressources.html</guid><category><![CDATA[sécurite]]></category><category><![CDATA[ssl]]></category><category><![CDATA[certificat]]></category><category><![CDATA[outils]]></category><category><![CDATA[cryptographie]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Thu, 19 Apr 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Cryptography glossary]]></title><description><![CDATA[<h1 id="_pki" class="sect0">PKI</h1>
 <div class="ulist">
 <ul>
 <li>
