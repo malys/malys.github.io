@@ -1,6 +1,6 @@
 = Cryptography glossary
-:published_at: 2018-08-19
-:hp-tags: sécurite,ssl,certificat,security,glossaire,certificate
+:published_at: 2018-04-19
+:hp-tags: sécurite,ssl,certificat,glossaire
 
 
 # PKI 
