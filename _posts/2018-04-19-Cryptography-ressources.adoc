@@ -1,0 +1,28 @@
+= Cryptography ressources
+:published_at: 2018-04-19
+:hp-tags: sécurite,ssl,certificat,security,tools,certificate,cryptography
+
+# Tools
+
+## Generic
+
+* Openssl
+* Keytool
+
+## Windows
+* http://keystore-explorer.org/features.html[Keystore Explorer]
+* http://hohnstaedt.de/xca/[XCA]
+
+
+# Libraries
+
+## Blog posts
+
+* http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases[Pattern]
+* https://cryptosense.com/whitepapers/[Cryptosense whitepaper]
+
+## Videos
+
+video::jMIAoAVbcsw[youtube]
+video::FSq-FXx5dxU[youtube]
+
