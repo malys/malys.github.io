@@ -6,8 +6,8 @@
 
 ## Generic
 
-* Openssl
-* Keytool
+* https://www.openssl.org/[Openssl]
+* https://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html[Keytool]
 
 ## Windows
 * http://keystore-explorer.org/features.html[Keystore Explorer]
