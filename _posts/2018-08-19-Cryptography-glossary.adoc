@@ -1,6 +1,6 @@
-= Cryptography
+= Cryptography glossary
 :published_at: 2018-08-19
-:hp-tags: sécurite,ssl,certificat
+:hp-tags: sécurite,ssl,certificat,security,glossaire,certificate
 
 # Glossary
 
