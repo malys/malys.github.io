@@ -1,6 +1,6 @@
 = Cryptography ressources
 :published_at: 2018-04-19
-:hp-tags: sécurite,ssl,certificat,security,tools,certificate,cryptography
+:hp-tags: sécurite,ssl,certificat,outils,cryptographie
 
 # Tools
 
