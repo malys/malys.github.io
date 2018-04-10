@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 30 Aug 2017 18:23:05 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io</link><image><url>http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Apr 2018 06:56:59 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cryptography glossary]]></title><description><![CDATA[<h1 id="_glossary" class="sect0">Glossary</h1>
+<div class="sect1">
+<h2 id="_pki">PKI</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>PKI Public Key Infrastructure</p>
+</li>
+<li>
+<p>CSR</p>
+</li>
+<li>
+<p>CLR</p>
+</li>
+<li>
+<p>X.509 standard that defines the format of public key certificates</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_standard">Standard</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_public_key_cryptography_standards_strong_pkcs_strong">Public-Key Cryptography Standards (<strong>PKCS</strong>)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>PKCS#1 <strong>unencrypted</strong> RSA key storage format.</p>
+</li>
+<li>
+<p>PKCS#7 Collection of <strong>public certificates</strong>.</p>
+</li>
+<li>
+<p>PKCS#8 Encrypted <strong>private key</strong> format for RSA DSA EC keys.</p>
+</li>
+<li>
+<p>PKCS#10 Certificate signing request (<strong>CSR</strong>).</p>
+</li>
+<li>
+<p>PKCS#11 Security token / Smart card / <strong>HSM access</strong>.</p>
+</li>
+<li>
+<p>PKCS#12 Certificate, Private key and probably a CA chain.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_formats">File formats</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>DER Distinguished Encoding Rules - Binary format</p>
+</li>
+<li>
+<p>PEM Privacy Enhanced Mail - Text format</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_extensions">Extensions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>.pem</strong> (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----"</p>
+</li>
+<li>
+<p><strong>.cer, .crt, .der</strong> – usually in binary DER form, but Base64-encoded certificates are common too (see .pem above)</p>
+</li>
+<li>
+<p><strong>.p7b, .p7c</strong> PKCS#7 SignedData structure without data, just certificate(s) or CRL(s)</p>
+</li>
+<li>
+<p><strong>.p12</strong> PKCS#12, may contain certificate(s) (public) and private keys (password protected)</p>
+</li>
+<li>
+<p><strong>.pfx</strong> PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_algorithms">Algorithms</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_idm">IDM</h2>
+<div class="sectionbody">
+
+</div>
+</div>]]></description><link>https://malys.github.io/2018/08/19/Cryptography-glossary.html</link><guid isPermaLink="true">https://malys.github.io/2018/08/19/Cryptography-glossary.html</guid><category><![CDATA[sécurite]]></category><category><![CDATA[ssl]]></category><category><![CDATA[certificat]]></category><category><![CDATA[security]]></category><category><![CDATA[glossaire]]></category><category><![CDATA[certificate]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 19 Aug 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Java Security Framework]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -89,86 +189,7 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 </div>
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</link><guid isPermaLink="true">https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</guid><category><![CDATA[security]]></category><category><![CDATA[java]]></category><category><![CDATA[framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Java build tools]]></title><description><![CDATA[<div class="sect1">
-<h2 id="_liste_des_outils">Liste des outils</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Nom</th>
-<th class="tableblock halign-left valign-top">Site</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ivy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ant.apache.org/ivy/" class="bare">https://ant.apache.org/ivy/</a></p></td>
-</tr>
-</tfoot>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Maven</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://maven.apache.org/" class="bare">https://maven.apache.org/</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gradle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://gradle.org/" class="bare">https://gradle.org/</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ant</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://ant.apache.org/" class="bare">https://ant.apache.org/</a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_tendances">Tendances</h2>
-<div class="sectionbody">
-<script type="text/javascript">
-window.listMVC=[
-	{name:'Maven',url:'https://maven.apache.org/',keywords:['maven','maven','maven','maven']},
-	{name:'Gradle',url:'https://gradle.org/ ',keywords:['gradle','gradle','gradle','gradle']},
-    {name:'Ant',url:'https://ant.apache.org/',keywords:['ant','ant','ant','ant']},
-    {name:'Ivy',url:'https://ant.apache.org/ivy/',keywords:['ivy','ivy','ivy','ivy']}
-    ];
-
-</script>
-<div class="sect2">
-<h3 id="_stackoverflow">Stackoverflow</h3>
-<a id='stofh' href="" target="_blank">
-Stackoverflow Trends
-</a>
-<p>
-
-<script type="text/javascript">
-var a =  document.getElementById('stofh')
-a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
-  return it.keywords[0];
-}).join(',') +  ']';
-
-</script>
-</div>
-<div class="sect2">
-<h3 id="_google">Google</h3>
-<a id='goo1' href="" target="_blank">Google trends</a>
-
-<script type="text/javascript">
-  var a =  document.getElementById('goo1')
-  a.href ='https://www.google.com/trends/explore#cat=0-5&q=';
-  a.href += encodeURIComponent(window.listMVC.map(function(it) {
-  return it.keywords[2];
-}).join(', '));
-  a.href +='&date=today%2012-m&cmpt=q&tz=Etc%2FGMT-2';
-
-</script>
-</div>
-</div>
-</div>]]></description><link>https://malys.github.io2017-0-15-Comparatif-Java-build-tools.adoc</link><guid isPermaLink="true">https://malys.github.io2017-0-15-Comparatif-Java-build-tools.adoc</guid><category><![CDATA[build]]></category><category><![CDATA[java]]></category><category><![CDATA[tools]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Invalid Date</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</link><guid isPermaLink="true">https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</guid><category><![CDATA[security]]></category><category><![CDATA[java]]></category><category><![CDATA[framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_langages">Liste des langages</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
