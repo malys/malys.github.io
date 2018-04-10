@@ -4,12 +4,12 @@
 
 # Glossary
 
-## PKI
+## PKI 
 
 * PKI Public Key Infrastructure
 * CSR
 * CLR
-* X.509
+* X.509 standard that defines the format of public key certificates
 
 ## Standard
 
@@ -29,11 +29,11 @@
 
 ### Extensions
 
-* **.pem** – (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----"
+* **.pem** (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----"
 * **.cer, .crt, .der** – usually in binary DER form, but Base64-encoded certificates are common too (see .pem above)
-* **.p7b, .p7c** – PKCS#7 SignedData structure without data, just certificate(s) or CRL(s)
-* **.p12** – PKCS#12, may contain certificate(s) (public) and private keys (password protected)
-* **.pfx** – PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)
+* **.p7b, .p7c** PKCS#7 SignedData structure without data, just certificate(s) or CRL(s)
+* **.p12** PKCS#12, may contain certificate(s) (public) and private keys (password protected)
+* **.pfx** PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)
 
 
 ## Algorithms
