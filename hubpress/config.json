@@ -19,12 +19,12 @@
     "github": "https://github.com/malys/"
   },
   "theme": {
-    "name": "ichiCustom"
+    "name": "ichicustom"
   },
   "urls": {
     "site": "https://malys.github.io",
     "hubpress": "http://malys.github.io",
-    "theme": "//malys.github.io/themes/ichi",
+    "theme": "//malys.github.io/themes/ichicustom",
     "images": "https://malys.github.io/images"
   },
   "initialisationConfigComponent": {
