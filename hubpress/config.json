@@ -9,7 +9,7 @@
     "title": "Des outils et des développeurs...",
     "description": "Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)\n\n",
     "logo": "https://www.gravatar.com/avatar/c738c1bff9731c9cf6dccd5cc1270e94.png",
-    "cover": "http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg",
+    "cover": "https://malys.github.io/images/Eco-Innovation.jpeg",
     "postsPerPage": "7",
     "googleAnalytics": "UA-60775657-1",
     "disqus": "malysblog"
@@ -19,7 +19,7 @@
     "github": "https://github.com/malys/"
   },
   "theme": {
-    "name": "ichi"
+    "name": "ichiCustom"
   },
   "urls": {
     "site": "https://malys.github.io",
