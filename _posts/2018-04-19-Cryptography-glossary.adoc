@@ -5,10 +5,10 @@
 
 # PKI 
 
-* PKI Public Key Infrastructure
-* CSR
-* CLR
-* X.509 standard that defines the format of public key certificates
+* **PKI** Public Key Infrastructure
+* **CSR** Certificate signing request
+* **CLR** Certificate revocation list
+* **X.509** standard that defines the format of public key certificates
 
 # Standard
 
@@ -23,8 +23,8 @@
 
 # File formats
 
-* DER Distinguished Encoding Rules - Binary format
-* PEM Privacy Enhanced Mail - Text format
+* **DER** Distinguished Encoding Rules - Binary format
+* **PEM** Privacy Enhanced Mail - Text format
 
 ## Extensions
 
@@ -36,7 +36,5 @@
 
 
 # Algorithms
-
-# IDM
 
 

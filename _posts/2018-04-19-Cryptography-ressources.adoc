@@ -10,6 +10,7 @@
 * https://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html[Keytool]
 
 ## Windows
+
 * http://keystore-explorer.org/features.html[Keystore Explorer]
 * http://hohnstaedt.de/xca/[XCA]
 
@@ -19,7 +20,7 @@
 ## Blog posts
 
 * http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases[Pattern]
-* https://cryptosense.com/whitepapers/[Cryptosense whitepaper]
+* https://cryptosense.com/whitepapers/[Cryptosense whitepapers]
 
 ## Videos
 
