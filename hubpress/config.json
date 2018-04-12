@@ -24,7 +24,7 @@
   "urls": {
     "site": "https://malys.github.io",
     "hubpress": "http://malys.github.io",
-    "theme": "//malys.github.io/themes/ichi",
+    "theme": "//malys.github.io/themes/ichi_custom",
     "images": "https://malys.github.io/images"
   },
   "initialisationConfigComponent": {
