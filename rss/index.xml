@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Aug 2019 14:00:20 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cryptography ressources]]></title><description><![CDATA[<h1 id="_tools" class="sect0">Tools</h1>
+]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Aug 2019 14:01:09 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[JRE Dependencies with host]]></title><description><![CDATA[<h1 id="_dependencies" class="sect0">Dependencies</h1>
+<div class="listingblock">
+<div class="title">Optional Command line</div>
+<div class="content">
+<pre>ldd /usr/bin/java
+        linux-vdso.so.1 =&gt;  (0x00007ffff917a000)
+        libpthread.so.0 =&gt; /lib64/libpthread.so.0 (0x00007f6fcb946000)
+        libz.so.1 =&gt; /lib64/libz.so.1 (0x00007f6fcb730000)
+        libjli.so =&gt; not found
+        libdl.so.2 =&gt; /lib64/libdl.so.2 (0x00007f6fcb52c000)
+        libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f6fcb15f000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f6fcbb62000)</pre>
+</div>
+</div>
+<h1 id="_definition" class="sect0">Definition</h1>
+<div class="ulist">
+<ul>
+<li>
+<p>vdso: a kernel mechanism for exporting a carefully selected set of kernel space routines to user space applications so that applications can call these kernel space routines in-process, without incurring the performance penalty of a context switch that is inherent when calling these same kernel space routines by means of the system call interface</p>
+</li>
+<li>
+<p>libpthread: multithreadinf</p>
+</li>
+<li>
+<p>libz: zlib (compression)</p>
+</li>
+<li>
+<p>libjli: JNI alternative (??)</p>
+</li>
+<li>
+<p>libdl: dynamic linkind support</p>
+</li>
+<li>
+<p>libc: C language standard library</p>
+</li>
+<li>
+<p>ld-linux: dynamic linker/loader</p>
+</li>
+</ul>
+</div>]]></description><link>https://malys.github.io/2019/08/19/JRE-Dependencies-with-host.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/19/JRE-Dependencies-with-host.html</guid><category><![CDATA[jre]]></category><category><![CDATA[java]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 19 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Cryptography ressources]]></title><description><![CDATA[<h1 id="_tools" class="sect0">Tools</h1>
 <div class="sect1">
 <h2 id="_generic">Generic</h2>
 <div class="sectionbody">
