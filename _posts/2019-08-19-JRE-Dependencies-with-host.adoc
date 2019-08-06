@@ -5,7 +5,7 @@
 
 # Dependencies 
 
-.Optional Command line
+.Command line
 ---- 
 ldd /usr/bin/java
         linux-vdso.so.1 =>  (0x00007ffff917a000) 
