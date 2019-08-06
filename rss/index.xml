@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Aug 2019 14:01:09 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[JRE Dependencies with host]]></title><description><![CDATA[<h1 id="_dependencies" class="sect0">Dependencies</h1>
+]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Aug 2019 14:01:46 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[JRE Dependencies with host]]></title><description><![CDATA[<h1 id="_dependencies" class="sect0">Dependencies</h1>
 <div class="listingblock">
-<div class="title">Optional Command line</div>
+<div class="title">Command line</div>
 <div class="content">
 <pre>ldd /usr/bin/java
         linux-vdso.so.1 =&gt;  (0x00007ffff917a000)
