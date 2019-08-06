@@ -1,6 +1,6 @@
 = JRE Dependencies with host
 :published_at: 2019-08-19
-:hp-tags: sécurite,jre,java
+:hp-tags: jre,java
 
 
 # Dependencies 
