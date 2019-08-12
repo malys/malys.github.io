@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Aug 2019 14:01:46 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[JRE Dependencies with host]]></title><description><![CDATA[<h1 id="_dependencies" class="sect0">Dependencies</h1>
+]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 12:48:35 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Understand: From scratch]]></title><description><![CDATA[<div class="sect1">
+<h2 id="_image">Image</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>FROM scratch
+ENV PROXY_LISTEN=0.0.0.0:8443
+ENV PROXY_LISTEN_HTTP=0.0.0.0:8080
+
+EXPOSE 8080 8443
+
+ADD keycloak-gatekeeper /
+ADD config.yaml /config.yaml
+CMD ["/keycloak-gatekeeper","--config","config.yaml"]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>d build -t keycloak-gatekeeper:scratch .
+
+# No file except keycloak-gatekeeper
+dive keycloak-gatekeeper:scratch
+{
+  "layer": [
+    {
+      "index": 0,
+      "digestId": "sha256:5615180f624e082f675261de139dca5eefe09ced8653bf25e02cb1075ace24dc",
+      "sizeBytes": 12768011,
+      "command": "#(nop) ADD file:40e67ed7d86014658f5b01316b9193210dc93bfe2bdf1ee9ae9c714635c9699c in / "
+    },
+    {
+      "index": 1,
+      "digestId": "sha256:bd785d8e829b3305fc45051b901d54805e1c536404359eb1084d754cf643b69c",
+      "sizeBytes": 501,
+      "command": "#(nop) ADD file:3704f000080497680b5aeae92f9cfadddbc385c4dacc87df1b8d0b072d46e63e in /config.yaml "
+    }
+  ],
+  "image": {
+    "sizeBytes": 12768512,
+    "inefficientBytes": 0,
+    "efficiencyScore": 1,
+    "inefficientFiles": []
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_container">Container</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code># Run
+d run --rm keycloak-gatekeeper:scratch &amp;
+
+## Attach alpine
+doatt determined_haibt
+/ # ls -al /proc/1/root
+lrwxrwxrwx    1 root     root             0 Aug 12 12:36 /proc/1/root -&gt; /
+/ # ls -al /proc/1/root/
+total 12476
+drwxr-xr-x    7 root     root           126 Aug 12 12:35 .
+drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..
+-rwxr-xr-x    1 root     root             0 Aug 12 12:35 .dockerenv
+-rwxr-xr-x    1 root     root           501 Aug 12 12:27 config.yaml
+drwxr-xr-x    5 root     root           340 Aug 12 12:35 dev
+drwxr-xr-x    2 root     root            66 Aug 12 12:35 etc
+-rwxr-xr-x    1 root     root      12768011 Aug 12 12:26 keycloak-gatekeeper
+dr-xr-xr-x  147 root     root             0 Aug 12 12:35 proc
+drwxr-xr-x    3 root     root            21 Aug 12 12:35 run
+dr-xr-xr-x   13 root     root             0 Aug 12 11:37 sys
+/ # ls -al /proc/1/root/etc
+total 12
+drwxr-xr-x    2 root     root            66 Aug 12 12:35 .
+drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..
+-rw-r--r--    1 root     root            13 Aug 12 12:35 hostname
+-rw-r--r--    1 root     root           174 Aug 12 12:35 hosts
+lrwxrwxrwx    1 root     root            12 Aug 12 12:35 mtab -&gt; /proc/mounts
+-rw-r--r--    1 root     root            92 Aug 12 12:35 resolv.conf</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Contianers includes standard linux folder structure (see specification).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reference">Reference</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.mgasch.com/post/scratch/">Scratch blog post</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>]]></description><link>https://malys.github.io/2019/08/19/Understand-From-scratch.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/19/Understand-From-scratch.html</guid><category><![CDATA[scratch]]></category><category><![CDATA[docker]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 19 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[JRE Dependencies with host]]></title><description><![CDATA[<h1 id="_dependencies" class="sect0">Dependencies</h1>
 <div class="listingblock">
 <div class="title">Command line</div>
 <div class="content">
