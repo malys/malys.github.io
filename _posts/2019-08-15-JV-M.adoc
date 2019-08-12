@@ -1,4 +1,4 @@
-= JVM
+= JVMs
 :published_at: 2019-08-15
 :hp-tags: optimization,java,jvm,comparatif, keycloak,openJ9,hotspot
 
