@@ -1,4 +1,4 @@
-= Microcontainer distribution
+= Microcontainer distributions
 :published_at: 2019-08-15
 :hp-tags: optimization,java,microcontainer,comparatif
 
