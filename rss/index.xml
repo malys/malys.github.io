@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
 
-]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 13:05:20 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Understand: From scratch]]></title><description><![CDATA[<div class="sect1">
+]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 13:05:41 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Understand: From scratch]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_image">Image</h2>
 <div class="sectionbody">
 <div class="listingblock">
@@ -137,99 +137,7 @@ lrwxrwxrwx    1 root     root            12 Aug 12 12:35 mtab -&gt; /proc/mounts
 <p>ld-linux: dynamic linker/loader</p>
 </li>
 </ul>
-</div>]]></description><link>https://malys.github.io/2019/08/19/JRE-Dependencies-with-host.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/19/JRE-Dependencies-with-host.html</guid><category><![CDATA[jre]]></category><category><![CDATA[java]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 19 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[JVM]]></title><description><![CDATA[<h1 id="_state_of_play" class="sect0">State of play</h1>
-<div class="paragraph">
-<p>In our case, we will be based on AdoptOpenJDK distributions.</p>
-</div>
-<div class="paragraph">
-<p>Given that some difference could be found in OpenJDK  packaging (Redhat, Zulu, ..), our tests will be based on AdoptOpenJDK pacjaging.  This page provides OpenJDK distributions for Linux and Windows platforms.</p>
-</div>
-<div class="paragraph">
-<p>It could be easier to compare results with the same base.</p>
-</div>
-<div class="sect1">
-<h2 id="_openjdk_hotspot">OpenJDK Hotspot</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>OpenJDK (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_openj9_hotspot">OpenJ9 Hotspot</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Eclipse OpenJ9 is a high performance, scalable, Java virtual machine (JVM) implementation that is fully compliant with the Java Virtual Machine Specification.</p>
-</div>
-</div>
-</div>
-<h1 id="_performance" class="sect0">Performance</h1>
-<div class="sect1">
-<h2 id="_streams">Streams</h2>
-<div class="sectionbody">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="900px" allowfullscreen></iframe>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=2060366115&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="1000px" allowfullscreen></iframe>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_microprofile">Microprofile</h2>
-<div class="sectionbody">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="1000px" allowfullscreen></iframe>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=1610324122&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="1100px" allowfullscreen></iframe>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_rh_sso_7_3_0">RH-SSO 7.3.0</h2>
-<div class="sectionbody">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="900px" allowfullscreen></iframe>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=443597512&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="800px" allowfullscreen></iframe>
-</div>
-</div>
-<h1 id="_custom_jre_distribution" class="sect0">Custom JRE distribution</h1>
-<div class="paragraph">
-<p><strong>New paradigm, JRE becomes a part of project packaging.</strong></p>
-</div>
-<div class="sect1">
-<h2 id="_jpms_java_platform_module_system">JPMS (Java Platform Module System)</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_standard_modules">Standard modules</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>List used standard modules</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>jdeps --list-deps CountUppercase</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>JRE custom generation</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>jlink --no-header-files --no-man-pages --compress=2 --strip-debug --add-modules  $(jdeps --print-module-deps CountUppercase) --output java-base</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For a no dependency application (CountUppercase.java), we generate a JRE distribution 30MB instead of 116MB ( JRE size) and 320MB for a full JDK.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_business_modules">Business modules</h3>
-<div class="paragraph">
-<p>For a business application with business modules and dependencies as modules , it 's possible to apply the same mechanism and embed only useful modules (business and standard).</p>
-</div>
-</div>
-</div>
-</div>]]></description><link>https://malys.github.io/2019/08/15/JVM.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/15/JVM.html</guid><category><![CDATA[optimization]]></category><category><![CDATA[java]]></category><category><![CDATA[jvm]]></category><category><![CDATA[comparatif]]></category><category><![CDATA[keycloak]]></category><category><![CDATA[openJ9]]></category><category><![CDATA[hotspot]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Thu, 15 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Cryptography ressources]]></title><description><![CDATA[<h1 id="_tools" class="sect0">Tools</h1>
+</div>]]></description><link>https://malys.github.io/2019/08/19/JRE-Dependencies-with-host.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/19/JRE-Dependencies-with-host.html</guid><category><![CDATA[jre]]></category><category><![CDATA[java]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 19 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Cryptography ressources]]></title><description><![CDATA[<h1 id="_tools" class="sect0">Tools</h1>
 <div class="sect1">
 <h2 id="_generic">Generic</h2>
 <div class="sectionbody">
