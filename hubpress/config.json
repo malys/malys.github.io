@@ -3,20 +3,33 @@
     "username": "malys",
     "repositoryName": "malys.github.io",
     "branch": "master",
-    "delay": "200"
+    "delay": "200",
+    "cname": ""
   },
   "site": {
     "title": "Des outils et des développeurs...",
-    "description": "Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)\n\n",
+    "description": "Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)",
     "logo": "https://www.gravatar.com/avatar/c738c1bff9731c9cf6dccd5cc1270e94.png",
     "cover": "https://malys.github.io/images/Eco-Innovation.jpeg",
-    "postsPerPage": "7",
+    "postsPerPage": "10",
     "googleAnalytics": "UA-60775657-1",
-    "disqus": "malysblog"
+    "disqus": "malysblog",
+    "delay": "200",
+    "blogPath": ""
   },
   "socialnetwork": {
     "email": "malys@mageos.com",
-    "github": "https://github.com/malys/"
+    "github": "https://github.com/malys/",
+    "twitter": "",
+    "facebook": "",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "",
+    "stackoverflow": "",
+    "paypalme": "",
+    "opencollective": ""
   },
   "theme": {
     "name": "ichi_custom"
@@ -40,5 +53,15 @@
     "beforeCreate": [
       null
     ]
-  }
+  },
+  "navigation": [
+    {
+      "label": "Java",
+      "url": "./tag/java/"
+    },
+    {
+      "label": "Javascript",
+      "url": "./tag/Javascript/"
+    }
+  ]
 }
