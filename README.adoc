@@ -126,3 +126,5 @@ Translations (Japanese) by:
 HubPress is powered by :beer:, :coffee: and :pizza:.
 
 Use the donation options in the HubPress Settings menu to say thanks: we really appreciate it.
+== Force to rebuild
+git commit -m 'rebuild pages' --allow-empty
