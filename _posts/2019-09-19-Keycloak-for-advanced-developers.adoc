@@ -1,4 +1,4 @@
-= Keycloak for adavanced developers
+= Keycloak for advanced developers
 :published_at: 2019-09-19
 :hp-tags: keycloak,RH-SSO
 
@@ -6,5 +6,5 @@
 ## Slides
 
 ++++
-<iframe  style="border: 0; width: 400px; height: 400px;" src="https://malys.github.io/keycloak-slides/#/"></iframe>
+<iframe  style="border: 0; width: 800px; height: 600px;" src="https://malys.github.io/keycloak-slides/#/"></iframe>
 ++++
