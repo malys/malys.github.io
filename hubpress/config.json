@@ -19,17 +19,7 @@
   },
   "socialnetwork": {
     "email": "malys@mageos.com",
-    "github": "https://github.com/malys/",
-    "twitter": "",
-    "facebook": "",
-    "googleplus": "",
-    "instagram": "",
-    "pinterest": "",
-    "flickr": "",
-    "linkedin": "",
-    "stackoverflow": "",
-    "paypalme": "",
-    "opencollective": ""
+    "github": "https://github.com/malys/"
   },
   "theme": {
     "name": "ichi_custom"
