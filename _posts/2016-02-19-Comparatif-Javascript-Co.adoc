@@ -1,6 +1,6 @@
 = Comparatif: Javascript & Co
 :published_at: 2016-02-19
-:hp-tags: langage,Javascript,comparatif
+:hp-tags: langage,Javascript,comparative
 
 
 == Liste des langages

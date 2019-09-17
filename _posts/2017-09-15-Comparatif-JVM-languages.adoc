@@ -1,6 +1,6 @@
 = Comparatif: JVM languages
 :published_at: 2017-09-15
-:hp-tags: build,java,tools,comparatif
+:hp-tags: build,java,tools,comparative
 
 
 == Liste des outils

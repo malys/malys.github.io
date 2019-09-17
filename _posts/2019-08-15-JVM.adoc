@@ -1,6 +1,6 @@
 = JVM
 :published_at: 2019-08-15
-:hp-tags: optimization,java,jvm,comparatif, keycloak,openJ9,hotspot
+:hp-tags: optimization,java,jvm,comparative, keycloak,openJ9,hotspot
 
 
 # State of play

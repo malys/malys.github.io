@@ -1,6 +1,6 @@
 = Comparatif: Java Security Framework
 :published_at: 2017-09-15
-:hp-tags: security,java,framework,comparatif
+:hp-tags: security,java,framework,comparative
 
 
 == Liste des frameworks

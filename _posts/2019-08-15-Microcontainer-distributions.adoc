@@ -1,6 +1,6 @@
 = Microcontainer distributions
 :published_at: 2019-08-15
-:hp-tags: optimization,java,microcontainer,comparatif
+:hp-tags: optimization,java,microcontainer,comparative
 
 # Goal
 Container must include minimal dependencies to run Java application (microservice or legacy application).

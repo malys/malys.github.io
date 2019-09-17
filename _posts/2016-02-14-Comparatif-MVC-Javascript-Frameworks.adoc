@@ -1,6 +1,6 @@
 = Comparatif: MVC Javascript Frameworks
 :published_at: 2016-02-14
-:hp-tags: MVC,Javascript,Framework,comparatif
+:hp-tags: MVC,Javascript,Framework,comparative
 
 
 == Liste des frameworks

@@ -1,6 +1,6 @@
 = Comparatif: Javascript modules
 :published_at: 2016-07-19
-:hp-tags: langage,Javascript,comparatif
+:hp-tags: langage,Javascript,comparative
 
 
 == Liste des langages
