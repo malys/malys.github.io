@@ -12,30 +12,27 @@
 
     <link rel="shortcut icon" href="https://malys.github.io/favicon.ico">
 
-    <script type="text/javascript" src="//malys.github.io/themes/ichi/assets/js/vendor/fastclick.js?v=1468781950023"></script>
-    <script type="text/javascript" src="//malys.github.io/themes/ichi/assets/js/vendor/modernizr.js?v=1468781950023"></script>
+    <script type="text/javascript" src="//malys.github.io/themes/ichi_custom/assets/js/vendor/fastclick.js?v=1568703419641"></script>
+    <script type="text/javascript" src="//malys.github.io/themes/ichi_custom/assets/js/vendor/modernizr.js?v=1568703419641"></script>
 
-
-    <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi/assets/css/normalize.css?v=1468781950023" />
-    <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi/assets/css/foundation.min.css?v=1468781950023" />
     <!--[if lte IE 8]>
-        <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi/assets/css/outdatedBrowser.min.css?v=1468781950023">
+        <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi_custom/assets/css/outdatedBrowser/outdatedBrowser.min.css?v=1568703419641">
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi/assets/fonts/foundation-icons/foundation-icons.css?v=1468781950023" />
-    <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi/assets/css/styles.css?v=1468781950023" />
+    <link rel="stylesheet" type="text/css" href="//malys.github.io/themes/ichi_custom/assets/css/ichi.css?v=1568703419641" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,700,400|Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic" />
 
     <link rel="canonical" href="https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html" />
     <meta name="referrer" content="origin" />
     
     <meta property="og:site_name" content="Des outils et des développeurs..." />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:title" content="Comparatif: Javascript modules" />
     <meta property="og:description" content="Liste des langages Nom Site Jspm http://jspm.io/ Browersify http://browserify.org/ Webpack https://webpack.github.io Requirejs http://requirejs.org/ Tendances window.listMVC&#x3D;[ 	{name:&#x27;Browersify&#x27;,url:&#x27;http://browserify.org/&#x27;,keywords:[&#x27;browserify&#x27;,&#x27;browserify&#x27;,&#x27;browserify&#x27;,&#x27;browserify&#x27;]}, 	{name:&#x27;Webpack&#x27;,url:&#x27;https://webpack.github.io&#x27;,keywords:[" />
     <meta property="og:url" content="https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html" />
+    <meta property="article:published_time" content="2016-07-19T00:00:00.000Z" />
     <meta property="article:tag" content="langage" />
     <meta property="article:tag" content="Javascript" />
-    <meta property="article:tag" content="comparatif" />
+    <meta property="article:tag" content="comparative" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Comparatif: Javascript modules" />
@@ -43,13 +40,32 @@
     <meta name="twitter:url" content="https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html" />
     
     <script type="application/ld+json">
-null
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Des outils et des développeurs...",
+    "author": {
+        "@type": "Person",
+        "name": "Malys",
+        "image": "https://avatars1.githubusercontent.com/u/463016?v=4",
+        "url": "https://malys.github.io/author/malys/",
+        "sameAs": "https://malys.github.io/"
+    },
+    "headline": "Comparatif: Javascript modules",
+    "url": "https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html",
+    "datePublished": "2016-07-19T00:00:00.000Z",
+    "keywords": "langage, Javascript, comparative",
+    "description": "Liste des langages Nom Site Jspm http://jspm.io/ Browersify http://browserify.org/ Webpack https://webpack.github.io Requirejs http://requirejs.org/ Tendances window.listMVC&#x3D;[ \t{name:&#x27;Browersify&#x27;,url:&#x27;http://browserify.org/&#x27;,keywords:[&#x27;browserify&#x27;,&#x27;browserify&#x27;,&#x27;browserify&#x27;,&#x27;browserify&#x27;]}, \t{name:&#x27;Webpack&#x27;,url:&#x27;https://webpack.github.io&#x27;,keywords:["
+}
     </script>
 
     <meta name="generator" content="HubPress" />
     <link rel="alternate" type="application/rss+xml" title="Des outils et des développeurs..." href="https://malys.github.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism-okaidia.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 </head>
-<body class="post-template tag-langage tag-Javascript tag-comparatif">
+<body class="post-template tag-langage tag-Javascript tag-comparative">
 
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
@@ -59,7 +75,7 @@ null
 <nav class="top-bar hide-for-large-up" data-topbar style="background: none">
   <ul class="title-area">
     <li class="name">
-
+      
     </li>
     <li class="home"><a class="fi-home" href="https://malys.github.io"></a></li>
     <li class="toggle-topbar"><a href="#" id="trigger-overlay" class="fi-list"></a></li>
@@ -69,7 +85,10 @@ null
     <button type="button" class="overlay-close">Close</button>
     <nav>
         <ul>
-            <li><a href="https://malys.github.io">Home</a></li>
+            <ul class="nav">
+    <li class="nav-java" role="presentation"><a href="https://malys.github.io/./tag/java/">Java</a></li>
+    <li class="nav-javascript" role="presentation"><a href="https://malys.github.io/./tag/Javascript/">Javascript</a></li>
+</ul>
         </ul>
     </nav>
 </div>
@@ -78,22 +97,21 @@ null
 
 <div class="row">
 
-<div class="small-16 medium-16 large-4 columns right head-area bgimage" style="background-image: url(http://www.knowledge4innovation.eu/sites/default/files/Eco-Innovation.jpeg)">
+<div class="small-16 medium-16 large-4 columns head-area bgimage" style="background-image: url(https://malys.github.io/images/Eco-Innovation.jpeg)">
 
 <header class="site-head">
     <div class="vertical">
         <div class="site-head-content inner">
             <ul class="side-nav blog-menu show-for-large-up">
-                <li><a class="fi-home" href="https://malys.github.io"></a></li>
-                <li><a class="fi-torso" href="https://malys.github.io/about"></a></li>
-                <li><a class="fi-mail" href="https://malys.github.io/contact"></a></li>
+                <ul class="nav">
+    <li class="nav-java" role="presentation"><a href="https://malys.github.io/./tag/java/">Java</a></li>
+    <li class="nav-javascript" role="presentation"><a href="https://malys.github.io/./tag/Javascript/">Javascript</a></li>
+</ul>
             </ul>
             <a class="blog-logo" href="https://malys.github.io"><img alt="Des outils et des développeurs..." src="https://www.gravatar.com/avatar/c738c1bff9731c9cf6dccd5cc1270e94.png" alt="Blog Logo" /></a>
             <h1 class="blog-title">Des outils et des développeurs...</h1>
             <hr>
-            <p class="blog-description">Astuces et conseils concernant les outils qui peuvent égailler le quotidien d&#x27;un développeur :)
-
-</p>
+            <p class="blog-description">Astuces et conseils concernant les outils qui peuvent égailler le quotidien d&#x27;un développeur :)</p>
             <div class="blog-network">
 <!--                 <a href="#" class="fi-social-pinterest"></a>
                 <a href="#" class="fi-social-linkedin"></a>
@@ -107,7 +125,11 @@ null
                 <a href="#" class="fi-social-steam"></a>
                 <a href="#" class="fi-social-xbox"></a>
                 <a href="#" class="fi-social-reddit"></a> -->
-                  <a href="https://github.com/malys/" class="fi-social-github"></a>
+                <a href="#" class="fi-rss"></a>
+                <a href="#" class="fi-social-google-plus"></a>
+                <a href="#" class="fi-social-youtube"></a>
+                <a href="#" class="fi-social-twitter"></a>
+                <a href="#" class="fi-social-facebook"></a>
             </div>
         </div>
     </div>
@@ -116,12 +138,12 @@ null
 </div>
 
 
-<div class="small-16 medium-16 large-12 columns main-column left">
+<div class="small-16 medium-16 large-12 columns main-column">
     
 
 <main class="content" role="main">
 
-    <article class="post tag-langage tag-Javascript tag-comparatif">
+    <article class="post tag-langage tag-Javascript tag-comparative">
 
 
             <h1 class="post-title">Comparatif: Javascript modules</h1>
@@ -248,65 +270,59 @@ for(i=0;i<5;i++){
 </div>
 </div>
 </div>
-                        <aside class="tags fi-pricetag-multiple">Posted on <a href="https://malys.github.io/tag/langage/">langage</a>, <a href="https://malys.github.io/tag/Javascript/">Javascript</a>, <a href="https://malys.github.io/tag/comparatif/">comparatif</a></aside>
+                        <aside class="tags fi-pricetag-multiple">Posted on <a href="https://malys.github.io/tag/langage/">langage</a>, <a href="https://malys.github.io/tag/Javascript/">Javascript</a>, <a href="https://malys.github.io/tag/comparative/">comparative</a></aside>
             </section>
             <hr>
             <footer class="post-footer">
 
                 <section class="share">
                     <h4>Liked this post ? Share it.</h4>
-                    <a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html"
+                    <a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://malys.github.io/"
                         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     </a>
-                    <a class="fi-social-twitter" href="https://twitter.com/share?text=Comparatif%3A%20Javascript%20modules&amp;url=https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html"
+                    <a class="fi-social-twitter" href="https://twitter.com/share?text=Comparatif%3A%20Javascript%20modules&amp;url=https://malys.github.io/"
                         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     </a>
-                    <a class="fi-social-google-plus" href="https://plus.google.com/share?url=https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html"
+                    <a class="fi-social-google-plus" href="https://plus.google.com/share?url=https://malys.github.io/"
                        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     </a>
                 </section>
 
                 <section class="author">
                     <header>
-                          <span>About the author</span>
+                        <span>About the author</span>
                     </header>
                     <section>
                         <h4>Malys</h4>
-                        <img src="https://www.gravatar.com/avatar/c738c1bff9731c9cf6dccd5cc1270e94.png">
+                        <img src="https://avatars1.githubusercontent.com/u/463016?v&#x3D;4">
                         <span>Toulouse</span>
-                        <a href="https://malys.github.io">https://malys.github.io</a>
+                        <a href="https://malys.github.io/">https://malys.github.io/</a>
                     </section>
                     <footer>
-                         <p>"Si tu fais toujours ce que tu as l'habitude de faire, tu récolteras ce que tu as toujours récolté."<br>
-                             A. Einstein</p>
+                         <p></p>
                     </footer>
                 </section>
-                
+
         <div class="clearfix"></div>
                     <hr>
 
             </footer>
 
         <h3 class="title-disqus"><span class="fi-comments"></span>Discussions</h3>
-
-
-
-
-        <section class="post-comments">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-          var disqus_shortname = 'malysblog'; // required: replace example with your forum shortname
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </section>
-
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'example'; // required: replace example with your forum shortname
+    var disqus_identifier = ''; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
+ 
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
     </article>
 
@@ -316,37 +332,13 @@ for(i=0;i<5;i++){
 
 </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
-      <script type="text/javascript">
-        jQuery( document ).ready(function() {
-          // change date with ago
-          jQuery('ago.ago').each(function(){
-            var element = jQuery(this).parent();
-            element.html( moment(element.text()).fromNow());
-          });
-        });
-
-        hljs.initHighlightingOnLoad();
-      </script>
-
     <!--[if lte IE 8]>
-        <script type="text/javascript" src="//malys.github.io/themes/ichi/assets/js/outdatedBrowser.min.js?v=1468781950023"></script>
+        <script type="text/javascript" src="//malys.github.io/themes/ichi_custom/assets/js/outdatedBrowser.min.js?v=1568703419641"></script>
     <![endif]-->
-    <script type="text/javascript" src="//malys.github.io/themes/ichi/assets/js/min/built.js?v=1468781950023"></script>
+    <script type="text/javascript" src="//malys.github.io/themes/ichi_custom/assets/js/dest/built.min.js?v=1568703419641"></script>
 
     <script>
       $(document).foundation();
-    </script>
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-60775657-1', 'auto');
-    ga('send', 'pageview');
-
     </script>
 </body>
 </html>

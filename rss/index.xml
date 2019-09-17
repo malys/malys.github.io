@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)
-
-]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 13:09:48 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Understand: From scratch]]></title><description><![CDATA[<div class="sect1">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Des outils et des développeurs...]]></title><description><![CDATA[Astuces et conseils concernant les outils qui peuvent égailler le quotidien d'un développeur :)]]></description><link>https://malys.github.io</link><image><url>https://malys.github.io/images/Eco-Innovation.jpeg</url><title>Des outils et des développeurs...</title><link>https://malys.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Sep 2019 06:56:59 GMT</lastBuildDate><atom:link href="https://malys.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Understand: From scratch]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_image">Image</h2>
 <div class="sectionbody">
 <div class="listingblock">
@@ -350,7 +348,7 @@ rh-sso/keycloak-gatekeeper60 200 Mo</pre>
 </div>
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2019/08/15/Microcontainer-distributions.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/15/Microcontainer-distributions.html</guid><category><![CDATA[optimization]]></category><category><![CDATA[java]]></category><category><![CDATA[microcontainer]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Thu, 15 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[JVMs]]></title><description><![CDATA[<h1 id="_state_of_play" class="sect0">State of play</h1>
+</div>]]></description><link>https://malys.github.io/2019/08/15/Microcontainer-distributions.html</link><guid isPermaLink="true">https://malys.github.io/2019/08/15/Microcontainer-distributions.html</guid><category><![CDATA[optimization]]></category><category><![CDATA[java]]></category><category><![CDATA[microcontainer]]></category><category><![CDATA[comparative]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Thu, 15 Aug 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[JVMs]]></title><description><![CDATA[<h1 id="_state_of_play" class="sect0">State of play</h1>
 <div class="paragraph">
 <p>In our case, we will be based on AdoptOpenJDK distributions.</p>
 </div>
@@ -673,7 +671,7 @@ a.href = 'http://sotagtrends.com/?tags=['+ window.listMVC.map(function(it) {
 </div>
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</link><guid isPermaLink="true">https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</guid><category><![CDATA[security]]></category><category><![CDATA[java]]></category><category><![CDATA[framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</link><guid isPermaLink="true">https://malys.github.io/2017/09/15/Comparatif-Java-Security-Framework.html</guid><category><![CDATA[security]]></category><category><![CDATA[java]]></category><category><![CDATA[framework]]></category><category><![CDATA[comparative]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 15 Sep 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript modules]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_langages">Liste des langages</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -791,7 +789,7 @@ for(i=0;i<5;i++){
 </div>
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html</link><guid isPermaLink="true">https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html</guid><category><![CDATA[langage]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Tue, 19 Jul 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Déplacement du disque virtuel disk.vmdk de Docker]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html</link><guid isPermaLink="true">https://malys.github.io/2016/07/19/Comparatif-Javascript-modules.html</guid><category><![CDATA[langage]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[comparative]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Tue, 19 Jul 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Déplacement du disque virtuel disk.vmdk de Docker]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_objectif">Objectif</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1014,7 +1012,7 @@ for(i=0;i<5;i++){
 
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2016/02/19/Comparatif-Javascript-Co.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/19/Comparatif-Javascript-Co.html</guid><category><![CDATA[langage]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 19 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript build tools]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2016/02/19/Comparatif-Javascript-Co.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/19/Comparatif-Javascript-Co.html</guid><category><![CDATA[langage]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[comparative]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Fri, 19 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: Javascript build tools]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -1134,7 +1132,7 @@ for(i=0;i<5;i++){
 
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2016/02/15/Comparatif-Javascript-build-tools.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/15/Comparatif-Javascript-build-tools.html</guid><category><![CDATA[build]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[tools]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 15 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: MVC Javascript Frameworks]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2016/02/15/Comparatif-Javascript-build-tools.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/15/Comparatif-Javascript-build-tools.html</guid><category><![CDATA[build]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[tools]]></category><category><![CDATA[comparative]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Mon, 15 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Comparatif: MVC Javascript Frameworks]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_liste_des_frameworks">Liste des frameworks</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
@@ -1259,7 +1257,7 @@ for(i=0;i<5;i++){
 </div>
 </div>
 </div>
-</div>]]></description><link>https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</guid><category><![CDATA[MVC]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[Framework]]></category><category><![CDATA[comparatif]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Débogueur avec NodeJS]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</link><guid isPermaLink="true">https://malys.github.io/2016/02/14/Comparatif-MVC-Javascript-Frameworks.html</guid><category><![CDATA[MVC]]></category><category><![CDATA[Javascript]]></category><category><![CDATA[Framework]]></category><category><![CDATA[comparative]]></category><dc:creator><![CDATA[Malys]]></dc:creator><pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Débogueur avec NodeJS]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_objectif">Objectif</h2>
 <div class="sectionbody">
 <div class="paragraph">
