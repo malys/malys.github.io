@@ -58,6 +58,12 @@
         </li>
         
         
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://malys.github.io/search">Search</a>
+        </li>
+        
+        
       </ul>
     </div>
   </nav>
@@ -91,10 +97,12 @@
           <h3 class="font-tertiary mb-5">JRE Dependencies with host</h3>
           <p class="font-secondary">Published on Aug 19, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
-            <img src="https://img.stackshare.io/service/995/K85ZWV2F.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            
             
 
-<h1 id="dependencies">Dependencies</h1>
+<p>What are JRE depencies with host OS ?</p>
+
+<h2 id="dependencies">Dependencies</h2>
 
 <pre><code class="language-bash">ldd /usr/bin/java
         linux-vdso.so.1 =&gt;  (0x00007ffff917a000) 
@@ -106,7 +114,7 @@
         /lib64/ld-linux-x86-64.so.2 (0x00007f6fcbb62000)
 </code></pre>
 
-<h1 id="definition">Definition</h1>
+<h2 id="definition">Definition</h2>
 
 <ul>
 <li>vdso: a kernel mechanism for exporting a carefully selected set of kernel space routines to user space applications so that applications can call these kernel space routines in-process, without incurring the performance penalty of a context switch that is inherent when calling these same kernel space routines by means of the system call interface</li>
@@ -143,6 +151,8 @@
 <script src="https://malys.github.io/plugins/slick/slick.min.js"></script>
 
 <script src="https://malys.github.io/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
 
 <!-- Main Script -->
 

@@ -9,16 +9,18 @@ author: "Malys"
 type: "post"
 ---
 
-# PKI 
+Glossary for cryptography vocabulary.
+
+## PKI 
 
 * PKI Public Key Infrastructure
 * CSR
 * CLR
 * X.509 standard that defines the format of public key certificates
 
-# Standard
+## Standard
 
-## Public-Key Cryptography Standards (**PKCS**)
+### Public-Key Cryptography Standards (**PKCS**)
 
 * PKCS#1 **unencrypted** RSA key storage format.
 * PKCS#7 Collection of **public certificates**.
@@ -27,12 +29,12 @@ type: "post"
 * PKCS#11 Security token / Smart card / **HSM access**.
 * PKCS#12 Certificate, Private key and probably a CA chain.
 
-# File formats
+## File formats
 
 * DER Distinguished Encoding Rules - Binary format
 * PEM Privacy Enhanced Mail - Text format
 
-## Extensions
+### Extensions
 
 * **.pem** (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----"
 * **.cer, .crt, .der** – usually in binary DER form, but Base64-encoded certificates are common too (see .pem above)
@@ -41,6 +43,6 @@ type: "post"
 * **.pfx** PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)
 
 
-# Algorithms
+## Algorithms
 
 TODO

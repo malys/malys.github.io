@@ -9,6 +9,8 @@ author: "Malys"
 type: "post"
 ---
 
+How "from scratch" works ?
+
 ## Image
 
 ```

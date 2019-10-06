@@ -58,6 +58,12 @@
         </li>
         
         
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://malys.github.io/search">Search</a>
+        </li>
+        
+        
       </ul>
     </div>
   </nav>
@@ -91,20 +97,18 @@
           <h3 class="font-tertiary mb-5">Microcontainer distributions</h3>
           <p class="font-secondary">Published on Aug 15, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
-            <img src="https://img.stackshare.io/service/586/logo_docker.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
             
-
-<h1 id="goal">Goal</h1>
+            
 
 <p>Container must include minimal dependencies to run Java application (microservice or legacy application).</p>
 
-<h1 id="sizing">Sizing</h1>
+<h2 id="sizing">Sizing</h2>
 
 <p>Creating a minimalist image will decrease size and improve performance to download it. It will also limit disk storage on docker registry and docker host (Layer duplication, automatic pull of base image).</p>
 
 <p>The same service with less resources. (Ubuntu docker base image to alpine, Eclipse to distroless, Kubernetes to distroless)</p>
 
-<h1 id="security">Security</h1>
+<h2 id="security">Security</h2>
 
 <p>NIST recommendation: &ldquo;An image should only include the executable and libraries required by the app itself; all other OS functionality is provided by the OS kernel within the underlying host OS&rdquo;.</p>
 
@@ -112,28 +116,28 @@
 Container immutability is guarantee (no manual connection into a container)
 Secure secret variables unreachable (no remote connection, no shell, no exposition)</p>
 
-<h1 id="useful-tools">Useful Tools</h1>
+<h2 id="useful-tools">Useful Tools</h2>
 
 <p>dive: image and layer size
 ex: dive image_name</p>
 
-<h1 id="state-of-play">State of play</h1>
+<h2 id="state-of-play">State of play</h2>
 
-<h2 id="sizing-comparison">Sizing comparison</h2>
+<h3 id="sizing-comparison">Sizing comparison</h3>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=12271636&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="1000px" allowfullscreen></iframe>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=1977800902&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="1000px" allowfullscreen></iframe>
 
-<h1 id="strategies">Strategies</h1>
+<h2 id="strategies">Strategies</h2>
 
-<h2 id="lightweight-distributions">Lightweight distributions</h2>
+<h3 id="lightweight-distributions">Lightweight distributions</h3>
 
-<h3 id="base-image-comparison">Base image comparison</h3>
+<h4 id="base-image-comparison">Base image comparison</h4>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1361748970&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="900px" width="1100px" allowfullscreen></iframe>
 
-<h4 id="distroless">Distroless</h4>
+<h5 id="distroless">Distroless</h5>
 
 <ul>
 <li>support of Java 8 and 11</li>
@@ -146,7 +150,7 @@ ex: dive image_name</p>
 <li>Limited storage and networking</li>
 </ul>
 
-<h4 id="alpine">Alpine</h4>
+<h5 id="alpine">Alpine</h5>
 
 <ul>
 <li>most common base image (possibility to use public image)</li>
@@ -154,7 +158,7 @@ ex: dive image_name</p>
 <li>java image add glibc</li>
 </ul>
 
-<h4 id="glibc-vs-musl-c">GLIBC vs musl c</h4>
+<h5 id="glibc-vs-musl-c">GLIBC vs musl c</h5>
 
 <ul>
 <li>GLIBC: standard C library</li>
@@ -169,11 +173,11 @@ Using implementation details from the glibc headers which were not meant to be e
 Use of an interface that’s not implemented in musl. This can only be fixed by making the application’s use of the interface optional, or by extending musl to support the missing interface.
 Binary compatibility is much more limited, but it will steadily increase with new versions of musl. At present, some glibc-linked shared libraries can be loaded with musl, but all but the simplest glibc-linked applications will fail if musl is dropped-in in place of /lib/ld-linux.so.2.</p>
 
-<h2 id="contains-optimization">Contains optimization</h2>
+<h3 id="contains-optimization">Contains optimization</h3>
 
 <p><em>New paradigm, Container becomes a part of project packaging.</em></p>
 
-<h3 id="docker-slim-https-github-com-docker-slim-docker-slim">Docker-slim: <a href="https://github.com/docker-slim/docker-slim">https://github.com/docker-slim/docker-slim</a></h3>
+<h4 id="docker-slim-https-github-com-docker-slim-docker-slim">Docker-slim: <a href="https://github.com/docker-slim/docker-slim">https://github.com/docker-slim/docker-slim</a></h4>
 
 <ul>
 <li>Since December 2014</li>
@@ -201,7 +205,7 @@ rh-sso/keycloak-gatekeeper60 200 Mo</p>
 <p>rh-sso/keycloak-gatekeeper60.slim 20 Mo :  d run -v /D/Developpement/archi/idm/keycloak-gatekeeper-test/config.yaml:/etc/keycloak-gatekeeper/config.yaml  rh-sso/keycloak-gatekeeper60.slim</p></li>
 </ul>
 
-<h4 id="security-1">Security</h4>
+<h5 id="security-1">Security</h5>
 
 <ul>
 <li>selinux ?</li>
@@ -209,11 +213,11 @@ rh-sso/keycloak-gatekeeper60 200 Mo</p>
 <li>a CVE on image base does not always consequences to redeploy child image (CVE for curl but it&rsquo;s removed by docker-slim =&gt; final image doesn&rsquo;t change =&gt; deployment is no necessary ?)</li>
 </ul>
 
-<h4 id="automation">Automation</h4>
+<h5 id="automation">Automation</h5>
 
 <p>Run container for introspection on build. CI platform runs containers to containers</p>
 
-<h3 id="minicon-https-github-com-grycap-minicon">Minicon <a href="https://github.com/grycap/minicon">https://github.com/grycap/minicon</a></h3>
+<h4 id="minicon-https-github-com-grycap-minicon">Minicon <a href="https://github.com/grycap/minicon">https://github.com/grycap/minicon</a></h4>
 
 <ul>
 <li>Since November 2017</li>
@@ -248,6 +252,8 @@ rh-sso/keycloak-gatekeeper60 200 Mo</p>
 <script src="https://malys.github.io/plugins/slick/slick.min.js"></script>
 
 <script src="https://malys.github.io/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
 
 <!-- Main Script -->
 

@@ -58,6 +58,12 @@
         </li>
         
         
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://malys.github.io/search">Search</a>
+        </li>
+        
+        
       </ul>
     </div>
   </nav>
@@ -91,10 +97,12 @@
           <h3 class="font-tertiary mb-5">JVM</h3>
           <p class="font-secondary">Published on Aug 15, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
-            <img src="https://img.stackshare.io/service/995/K85ZWV2F.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            
             
 
-<h1 id="state-of-play">State of play</h1>
+<p>Compare different JVM to improve container performance.</p>
+
+<h2 id="state-of-play">State of play</h2>
 
 <p>In our case, we will be based on AdoptOpenJDK distributions.</p>
 
@@ -102,41 +110,41 @@
 
 <p>It could be easier to compare results with the same base.</p>
 
-<h2 id="openjdk-hotspot">OpenJDK Hotspot</h2>
+<h3 id="openjdk-hotspot">OpenJDK Hotspot</h3>
 
 <p>OpenJDK (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).</p>
 
-<h2 id="openj9-hotspot">OpenJ9 Hotspot</h2>
+<h3 id="openj9-hotspot">OpenJ9 Hotspot</h3>
 
 <p>Eclipse OpenJ9 is a high performance, scalable, Java virtual machine (JVM) implementation that is fully compliant with the Java Virtual Machine Specification.</p>
 
-<h1 id="performance">Performance</h1>
+<h2 id="performance">Performance</h2>
 
-<h2 id="streams">Streams</h2>
+<h3 id="streams">Streams</h3>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="900px" allowfullscreen></iframe>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=2060366115&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="1000px" allowfullscreen></iframe>
 
-<h2 id="microprofile">Microprofile</h2>
+<h3 id="microprofile">Microprofile</h3>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="1000px" allowfullscreen></iframe>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=1610324122&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="1100px" allowfullscreen></iframe>
 
-<h2 id="rh-sso-7-3-0">RH-SSO 7.3.0</h2>
+<h3 id="rh-sso-7-3-0">RH-SSO 7.3.0</h3>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="900px" allowfullscreen></iframe>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=443597512&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="800px" allowfullscreen></iframe>
 
-<h1 id="custom-jre-distribution">Custom JRE distribution</h1>
+<h2 id="custom-jre-distribution">Custom JRE distribution</h2>
 
 <p><em>New paradigm, JRE becomes a part of project packaging.</em></p>
 
-<h2 id="jpms-java-platform-module-system">JPMS (Java Platform Module System)</h2>
+<h3 id="jpms-java-platform-module-system">JPMS (Java Platform Module System)</h3>
 
-<h3 id="standard-modules">Standard modules</h3>
+<h4 id="standard-modules">Standard modules</h4>
 
 <ul>
 <li><p>List used standard modules</p>
@@ -152,7 +160,7 @@
 
 <p>For a no dependency application (CountUppercase.java), we generate a JRE distribution 30MB instead of 116MB ( JRE size) and 320MB for a full JDK.</p>
 
-<h3 id="business-modules">Business modules</h3>
+<h4 id="business-modules">Business modules</h4>
 
 <p>For a business application with business modules and dependencies as modules , it &rsquo;s possible to apply the same mechanism and embed only useful modules (business and standard).</p>
 
@@ -181,6 +189,8 @@
 <script src="https://malys.github.io/plugins/slick/slick.min.js"></script>
 
 <script src="https://malys.github.io/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
 
 <!-- Main Script -->
 

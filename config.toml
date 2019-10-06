@@ -3,7 +3,11 @@ languageCode = "en-us"
 title = "Malys | Portfolio"
 theme = "kross-hugo-portfolio-template"
 summaryLength = "10"
+
 publishDir = "./"
+[outputs]
+  home = ["HTML","JSON"]
+  blog = ["HTML", "JSON"]
 
 # Plugins
 [params.plugins]
@@ -29,17 +33,21 @@ publishDir = "./"
 
 # navigation
 [menu]
-    
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 2
+
   [[menu.main]]
   name = "About"
   URL = "about"
   weight = 3
   
   [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight = 2
-
+  name = "Search"
+  URL = "search"
+  weight = 4
+  
 [params]
 logo = "images/logo.png"
 home = "Home"

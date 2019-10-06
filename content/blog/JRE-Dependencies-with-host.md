@@ -9,7 +9,9 @@ author: "Malys"
 type: "post"
 ---
 
-# Dependencies 
+What are JRE depencies with host OS ?
+
+## Dependencies 
 
 ```bash
 ldd /usr/bin/java
@@ -22,7 +24,7 @@ ldd /usr/bin/java
         /lib64/ld-linux-x86-64.so.2 (0x00007f6fcbb62000)
 ```
 
-# Definition
+## Definition
 
 * vdso: a kernel mechanism for exporting a carefully selected set of kernel space routines to user space applications so that applications can call these kernel space routines in-process, without incurring the performance penalty of a context switch that is inherent when calling these same kernel space routines by means of the system call interface
 * libpthread: multithreadinf

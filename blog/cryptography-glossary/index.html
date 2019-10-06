@@ -58,6 +58,12 @@
         </li>
         
         
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://malys.github.io/search">Search</a>
+        </li>
+        
+        
       </ul>
     </div>
   </nav>
@@ -91,10 +97,12 @@
           <h3 class="font-tertiary mb-5">Cryptography glossary</h3>
           <p class="font-secondary">Published on Aug 19, 2018 by <span class="text-primary">Malys</span></p>
           <div class="content">
-            <img src="https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            
             
 
-<h1 id="pki">PKI</h1>
+<p>Glossary for cryptography vocabulary.</p>
+
+<h2 id="pki">PKI</h2>
 
 <ul>
 <li>PKI Public Key Infrastructure</li>
@@ -103,9 +111,9 @@
 <li>X.509 standard that defines the format of public key certificates</li>
 </ul>
 
-<h1 id="standard">Standard</h1>
+<h2 id="standard">Standard</h2>
 
-<h2 id="public-key-cryptography-standards-pkcs">Public-Key Cryptography Standards (<strong>PKCS</strong>)</h2>
+<h3 id="public-key-cryptography-standards-pkcs">Public-Key Cryptography Standards (<strong>PKCS</strong>)</h3>
 
 <ul>
 <li>PKCS#1 <strong>unencrypted</strong> RSA key storage format.</li>
@@ -116,14 +124,14 @@
 <li>PKCS#12 Certificate, Private key and probably a CA chain.</li>
 </ul>
 
-<h1 id="file-formats">File formats</h1>
+<h2 id="file-formats">File formats</h2>
 
 <ul>
 <li>DER Distinguished Encoding Rules - Binary format</li>
 <li>PEM Privacy Enhanced Mail - Text format</li>
 </ul>
 
-<h2 id="extensions">Extensions</h2>
+<h3 id="extensions">Extensions</h3>
 
 <ul>
 <li><strong>.pem</strong> (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between &ldquo;&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash;&rdquo; and &ldquo;&mdash;&ndash;END CERTIFICATE&mdash;&ndash;&rdquo;</li>
@@ -133,7 +141,7 @@
 <li><strong>.pfx</strong> PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)</li>
 </ul>
 
-<h1 id="algorithms">Algorithms</h1>
+<h2 id="algorithms">Algorithms</h2>
 
 <p>TODO</p>
 
@@ -162,6 +170,8 @@
 <script src="https://malys.github.io/plugins/slick/slick.min.js"></script>
 
 <script src="https://malys.github.io/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
 
 <!-- Main Script -->
 

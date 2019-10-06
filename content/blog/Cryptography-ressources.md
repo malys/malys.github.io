@@ -9,28 +9,31 @@ author: "Malys"
 type: "post"
 ---
 
-# Tools
+Tools and web ressources about cryptography.
 
-## Generic
+## Tools
+
+### Generic
 
 * [Openssl](https://www.openssl.org/)
 * [Keytool](https://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html)
 
-## Windows
+### Windows
 
 * [Keystore Explorer](http://keystore-explorer.org/features.html)
 * [XCA](http://hohnstaedt.de/xca/)
 
 
-# Libraries
+## Libraries
 
-## Blog posts
+### Blog posts
 
 * [Pattern](http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases)
 * [Cryptosense whitepapers](https://cryptosense.com/whitepapers/)
 
-## Videos
+### Videos
 
 {{< youtube jMIAoAVbcsw >}}
+
 {{< youtube FSq-FXx5dxU >}}
 

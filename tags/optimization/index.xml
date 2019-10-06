@@ -17,7 +17,8 @@
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/jvm/</guid>
-      <description>State of play In our case, we will be based on AdoptOpenJDK distributions.</description>
+      <description>Compare different JVM to improve container performance.
+State of play In our case, we will be based on AdoptOpenJDK distributions.</description>
     </item>
     
     <item>
@@ -26,7 +27,7 @@
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/microcontainer-distributions/</guid>
-      <description>Goal Container must include minimal dependencies to run Java application (microservice or legacy application).</description>
+      <description>Container must include minimal dependencies to run Java application (microservice or legacy application).</description>
     </item>
     
   </channel>

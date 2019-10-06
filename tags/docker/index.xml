@@ -17,7 +17,8 @@
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/understand-from-scratch/</guid>
-      <description>Image FROM scratch ENV PROXY_LISTEN=0.0.0.0:8443 ENV PROXY_LISTEN_HTTP=0.0.0.0:8080 EXPOSE 8080 8443 ADD keycloak-gatekeeper / ADD config.</description>
+      <description>How &amp;ldquo;from scratch&amp;rdquo; works ?
+Image FROM scratch ENV PROXY_LISTEN=0.</description>
     </item>
     
   </channel>

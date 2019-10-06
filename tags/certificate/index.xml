@@ -17,7 +17,8 @@
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/cryptography-glossary/</guid>
-      <description>PKI  PKI Public Key Infrastructure CSR CLR X.509 standard that defines the format of public key certificates  Standard Public-Key Cryptography Standards (PKCS)  PKCS#1 unencrypted RSA key storage format.</description>
+      <description>Glossary for cryptography vocabulary.
+PKI  PKI Public Key Infrastructure CSR CLR X.</description>
     </item>
     
     <item>
@@ -26,7 +27,8 @@
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/cryptography-ressources/</guid>
-      <description> Tools Generic  Openssl Keytool  Windows  Keystore Explorer XCA  Libraries Blog posts  Pattern Cryptosense whitepapers  Videos      </description>
+      <description> Tools and web ressources about cryptography.
+Tools Generic  Openssl Keytool  Windows  Keystore Explorer XCA  Libraries Blog posts  Pattern Cryptosense whitepapers  Videos     </description>
     </item>
     
   </channel>
