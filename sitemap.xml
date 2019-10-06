@@ -38,6 +38,16 @@
   </url>
   
   <url>
+    <loc>https://malys.github.io/tags/authentication/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/authorization/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://malys.github.io/tags/keycloak/</loc>
     <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -159,6 +169,18 @@
   
   <url>
     <loc>https://malys.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/computing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/quantum/</loc>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/blog/quantum-ressources/</loc>
   </url>
   
   <url>

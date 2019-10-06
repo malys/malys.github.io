@@ -37,3 +37,7 @@ Tools and web ressources about cryptography.
 
 {{< youtube FSq-FXx5dxU >}}
 
+### Awesome
+
+<iframe  style="border: 0; width: 1000px; height: 1000px;" src="https://awesomelists.top/#/repos/sobolevn/awesome-cryptography"></iframe>
+

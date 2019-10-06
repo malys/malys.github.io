@@ -2,7 +2,7 @@
 title: "Keycloak for advanced developers"
 date: 2019-09-19
 publishdate : 2019-09-19
-tags: [keycloak,RH-SSO]
+tags: [keycloak,RH-SSO, authentication, authorization]
 image: "https://img.stackshare.io/service/5439/oAC05cEB_400x400.png"
 description: "This is meta description."
 author: "Malys"

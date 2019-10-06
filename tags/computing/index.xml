@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computing on Malys | Portfolio</title>
+    <link>https://malys.github.io/tags/computing/</link>
+    <description>Recent content in computing on Malys | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://malys.github.io/tags/computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quantum computing ressources</title>
+      <link>https://malys.github.io/blog/quantum-ressources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/quantum-ressources/</guid>
+      <description> Tools and web ressources about quantum computing.
+Libraries Videos  No Limit Secu - audio  Awesome  </description>
+    </item>
+    
+  </channel>
+</rss>
