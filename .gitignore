@@ -1,2 +1,5 @@
+/Keycloak/*
+/JBoss/*
+
+/.vscode/
 /malys.github.io.zip
-/.vscode
