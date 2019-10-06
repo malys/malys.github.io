@@ -1,9 +1,9 @@
 ---
 title: "Quantum computing ressources"
-date: 2019-0-07
-publishdate : 2019-0-07
+date: 2019-10-07
+publishdate : 2019-10-07
 tags: [quantum, computing]
-image: "https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+image: "https://pixabay.com/get/55e8d3474f54a814f1dc8460825668204022dfe054517241772973d1/physics-3864564_640.jpg"
 description: "This is meta description."
 author: "Malys"
 type: "post"

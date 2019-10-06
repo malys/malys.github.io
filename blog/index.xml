@@ -90,15 +90,5 @@ PKI  PKI Public Key Infrastructure CSR CLR X.</description>
 Tools Generic  Openssl Keytool  Windows  Keystore Explorer XCA  Libraries Blog posts  Pattern Cryptosense whitepapers  Videos     Awesome  </description>
     </item>
     
-    <item>
-      <title>Quantum computing ressources</title>
-      <link>https://malys.github.io/blog/quantum-ressources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/quantum-ressources/</guid>
-      <description> Tools and web ressources about quantum computing.
-Libraries Videos  No Limit Secu - audio  Awesome  </description>
-    </item>
-    
   </channel>
 </rss>
