@@ -4,10 +4,8 @@ date: 2019-05-12T12:14:34+06:00
 description: "This is meta description."
 author : "Malys"
 authorImage : "images/about/author.png"
+image: "https://negativespace.co/wp-content/uploads/2019/03/negative-space-colorful-programming-code.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+Developer by passion. I like technology and science innovation. I have taken care throughout my career to share and transmit my know-how and my knowledge.
+Rigorous, I will be an asset for your architectural or DevOps projects (Java, JEE, NodeJS, ...).

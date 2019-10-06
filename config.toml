@@ -32,24 +32,18 @@ summaryLength = "10"
   [[menu.main]]
   name = "About"
   URL = "about"
-  weight = 2
+  weight = 3
   
   [[menu.main]]
   name = "Blog"
   URL = "blog"
-  weight = 3
-  
-  [[menu.main]]
-  name = "My works"
-  URL = "portfolio"
-  weight = 5
-
+  weight = 2
 
 [params]
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
+description = "Software architect"
 author = "Malys"
 # Google Analitycs
 googleAnalitycsID = "Your ID"

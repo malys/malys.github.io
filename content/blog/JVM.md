@@ -3,7 +3,7 @@ title: "JVM"
 date: 2019-08-15
 publishdate : 2019-08-15
 tags: [optimization,java,jvm,comparative, keycloak,openJ9,hotspot]
-image: "https://svgsilh.com/png-512/367946-795548.png"
+image: "https://img.stackshare.io/service/995/K85ZWV2F.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"

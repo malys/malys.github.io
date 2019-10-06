@@ -3,7 +3,7 @@ title: "Native Java frameworks"
 date: 2019-09-20
 publishdate : 2019-09-20
 tags: [graalvm,java,framework,comparative]
-image: "https://svgsilh.com/png-512/367946-f44336.png"
+image: "https://images.unsplash.com/photo-1506287375451-bb850eba44d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
 description: "This is meta description."
 author: "Malys"
 type: "post"

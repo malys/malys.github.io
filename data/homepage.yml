@@ -4,11 +4,13 @@ banner:
   socialLinks:
     - icon : "ti-linkedin"
       URL : "https://www.linkedin.com/in/sylvain-malnuit-78368467/"
+    - icon : "ti-github"
+      URL : "https://github.com/malys"
     
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Developer by passion. I like technology and science innovation. I have taken care throughout my career to share and transmit my know-how and my knowledge.</br> Rigorous, I will be an asset for your architectural or DevOps projects (Java, JEE, NodeJS, ...)."
   button:
     btnText : "know more"
     URL : "/about"
@@ -71,33 +73,33 @@ service:
   item : 
     - title : "Software architecture"
       icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "the fundamental structures of a software system and the discipline of creating such structures and systems. Each structure comprises software elements, relations among them, and properties of both elements and relations."
       highlighted : false
 
     - title : "DevOps"
       icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "practices that combines software development and information-technology operations which aims to shorten the systems development life cycle and provide continuous delivery with high software quality."
       highlighted : true
 
     - title : "Software security"
       icon : "ti-lock"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "computer program designed to enhance information security."
       highlighted : false
 
 # portfolio
 portfolio:
-  enable : true
+  enable : false
   item:
-    - image : "https://svgsilh.com/png-512/538721-00bcd4.png"
+    - image : "https://img.stackshare.io/service/5439/oAC05cEB_400x400.png"
       projectURL : "./blog/keycloak-for-advanced-developers/"
       
-    - image : "https://svgsilh.com/png-512/148308-4caf50.png"
+    - image : "https://img.stackshare.io/service/586/logo_docker.png"
       projectURL : "./blog/microcontainer-distributions/"
       
-    - image : "https://svgsilh.com/png-512/367946-795548.png"
+    - image : "https://img.stackshare.io/service/995/K85ZWV2F.png"
       projectURL : "./blog/jvm/"
     
-    - image : "https://svgsilh.com/png-512/367946-795548.png"
+    - image : "https://img.stackshare.io/service/5439/oAC05cEB_400x400.png"
       projectURL : "https://github.com/malys/rh-sso-rest_federation"
 
 # testimonial
@@ -120,9 +122,6 @@ portfolio:
 #      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 # client slider
-clientSlider:
-  enable : true
-  item:
 clientSlider:
   enable : true
   item:
@@ -158,4 +157,4 @@ clientSlider:
 
 # blog
 blog:
-  enable : true
+  enable : false

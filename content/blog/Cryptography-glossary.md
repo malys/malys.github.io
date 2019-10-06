@@ -3,7 +3,7 @@ title: "Cryptography glossary"
 date: 2018-08-19
 publishdate : 2018-08-19
 tags: [ssl,security,certificate]
-image: "https://svgsilh.com/png-512/484402-2196f3.png"
+image: "https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
 description: "This is meta description."
 author: "Malys"
 type: "post"

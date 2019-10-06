@@ -3,7 +3,7 @@ title: "JRE Dependencies with host"
 date: 2019-08-19
 publishdate : 2019-08-19
 tags: [jre,java]
-image: "https://svgsilh.com/png-512/367946-e91e63.png"
+image: "https://img.stackshare.io/service/995/K85ZWV2F.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"
