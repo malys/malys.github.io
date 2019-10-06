@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Malys | Portfolio"
 theme = "kross-hugo-portfolio-template"
 summaryLength = "10"
-publishDir = "docs"
+publishDir = "./"
 
 # Plugins
 [params.plugins]
