@@ -1,3 +1,4 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
+[submodule "themes/kross-hugo-portfolio-template"]
+	path = themes/kross-hugo-portfolio-template
 	url = https://github.com/malys/kross-hugo-portfolio-template.git
+	branch = custom
