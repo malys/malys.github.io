@@ -3,7 +3,7 @@ title: "Quantum computing ressources"
 date: 2019-10-07
 publishdate : 2019-10-07
 tags: [quantum, computing]
-image: "https://pixabay.com/get/55e8d3474f54a814f1dc8460825668204022dfe054517241772973d1/physics-3864564_640.jpg"
+image: "https://www.arl.army.mil/www/articles/3187/image.2.large.jpg"
 description: "This is meta description."
 author: "Malys"
 type: "post"
