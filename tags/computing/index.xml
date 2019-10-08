@@ -6,6 +6,7 @@
     <description>Recent content in computing on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://malys.github.io/tags/computing/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>Quantum computing ressources</title>
       <link>https://malys.github.io/blog/quantum-ressources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/quantum-ressources/</guid>
       <description> Tools and web ressources about quantum computing.

@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://malys.github.io/tags/computing/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/quantum/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/blog/quantum-ressources/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://malys.github.io/tags/comparative/</loc>
     <lastmod>2019-09-20T00:00:00+00:00</lastmod>
   </url>
@@ -23,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://malys.github.io/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://malys.github.io/blog/native-java-frameworks/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://malys.github.io/tags/</loc>
     <lastmod>2019-09-20T00:00:00+00:00</lastmod>
   </url>
   
