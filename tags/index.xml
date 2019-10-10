@@ -93,33 +93,6 @@
     </item>
     
     <item>
-      <title>docker</title>
-      <link>https://malys.github.io/tags/docker/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>framework</title>
-      <link>https://malys.github.io/tags/framework/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/framework/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>graalvm</title>
-      <link>https://malys.github.io/tags/graalvm/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/graalvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>authentication</title>
       <link>https://malys.github.io/tags/authentication/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
@@ -143,6 +116,33 @@
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/tags/rh-sso/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://malys.github.io/tags/docker/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>framework</title>
+      <link>https://malys.github.io/tags/framework/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graalvm</title>
+      <link>https://malys.github.io/tags/graalvm/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/graalvm/</guid>
       <description></description>
     </item>
     

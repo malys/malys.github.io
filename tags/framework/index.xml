@@ -6,7 +6,7 @@
     <description>Recent content in framework on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://malys.github.io/tags/framework/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Native Java frameworks</title>
       <link>https://malys.github.io/blog/native-java-frameworks/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/native-java-frameworks/</guid>
       <description>Compare different Java framework to generate native application.

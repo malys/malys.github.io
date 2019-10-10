@@ -68,31 +68,6 @@
   </url>
   
   <url>
-    <loc>https://malys.github.io/tags/docker/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://malys.github.io/tags/framework/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://malys.github.io/tags/graalvm/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://malys.github.io/blog/java-container-optimization/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://malys.github.io/blog/native-java-frameworks/</loc>
-    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://malys.github.io/tags/authentication/</loc>
     <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -110,6 +85,31 @@
   <url>
     <loc>https://malys.github.io/tags/rh-sso/</loc>
     <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/docker/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/framework/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/tags/graalvm/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/blog/java-container-optimization/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malys.github.io/blog/native-java-frameworks/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -32,9 +32,19 @@ Libraries Videos  No Limit Secu - audio  Awesome  </description>
     </item>
     
     <item>
+      <title>Keycloak for advanced developers</title>
+      <link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid>
+      <description> Keycloak / OIDC presentation.
+Slides  </description>
+    </item>
+    
+    <item>
       <title>Java container optimization</title>
       <link>https://malys.github.io/blog/java-container-optimization/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/java-container-optimization/</guid>
       <description> Java container optimization.
@@ -44,21 +54,11 @@ Slides  </description>
     <item>
       <title>Native Java frameworks</title>
       <link>https://malys.github.io/blog/native-java-frameworks/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/native-java-frameworks/</guid>
       <description>Compare different Java framework to generate native application.
 Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
-    </item>
-    
-    <item>
-      <title>Keycloak for advanced developers</title>
-      <link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid>
-      <description> Keycloak / OIDC presentation.
-Slides  </description>
     </item>
     
     <item>

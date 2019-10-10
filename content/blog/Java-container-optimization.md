@@ -1,6 +1,6 @@
 ---
 title: "Java container optimization"
-date: 2019-09-20
+date: 2019-09-10
 publishdate : 2019-10-10
 tags: [java,docker]
 image: "https://img.stackshare.io/service/995/K85ZWV2F.png"
