@@ -18,7 +18,7 @@
       
       <guid>https://malys.github.io/blog/native-java-frameworks/</guid>
       <description>Compare different Java framework to generate native application.
- </description>
+Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
     </item>
     
   </channel>
