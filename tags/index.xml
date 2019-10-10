@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://malys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>comparative</title>
+      <link>https://malys.github.io/tags/comparative/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/comparative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hotspot</title>
+      <link>https://malys.github.io/tags/hotspot/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/hotspot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://malys.github.io/tags/java/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jvm</title>
+      <link>https://malys.github.io/tags/jvm/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/jvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keycloak</title>
+      <link>https://malys.github.io/tags/keycloak/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/keycloak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openJ9</title>
+      <link>https://malys.github.io/tags/openj9/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/openj9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>https://malys.github.io/tags/optimization/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>computing</title>
@@ -26,15 +89,6 @@
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/tags/quantum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>comparative</title>
-      <link>https://malys.github.io/tags/comparative/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/comparative/</guid>
       <description></description>
     </item>
     
@@ -57,15 +111,6 @@
     </item>
     
     <item>
-      <title>java</title>
-      <link>https://malys.github.io/tags/java/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>authentication</title>
       <link>https://malys.github.io/tags/authentication/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
@@ -80,15 +125,6 @@
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/tags/authorization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keycloak</title>
-      <link>https://malys.github.io/tags/keycloak/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/keycloak/</guid>
       <description></description>
     </item>
     
@@ -129,47 +165,11 @@
     </item>
     
     <item>
-      <title>hotspot</title>
-      <link>https://malys.github.io/tags/hotspot/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/hotspot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jvm</title>
-      <link>https://malys.github.io/tags/jvm/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/jvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>microcontainer</title>
       <link>https://malys.github.io/tags/microcontainer/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/tags/microcontainer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>openJ9</title>
-      <link>https://malys.github.io/tags/openj9/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/openj9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>optimization</title>
-      <link>https://malys.github.io/tags/optimization/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     

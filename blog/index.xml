@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>JVM</title>
+      <link>https://malys.github.io/blog/jvm/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/jvm/</guid>
+      <description>Compare different JVM to improve container performance.
+State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+    </item>
+    
+    <item>
       <title>Quantum computing ressources</title>
       <link>https://malys.github.io/blog/quantum-ressources/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
@@ -59,16 +69,6 @@ Dependencies ldd /usr/bin/java linux-vdso.</description>
       <guid>https://malys.github.io/blog/understand-from-scratch/</guid>
       <description>How &amp;ldquo;from scratch&amp;rdquo; works ?
 Image FROM scratch ENV PROXY_LISTEN=0.</description>
-    </item>
-    
-    <item>
-      <title>JVM</title>
-      <link>https://malys.github.io/blog/jvm/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/jvm/</guid>
-      <description>Compare different JVM to improve container performance.
-State of play In our case, we will be based on AdoptOpenJDK distributions.</description>
     </item>
     
     <item>

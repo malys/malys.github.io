@@ -6,7 +6,7 @@
     <description>Recent content in jvm on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://malys.github.io/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>JVM</title>
       <link>https://malys.github.io/blog/jvm/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/jvm/</guid>
       <description>Compare different JVM to improve container performance.
-State of play In our case, we will be based on AdoptOpenJDK distributions.</description>
+State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
     </item>
     
   </channel>
