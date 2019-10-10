@@ -28,7 +28,7 @@ It could be easier to compare results with the same base.
 
 OpenJDK (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).
 
-**OpenJDK 11** provides new interesting features:
+*OpenJDK 11* provides new interesting features:
 
 * [Class data sharing](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/class-data-sharing.html) or [CDS](https://gist.github.com/malys/278259d25be9326572b06e51f24f206b#file-bench-sh-L179)
     
@@ -44,10 +44,10 @@ OpenJDK (Open Java Development Kit) is a free and open-source implementation of 
 
 #### Container friendly
 
-Before OpenJDK **8u131**, JRE embedded in a container didn't detect allocated resources to a container but it managed host resources. Sometimes, system killed Java process because it passed allocated resources limits.
+Before OpenJDK *8u131*, JRE embedded in a container didn't detect allocated resources to a container but it managed host resources. Sometimes, system killed Java process because it passed allocated resources limits.
 
-The solution to detect container resources  was developed for JDK 9 but it was retro-featured in **8u131** as an option.
-Since **8u391**, was enabled by default. You can disable it using this parameter *-XX:-UseContainerSupport*.
+The solution to detect container resources  was developed for JDK 9 but it was retro-featured in *8u131* as an option.
+Since *8u391*, was enabled by default. You can disable it using this parameter *-XX:-UseContainerSupport*.
 Obviously, OpenJDK 11 integrates this feature.
 
 ### Eclipse OpenJ9 HotSpot
@@ -56,7 +56,7 @@ Obviously, OpenJDK 11 integrates this feature.
 
 Eclipse OpenJ9 is a high performance, scalable, Java virtual machine implementation that is fully compliant with the Java Virtual Machine Specification.
 
-**OpenJ9** provides new interesting features:
+*OpenJ9* provides new interesting features:
 * JDK 8-11 supports
 * Container friendly by default
 * Class Data Sharing
@@ -70,7 +70,7 @@ Eclipse OpenJ9 is a high performance, scalable, Java virtual machine implementat
 GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Groovy, Kotlin, Clojure, and LLVM-based languages such as C and C++.
 It can be considered like the next generation of HotSport JVM.
 
-**GraalVM** provides new interesting features:
+*GraalVM* provides new interesting features:
 * Full JVM Platform 
 * Polyglot : Python, Java, Rust, NodeJS over GraalVM
 * Graal compiler: full Java compiler, successor of C2 compiler for long time high performance 
@@ -85,7 +85,7 @@ It can be considered like the next generation of HotSport JVM.
 
  ![](https://miro.medium.com/max/710/1*0gfk2o71BRI8ny8HI4_Wlg.png)
 
-To improve performance on runtime, **GraalVM** will processing and apply optimization during compilation phase. This mechanism called **Ahead Of Time Compilation** provides a static executable of your application corresponding to a snapshot:
+To improve performance on runtime, *GraalVM* will processing and apply optimization during compilation phase. This mechanism called *Ahead Of Time Compilation* provides a static executable of your application corresponding to a snapshot:
 * embedded minimal dependencies VM: Substract VM 
 * optimized application
   
@@ -94,13 +94,13 @@ Static executable is self-sufficient with high performance.
 
 ### LTS / Production Ready
 
-For our usage, we want stability and production ready JRE that's why we will use only **[LTS](https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1089879229&single=true)** of JRE.
-**OpenJ9** follows the same lifetime of OpenJDK.
-Currently, **GraalVM** supports only JDK 8 but 11's support is in progress.
+For our usage, we want stability and production ready JRE that's why we will use only *[LTS](https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1089879229&single=true)* of JRE.
+*OpenJ9* follows the same lifetime of OpenJDK.
+Currently, *GraalVM* supports only JDK 8 but 11's support is in progress.
 
 
 | JDK        | 1st release | last release |
-| :--------- | ----------- | -----------: |
+| :---------: | :-----------: |:-----------: |
 | OpenJDK 8  |             |      Q3 2023 |
 | OpenJDK 11 |             |      Q4 2024 |
 | OpenJDK 17 | Q3 2021     |              |
@@ -128,28 +128,30 @@ Tests are based on:
 
 ##### Java Streams
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="500px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="700px" allowfullscreen></iframe>
 
 ##### Jakarta Microprofile
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Microprofile" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="1000px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Microprofile" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen></iframe>
 
 ##### SpringBoot
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1814932109&single=true" style="border:0px #ffffff none;" name="Spring Boot" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="1000px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1814932109&single=true" style="border:0px #ffffff none;" name="Spring Boot" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen></iframe>
 
 ##### RH-SSO 7.3
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="RH-SSO7.3" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="500px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="RH-SSO7.3" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="700px" allowfullscreen></iframe>
 
 ##### Results
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=2071947112&single=true" style="border:0px #ffffff none;" name="Results" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="600px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=2071947112&single=true" style="border:0px #ffffff none;" name="Results" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="800px" allowfullscreen></iframe>
 
-Currently, **OpenJDK 11** is the most polyvalent JRE and provides good performance in most of cases. We recommend to use it by default.
-**OpenJ9** could be used for high memory use case because it' s very efficient to minimize memory footprint.
-As soon as possible,**OpenJDK8** should be replaced by **OpenJDK11**.
-**GraalVM** as JRE is too young and currently, it's not enough efficient.
+Currently, *OpenJDK 11* is the most polyvalent JRE and provides good performance in most of cases. We recommend to use it by default.
+
+*OpenJ9* could be used for high memory use case because it' s very efficient to minimize memory footprint.
+As soon as possible,*OpenJDK8* should be replaced by *OpenJDK11*.
+
+*GraalVM* as JRE is too young and currently, it's not enough efficient.
 
 Some public posts confirms my results and my conclusion. ([1](https://www.optaplanner.org/blog/2019/01/17/HowMuchFasterIsJava11.html), [2](https://royvanrijn.com/blog/2018/05/openj9-jvm-shootout/), [3](https://technology.amis.nl/2018/11/23/comparing-jvm-performance-zulu-openjdk-openjdk-oracle-jdk-graalvm-ce/#prettyPhoto),...) 
 
@@ -181,4 +183,4 @@ ls java-base/ && du -hcs
 JAVA_HOME=$PWD/java-base
 ```
 
-In the case of an *hello world* with no dependency, the custom distribution is **30MB instead of 116MB for a full JRE**.
+In the case of an *hello world* with no dependency, the custom distribution is *30MB instead of 116MB for a full JRE*.

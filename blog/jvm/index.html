@@ -119,7 +119,7 @@ It could be easier to compare results with the same base.</p>
 
 <p>OpenJDK (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).</p>
 
-<p><strong>OpenJDK 11</strong> provides new interesting features:</p>
+<p><em>OpenJDK 11</em> provides new interesting features:</p>
 
 <ul>
 <li><p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/vm/class-data-sharing.html">Class data sharing</a> or <a href="https://gist.github.com/malys/278259d25be9326572b06e51f24f206b#file-bench-sh-L179">CDS</a></p>
@@ -140,10 +140,10 @@ It could be easier to compare results with the same base.</p>
 
 <h4 id="container-friendly">Container friendly</h4>
 
-<p>Before OpenJDK <strong>8u131</strong>, JRE embedded in a container didn&rsquo;t detect allocated resources to a container but it managed host resources. Sometimes, system killed Java process because it passed allocated resources limits.</p>
+<p>Before OpenJDK <em>8u131</em>, JRE embedded in a container didn&rsquo;t detect allocated resources to a container but it managed host resources. Sometimes, system killed Java process because it passed allocated resources limits.</p>
 
-<p>The solution to detect container resources  was developed for JDK 9 but it was retro-featured in <strong>8u131</strong> as an option.
-Since <strong>8u391</strong>, was enabled by default. You can disable it using this parameter <em>-XX:-UseContainerSupport</em>.
+<p>The solution to detect container resources  was developed for JDK 9 but it was retro-featured in <em>8u131</em> as an option.
+Since <em>8u391</em>, was enabled by default. You can disable it using this parameter <em>-XX:-UseContainerSupport</em>.
 Obviously, OpenJDK 11 integrates this feature.</p>
 
 <h3 id="eclipse-openj9-hotspot">Eclipse OpenJ9 HotSpot</h3>
@@ -152,7 +152,7 @@ Obviously, OpenJDK 11 integrates this feature.</p>
 
 <p>Eclipse OpenJ9 is a high performance, scalable, Java virtual machine implementation that is fully compliant with the Java Virtual Machine Specification.</p>
 
-<p><strong>OpenJ9</strong> provides new interesting features:
+<p><em>OpenJ9</em> provides new interesting features:
 * JDK 8-11 supports
 * Container friendly by default
 * Class Data Sharing
@@ -166,7 +166,7 @@ Obviously, OpenJDK 11 integrates this feature.</p>
 <p>GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Groovy, Kotlin, Clojure, and LLVM-based languages such as C and C++.
 It can be considered like the next generation of HotSport JVM.</p>
 
-<p><strong>GraalVM</strong> provides new interesting features:
+<p><em>GraalVM</em> provides new interesting features:
 * Full JVM Platform
 * Polyglot : Python, Java, Rust, NodeJS over GraalVM
 * Graal compiler: full Java compiler, successor of C2 compiler for long time high performance
@@ -181,7 +181,7 @@ It can be considered like the next generation of HotSport JVM.</p>
 
 <p><img src="https://miro.medium.com/max/710/1*0gfk2o71BRI8ny8HI4_Wlg.png" alt="" /></p>
 
-<p>To improve performance on runtime, <strong>GraalVM</strong> will processing and apply optimization during compilation phase. This mechanism called <strong>Ahead Of Time Compilation</strong> provides a static executable of your application corresponding to a snapshot:
+<p>To improve performance on runtime, <em>GraalVM</em> will processing and apply optimization during compilation phase. This mechanism called <em>Ahead Of Time Compilation</em> provides a static executable of your application corresponding to a snapshot:
 * embedded minimal dependencies VM: Substract VM
 * optimized application</p>
 
@@ -190,42 +190,42 @@ Static executable is self-sufficient with high performance.</p>
 
 <h3 id="lts-production-ready">LTS / Production Ready</h3>
 
-<p>For our usage, we want stability and production ready JRE that&rsquo;s why we will use only <strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1089879229&amp;single=true">LTS</a></strong> of JRE.
-<strong>OpenJ9</strong> follows the same lifetime of OpenJDK.
-Currently, <strong>GraalVM</strong> supports only JDK 8 but 11&rsquo;s support is in progress.</p>
+<p>For our usage, we want stability and production ready JRE that&rsquo;s why we will use only <em><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1089879229&amp;single=true">LTS</a></em> of JRE.
+<em>OpenJ9</em> follows the same lifetime of OpenJDK.
+Currently, <em>GraalVM</em> supports only JDK 8 but 11&rsquo;s support is in progress.</p>
 
 <table>
 <thead>
 <tr>
-<th align="left">JDK</th>
-<th>1st release</th>
-<th align="right">last release</th>
+<th align="center">JDK</th>
+<th align="center">1st release</th>
+<th align="center">last release</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">OpenJDK 8</td>
-<td></td>
-<td align="right">Q3 2023</td>
+<td align="center">OpenJDK 8</td>
+<td align="center"></td>
+<td align="center">Q3 2023</td>
 </tr>
 
 <tr>
-<td align="left">OpenJDK 11</td>
-<td></td>
-<td align="right">Q4 2024</td>
+<td align="center">OpenJDK 11</td>
+<td align="center"></td>
+<td align="center">Q4 2024</td>
 </tr>
 
 <tr>
-<td align="left">OpenJDK 17</td>
-<td>Q3 2021</td>
-<td align="right"></td>
+<td align="center">OpenJDK 17</td>
+<td align="center">Q3 2021</td>
+<td align="center"></td>
 </tr>
 
 <tr>
-<td align="left">GraalVM</td>
-<td>Q2 2019</td>
-<td align="right"></td>
+<td align="center">GraalVM</td>
+<td align="center">Q2 2019</td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -260,28 +260,30 @@ Currently, <strong>GraalVM</strong> supports only JDK 8 but 11&rsquo;s support i
 
 <h5 id="java-streams">Java Streams</h5>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="500px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="700px" allowfullscreen></iframe>
 
 <h5 id="jakarta-microprofile">Jakarta Microprofile</h5>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Microprofile" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="1000px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Microprofile" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen></iframe>
 
 <h5 id="springboot">SpringBoot</h5>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1814932109&single=true" style="border:0px #ffffff none;" name="Spring Boot" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="1000px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1814932109&single=true" style="border:0px #ffffff none;" name="Spring Boot" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen></iframe>
 
 <h5 id="rh-sso-7-3">RH-SSO 7.3</h5>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="RH-SSO7.3" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="500px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="RH-SSO7.3" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="700px" allowfullscreen></iframe>
 
 <h5 id="results">Results</h5>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=2071947112&single=true" style="border:0px #ffffff none;" name="Results" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="600px" allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=2071947112&single=true" style="border:0px #ffffff none;" name="Results" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="800px" allowfullscreen></iframe>
 
-<p>Currently, <strong>OpenJDK 11</strong> is the most polyvalent JRE and provides good performance in most of cases. We recommend to use it by default.
-<strong>OpenJ9</strong> could be used for high memory use case because it&rsquo; s very efficient to minimize memory footprint.
-As soon as possible,<strong>OpenJDK8</strong> should be replaced by <strong>OpenJDK11</strong>.
-<strong>GraalVM</strong> as JRE is too young and currently, it&rsquo;s not enough efficient.</p>
+<p>Currently, <em>OpenJDK 11</em> is the most polyvalent JRE and provides good performance in most of cases. We recommend to use it by default.</p>
+
+<p><em>OpenJ9</em> could be used for high memory use case because it&rsquo; s very efficient to minimize memory footprint.
+As soon as possible,<em>OpenJDK8</em> should be replaced by <em>OpenJDK11</em>.</p>
+
+<p><em>GraalVM</em> as JRE is too young and currently, it&rsquo;s not enough efficient.</p>
 
 <p>Some public posts confirms my results and my conclusion. (<a href="https://www.optaplanner.org/blog/2019/01/17/HowMuchFasterIsJava11.html">1</a>, <a href="https://royvanrijn.com/blog/2018/05/openj9-jvm-shootout/">2</a>, <a href="https://technology.amis.nl/2018/11/23/comparing-jvm-performance-zulu-openjdk-openjdk-oracle-jdk-graalvm-ce/#prettyPhoto">3</a>,&hellip;)</p>
 
@@ -312,7 +314,7 @@ ls java-base/ &amp;&amp; du -hcs
 JAVA_HOME=$PWD/java-base
 </code></pre>
 
-<p>In the case of an <em>hello world</em> with no dependency, the custom distribution is <strong>30MB instead of 116MB for a full JRE</strong>.</p>
+<p>In the case of an <em>hello world</em> with no dependency, the custom distribution is <em>30MB instead of 116MB for a full JRE</em>.</p>
 
           </div>
         </div>
