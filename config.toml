@@ -55,7 +55,7 @@ home = "Home"
 description = "Software architect"
 author = "Malys"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-149870475-1"
 
   # Preloader
   [params.preloader]
