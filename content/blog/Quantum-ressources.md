@@ -13,6 +13,10 @@ Tools and web ressources about quantum computing.
 
 ## Libraries
 
+### Blog
+
+* [ToutEstQuantique](http://toutestquantique.fr/)
+
 ### Videos
 
 * [No Limit Secu](https://www.nolimitsecu.fr/informatique-quantique/) - [audio](https://www.nolimitsecu.fr/wp-content/uploads/NoLimistSecu-Informatique-Quantique-avec-Renaud-Lifchitz.mp3)
