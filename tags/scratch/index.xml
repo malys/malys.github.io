@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scratch on Malys | Portfolio</title>
@@ -18,7 +18,7 @@
       
       <guid>https://malys.github.io/blog/understand-from-scratch/</guid>
       <description>How &amp;ldquo;from scratch&amp;rdquo; works ?
-Image FROM scratch ENV PROXY_LISTEN=0.</description>
+Image FROM scratch ENV PROXY_LISTEN=0.0.0.0:8443 ENV PROXY_LISTEN_HTTP=0.</description>
     </item>
     
   </channel>

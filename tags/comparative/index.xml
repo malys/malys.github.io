@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>comparative on Malys | Portfolio</title>
@@ -18,7 +18,7 @@
       
       <guid>https://malys.github.io/blog/jvm/</guid>
       <description>Compare different JVM to improve container performance.
-State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+State of play We will focus on OpenJDK because it&#39;s the reference for JDK, it&#39;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for 
       
       <guid>https://malys.github.io/blog/native-java-frameworks/</guid>
       <description>Compare different Java framework to generate native application.
-Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
+Native Static executable provides best performance on runtime because it&#39;s compiled for a specific platform.</description>
     </item>
     
     <item>

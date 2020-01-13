@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cryptography on Malys | Portfolio</title>
@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>Cryptography ressources</title>
+      <title>Security ressources</title>
       <link>https://malys.github.io/blog/cryptography-ressources/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/cryptography-ressources/</guid>
-      <description> Tools and web ressources about cryptography.
-Tools Generic  Openssl Keytool  Windows  Keystore Explorer XCA  Libraries Blog posts  Pattern Cryptosense whitepapers  Videos     Awesome  </description>
+      <description>Tools and web ressources about cryptography.
+Tools Generic  Openssl Keytool  Windows  Keystore Explorer XCA  Libraries Blog posts  Pattern Cryptosense whitepapers  Videos     Awesome </description>
     </item>
     
   </channel>

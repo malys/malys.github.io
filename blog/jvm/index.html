@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description.">
   <meta name="author" content="Malys">
-  <meta name="generator" content="Hugo 0.58.2" />
+  <meta name="generator" content="Hugo 0.62.2" />
 
   <!-- plugins -->
   
@@ -98,102 +98,82 @@
           <p class="font-secondary">Published on Oct 10, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
             
-            
-
-<p>Compare different JVM to improve container performance.</p>
-
+            <p>Compare different JVM to improve container performance.</p>
 <h2 id="state-of-play">State of play</h2>
-
-<p>We will focus on OpenJDK because it&rsquo;s the reference  for JDK, it&rsquo;s an open project and many companies are contributors (Oracle, RedHat, &hellip;).</p>
-
+<p>We will focus on OpenJDK because it's the reference  for JDK, it's an open project and many companies are contributors (Oracle, RedHat, &hellip;).</p>
 <p>In our case, we will be based on AdoptOpenJDK distributions.</p>
-
 <p>Given that some difference could be found in OpenJDK  packaging (RedHat, Zulu, ..), our tests will be based on AdoptOpenJDK packaging.</p>
-
 <p>This page provides OpenJDK distributions for Linux and Windows platforms.
 It could be easier to compare results with the same base.</p>
-
 <h3 id="openjdk-hotspot">OpenJDK HotSpot</h3>
-
-<p><img src="https://developers.redhat.com/blog/wp-content/uploads/2018/09/OpenJDK.png" alt="" /></p>
-
+<p><img src="https://developers.redhat.com/blog/wp-content/uploads/2018/09/OpenJDK.png" alt=""></p>
 <p>OpenJDK (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition (Java SE).</p>
-
 <p><em>OpenJDK 11</em> provides new interesting features:</p>
-
 <ul>
-<li><p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/vm/class-data-sharing.html">Class data sharing</a> or <a href="https://gist.github.com/malys/278259d25be9326572b06e51f24f206b#file-bench-sh-L179">CDS</a></p>
-
-<p>Class data sharing (CDS) helps reduce the startup time for Java programming language applications, in particular smaller applications, as well as reduce footprint. When the JRE is installed using the installer, the installer loads a set of classes from the system jar file into a private internal representation, and dumps that representation to a file, called a &ldquo;shared archive&rdquo;. If the JRE installer is not being used, this can be done manually, as explained below. During subsequent JVM invocations, the shared archive is memory-mapped in, saving the cost of loading those classes and allowing much of the JVM&rsquo;s metadata for these classes to be shared among multiple JVM processes.</p></li>
+<li>
+<p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/vm/class-data-sharing.html">Class data sharing</a> or <a href="https://gist.github.com/malys/278259d25be9326572b06e51f24f206b#file-bench-sh-L179">CDS</a></p>
+<p>Class data sharing (CDS) helps reduce the startup time for Java programming language applications, in particular smaller applications, as well as reduce footprint. When the JRE is installed using the installer, the installer loads a set of classes from the system jar file into a private internal representation, and dumps that representation to a file, called a &ldquo;shared archive&rdquo;. If the JRE installer is not being used, this can be done manually, as explained below. During subsequent JVM invocations, the shared archive is memory-mapped in, saving the cost of loading those classes and allowing much of the JVM's metadata for these classes to be shared among multiple JVM processes.</p>
+</li>
 </ul>
-
 <script type="application/javascript" src="https://gist.github.com/malys278259d25be9326572b06e51f24f206b/.js"></script>
 
-
 <ul>
-<li><p><a href="https://en.wikipedia.org/wiki/Java_Platform_Module_System">Java Platform Module System</a> (Jigsaw)</p>
-
-<p>The Java Platform Module System[1] specifies a distribution format for collections of Java code and associated resources. It also specifies a repository for storing these collections, or modules, and identifies how they can be discovered, loaded and checked for integrity. It includes features such as namespaces with the aim of fixing some of the shortcomings in the existing JAR format, especially the JAR Hell, which can lead to issues such as classpath and class loading problems.</p></li>
-
-<li><p>Low GC pause by default: G1</p></li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Java_Platform_Module_System">Java Platform Module System</a> (Jigsaw)</p>
+<p>The Java Platform Module System[1] specifies a distribution format for collections of Java code and associated resources. It also specifies a repository for storing these collections, or modules, and identifies how they can be discovered, loaded and checked for integrity. It includes features such as namespaces with the aim of fixing some of the shortcomings in the existing JAR format, especially the JAR Hell, which can lead to issues such as classpath and class loading problems.</p>
+</li>
+<li>
+<p>Low GC pause by default: G1</p>
+</li>
 </ul>
-
 <h4 id="container-friendly">Container friendly</h4>
-
-<p>Before OpenJDK <em>8u131</em>, JRE embedded in a container didn&rsquo;t detect allocated resources to a container but it managed host resources. Sometimes, system killed Java process because it passed allocated resources limits.</p>
-
+<p>Before OpenJDK <em>8u131</em>, JRE embedded in a container didn't detect allocated resources to a container but it managed host resources. Sometimes, system killed Java process because it passed allocated resources limits.</p>
 <p>The solution to detect container resources  was developed for JDK 9 but it was retro-featured in <em>8u131</em> as an option.
 Since <em>8u391</em>, was enabled by default. You can disable it using this parameter <em>-XX:-UseContainerSupport</em>.
 Obviously, OpenJDK 11 integrates this feature.</p>
-
 <h3 id="eclipse-openj9-hotspot">Eclipse OpenJ9 HotSpot</h3>
-
-<p><img src="https://pbs.twimg.com/profile_images/910853900181364736/bmWkKoLn_400x400.jpg" alt="" /></p>
-
+<p><img src="https://pbs.twimg.com/profile_images/910853900181364736/bmWkKoLn_400x400.jpg" alt=""></p>
 <p>Eclipse OpenJ9 is a high performance, scalable, Java virtual machine implementation that is fully compliant with the Java Virtual Machine Specification.</p>
-
-<p><em>OpenJ9</em> provides new interesting features:
-* JDK 8-11 supports
-* Container friendly by default
-* Class Data Sharing
-* Dynamic Ahead-Of-Time
-* Startup mode (quick, virtualized)</p>
-
+<p><em>OpenJ9</em> provides new interesting features:</p>
+<ul>
+<li>JDK 8-11 supports</li>
+<li>Container friendly by default</li>
+<li>Class Data Sharing</li>
+<li>Dynamic Ahead-Of-Time</li>
+<li>Startup mode (quick, virtualized)</li>
+</ul>
 <h3 id="graalvm-by-oracle">GraalVM by Oracle</h3>
-
-<p><img src="https://miro.medium.com/max/655/1*eIW3gooOD5kApk7qw_82lg.png" alt="" /></p>
-
+<p><img src="https://miro.medium.com/max/655/1*eIW3gooOD5kApk7qw_82lg.png" alt=""></p>
 <p>GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Groovy, Kotlin, Clojure, and LLVM-based languages such as C and C++.
 It can be considered like the next generation of HotSport JVM.</p>
-
-<p><em>GraalVM</em> provides new interesting features:
-* Full JVM Platform
-* Polyglot : Python, Java, Rust, NodeJS over GraalVM
-* Graal compiler: full Java compiler, successor of C2 compiler for long time high performance
-* Community edition
-* Enterprise edition
-  * optimization
-  *  debugging
-  *  &hellip;
-* Native image generation</p>
-
+<p><em>GraalVM</em> provides new interesting features:</p>
+<ul>
+<li>Full JVM Platform</li>
+<li>Polyglot : Python, Java, Rust, NodeJS over GraalVM</li>
+<li>Graal compiler: full Java compiler, successor of C2 compiler for long time high performance</li>
+<li>Community edition</li>
+<li>Enterprise edition
+<ul>
+<li>optimization</li>
+<li>debugging</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>Native image generation</li>
+</ul>
 <h4 id="native-compilation">Native compilation</h4>
-
-<p><img src="https://miro.medium.com/max/710/1*0gfk2o71BRI8ny8HI4_Wlg.png" alt="" /></p>
-
-<p>To improve performance on runtime, <em>GraalVM</em> will processing and apply optimization during compilation phase. This mechanism called <em>Ahead Of Time Compilation</em> provides a static executable of your application corresponding to a snapshot:
-* embedded minimal dependencies VM: Substract VM
-* optimized application</p>
-
-<p>It&rsquo;s possible to apply this process to an library or a full Java application.
+<p><img src="https://miro.medium.com/max/710/1*0gfk2o71BRI8ny8HI4_Wlg.png" alt=""></p>
+<p>To improve performance on runtime, <em>GraalVM</em> will processing and apply optimization during compilation phase. This mechanism called <em>Ahead Of Time Compilation</em> provides a static executable of your application corresponding to a snapshot:</p>
+<ul>
+<li>embedded minimal dependencies VM: Substract VM</li>
+<li>optimized application</li>
+</ul>
+<p>It's possible to apply this process to an library or a full Java application.
 Static executable is self-sufficient with high performance.</p>
-
-<h3 id="lts-production-ready">LTS / Production Ready</h3>
-
-<p>For our usage, we want stability and production ready JRE that&rsquo;s why we will use only <em><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1089879229&amp;single=true">LTS</a></em> of JRE.
+<h3 id="lts--production-ready">LTS / Production Ready</h3>
+<p>For our usage, we want stability and production ready JRE that's why we will use only <em><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1089879229&amp;single=true">LTS</a></em> of JRE.
 <em>OpenJ9</em> follows the same lifetime of OpenJDK.
-Currently, <em>GraalVM</em> supports only JDK 8 but 11&rsquo;s support is in progress.</p>
-
+Currently, <em>GraalVM</em> supports only JDK 8 but 11's support is in progress.</p>
 <table>
 <thead>
 <tr>
@@ -202,26 +182,22 @@ Currently, <em>GraalVM</em> supports only JDK 8 but 11&rsquo;s support is in pro
 <th align="center">last release</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">OpenJDK 8</td>
 <td align="center"></td>
 <td align="center">Q3 2023</td>
 </tr>
-
 <tr>
 <td align="center">OpenJDK 11</td>
 <td align="center"></td>
 <td align="center">Q4 2024</td>
 </tr>
-
 <tr>
 <td align="center">OpenJDK 17</td>
 <td align="center">Q3 2021</td>
 <td align="center"></td>
 </tr>
-
 <tr>
 <td align="center">GraalVM</td>
 <td align="center">Q2 2019</td>
@@ -229,92 +205,66 @@ Currently, <em>GraalVM</em> supports only JDK 8 but 11&rsquo;s support is in pro
 </tr>
 </tbody>
 </table>
-
 <h3 id="performance-comparative">Performance comparative</h3>
-
 <h4 id="method">Method</h4>
-
 <p>Tests are based on:</p>
-
 <ul>
-<li><p>different use cases:</p>
-
+<li>
+<p>different use cases:</p>
 <ul>
-<li>Stream only: new Java 8 feature<br /></li>
+<li>Stream only: new Java 8 feature</li>
 <li>Microprofile: new Jakarta standard</li>
-<li>SpringBoot: standard framework<br /></li>
+<li>SpringBoot: standard framework</li>
 <li>RH-SSO 7.3: AppServer compatible JDK 8 &amp; 11</li>
-</ul></li>
-
-<li><p>metrics (two <a href="https://gist.github.com/malys/278259d25be9326572b06e51f24f206b">automatic</a> measures)</p>
-
+</ul>
+</li>
+<li>
+<p>metrics (two <a href="https://gist.github.com/malys/278259d25be9326572b06e51f24f206b">automatic</a> measures)</p>
 <ul>
 <li>Start time o process time</li>
 <li>Memory: RAM usage</li>
 <li>Latency (mean, 50%, 90%): closed test by thread</li>
 <li>Throughput: efficiency</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h4 id="comparative">Comparative</h4>
-
 <h5 id="java-streams">Java Streams</h5>
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=338344574&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="700px" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <h5 id="jakarta-microprofile">Jakarta Microprofile</h5>
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=898376284&single=true" style="border:0px #ffffff none;" name="Microprofile" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <h5 id="springboot">SpringBoot</h5>
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1814932109&single=true" style="border:0px #ffffff none;" name="Spring Boot" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen></iframe>
-
-<h5 id="rh-sso-7-3">RH-SSO 7.3</h5>
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=166042169&single=true" style="border:0px #ffffff none;" name="RH-SSO7.3" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="700px" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
+<h5 id="rh-sso-73">RH-SSO 7.3</h5>
+<!-- raw HTML omitted -->
 <h5 id="results">Results</h5>
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=2071947112&single=true" style="border:0px #ffffff none;" name="Results" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="800px" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <p>Currently, <em>OpenJDK 11</em> is the most polyvalent JRE and provides good performance in most of cases. We recommend to use it by default.</p>
-
 <p><em>OpenJ9</em> could be used for high memory use case because it&rsquo; s very efficient to minimize memory footprint.
 As soon as possible,<em>OpenJDK8</em> should be replaced by <em>OpenJDK11</em>.</p>
-
-<p><em>GraalVM</em> as JRE is too young and currently, it&rsquo;s not enough efficient.</p>
-
+<p><em>GraalVM</em> as JRE is too young and currently, it's not enough efficient.</p>
 <p>Some public posts confirms my results and my conclusion. (<a href="https://www.optaplanner.org/blog/2019/01/17/HowMuchFasterIsJava11.html">1</a>, <a href="https://royvanrijn.com/blog/2018/05/openj9-jvm-shootout/">2</a>, <a href="https://technology.amis.nl/2018/11/23/comparing-jvm-performance-zulu-openjdk-openjdk-oracle-jdk-graalvm-ce/#prettyPhoto">3</a>,&hellip;)</p>
-
 <h3 id="java-platform-module-system">Java Platform Module System</h3>
-
-<p><img src="https://docs.toradex.com/102686-modularity-icon.jpg" alt="" /></p>
-
+<p><img src="https://docs.toradex.com/102686-modularity-icon.jpg" alt=""></p>
 <p>Modularity can be applied to application with dependencies but also to JRE distribution.</p>
-
 <h4 id="custom-jre">Custom JRE</h4>
-
-<p>It&rsquo;s possible to generate a custom and minimal JRE to cover only JRE application needs.</p>
-
-<pre><code class="language-bash"># JDK11
-sdk use java 11.0.4.j9-adpt &amp;&amp; du -hcs  $JAVA_HOME
-# 300M    /java/11.0.4.j9-adpt
-# Compile
+<p>It's possible to generate a custom and minimal JRE to cover only JRE application needs.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># JDK11</span>
+sdk use java 11.0.4.j9-adpt <span style="color:#f92672">&amp;&amp;</span> du -hcs  $JAVA_HOME
+<span style="color:#75715e"># 300M    /java/11.0.4.j9-adpt</span>
+<span style="color:#75715e"># Compile</span>
 javac CountUppercase.java
-# Deps
+<span style="color:#75715e"># Deps</span>
 jdeps --print-module-deps CountUppercase.class
-# Generate distribution
-jlink --no-header-files --no-man-pages --compress=2 --strip-debug \
- --add-modules  $(jdeps --print-module-deps CountUppercase.class) \
- --output java-base
-# Custom distribution
-ls java-base/ &amp;&amp; du -hcs
-# bin  conf  legal  lib  release -&gt; java-base/ 39M
-JAVA_HOME=$PWD/java-base
-</code></pre>
-
-<p>In the case of an <em>hello world</em> with no dependency, the custom distribution is <em>30MB instead of 116MB for a full JRE</em>.</p>
+<span style="color:#75715e"># Generate distribution</span>
+jlink --no-header-files --no-man-pages --compress<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> --strip-debug <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span> --add-modules  <span style="color:#66d9ef">$(</span>jdeps --print-module-deps CountUppercase.class<span style="color:#66d9ef">)</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span> --output java-base
+<span style="color:#75715e"># Custom distribution</span>
+ls java-base/ <span style="color:#f92672">&amp;&amp;</span> du -hcs
+<span style="color:#75715e"># bin  conf  legal  lib  release -&gt; java-base/ 39M</span>
+JAVA_HOME<span style="color:#f92672">=</span>$PWD/java-base
+</code></pre></div><p>In the case of an <em>hello world</em> with no dependency, the custom distribution is <em>30MB instead of 116MB for a full JRE</em>.</p>
 
           </div>
         </div>
