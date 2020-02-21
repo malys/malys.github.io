@@ -3,7 +3,7 @@ title: "Cryptography glossary"
 date: 2018-08-19
 publishdate : 2018-08-19
 tags: [ssl,security,certificate]
-image: "https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+image: "images/logo/crypto.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"
@@ -20,7 +20,7 @@ Glossary for cryptography vocabulary.
 
 ## Standard
 
-### Public-Key Cryptography Standards (**PKCS**)
+### Public-Key Cryptography Standards (PKCS)
 
 * PKCS#1 **unencrypted** RSA key storage format.
 * PKCS#7 Collection of **public certificates**.

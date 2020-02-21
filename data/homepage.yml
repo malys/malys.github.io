@@ -90,16 +90,16 @@ service:
 portfolio:
   enable : false
   item:
-    - image : "https://img.stackshare.io/service/5439/oAC05cEB_400x400.png"
+    - image : "images/logo/keycloak.png"
       projectURL : "./blog/keycloak-for-advanced-developers/"
       
-    - image : "https://img.stackshare.io/service/586/logo_docker.png"
+    - image : "images/logo/docker.png"
       projectURL : "./blog/microcontainer-distributions/"
       
-    - image : "https://img.stackshare.io/service/995/K85ZWV2F.png"
+    - image : "images/logo/java.png"
       projectURL : "./blog/jvm/"
     
-    - image : "https://img.stackshare.io/service/5439/oAC05cEB_400x400.png"
+    - image : "images/logo/keycloak.png"
       projectURL : "https://github.com/malys/rh-sso-rest_federation"
 
 # testimonial
@@ -125,34 +125,34 @@ portfolio:
 clientSlider:
   enable : true
   item:
-    - logo : "https://img.stackshare.io/service/995/K85ZWV2F.png"
+    - logo : "images/logo/java.png"
       URL : "https://www.java.com/"
       
-    - logo : "https://img.stackshare.io/service/1011/GWnVTc9j.png"
+    - logo : "images/logo/nodejs.png"
       URL : "http://nodejs.org/"
       
-    - logo : "https://img.stackshare.io/service/5439/oAC05cEB_400x400.png"
+    - logo : "images/logo/keycloak.png"
       URL : "https://www.keycloak.org/"
       
-    - logo : "https://img.stackshare.io/service/1453/icon_IntelliJIDEA.png"
+    - logo : "images/logo/IntelliJIDEA.png"
       URL : "http://www.jetbrains.com/idea/"
       
-    - logo : "https://img.stackshare.io/service/4202/Visual_Studio_Code_logo.png"
+    - logo : "images/logo/vscode.png"
       URL : "https://code.visualstudio.com/"
       
-    - logo : "https://img.stackshare.io/service/586/logo_docker.png"
+    - logo : "images/logo/docker.png"
       URL : "https://www.docker.com/"
       
-    - logo : "https://img.stackshare.io/service/1885/21_d3cvM.png"
+    - logo : "images/logo/kubernetes.png"
       URL : "http://kubernetes.io/"
       
-    - logo : "https://img.stackshare.io/stack/426506/Wtda2djF_400x400.png"
+    - logo : "images/logo/quarkus.png"
       URL : "https://stackshare.io/quarkusio"
       
-    - logo : "https://img.stackshare.io/service/1209/javascript.jpeg"
+    - logo : "images/logo/javascript.png"
       URL : "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       
-    - logo : "https://img.stackshare.io/service/1046/git.png"
+    - logo : "images/logo/git.png"
       URL : "http://git-scm.com/"
 
 # blog

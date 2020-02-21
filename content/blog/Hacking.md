@@ -2,15 +2,15 @@
 title: "Hacking"
 date: 2019-12-01
 publishdate : 2019-12-03
-tags: [hacking,ressources]
-image: "https://img.stackshare.io/stack/436485/ZSzHgaRh_400x400.jpg"
+tags: [hacking,resources]
+image: "images/logo/hacking.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"
 ---
 
 
-Tools and web ressources about hacking.
+Tools and web resources about hacking.
 
 ## Libraries
 

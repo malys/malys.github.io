@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>jre on Malys | Portfolio</title>
-    <link>https://malys.github.io/tags/jre/</link>
-    <description>Recent content in jre on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://malys.github.io/tags/jre/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>JRE Dependencies with host</title>
-      <link>https://malys.github.io/blog/jre-dependencies-with-host/</link>
-      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/jre-dependencies-with-host/</guid>
-      <description>What are JRE depencies with host OS ?
-Dependencies ldd /usr/bin/java linux-vdso.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jre on Malys | Portfolio</title><link>https://malys.github.io/tags/jre/</link><description>Recent content in jre on Malys | Portfolio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/jre/index.xml" rel="self" type="application/rss+xml"/><item><title>JRE Dependencies with host</title><link>https://malys.github.io/blog/jre-dependencies-with-host/</link><pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate><guid>https://malys.github.io/blog/jre-dependencies-with-host/</guid><description>What are JRE depencies with host OS ?
+Dependencies ldd /usr/bin/java linux-vdso.</description></item></channel></rss>

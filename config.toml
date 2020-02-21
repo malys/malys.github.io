@@ -9,6 +9,9 @@ publishDir = "./"
   home = ["HTML","JSON"]
   blog = ["HTML", "JSON"]
 
+[markup.goldmark.renderer]
+unsafe= true
+
 # Plugins
 [params.plugins]
 

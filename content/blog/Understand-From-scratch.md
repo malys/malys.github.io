@@ -3,7 +3,7 @@ title: "Understand: From scratch"
 date: 2019-08-19
 publishdate : 2019-08-19
 tags: [scratch,docker]
-image: "https://img.stackshare.io/service/586/logo_docker.png"
+image: "images/logo/docker.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"

@@ -1,15 +1,15 @@
 ---
-title: "Cryptography ressources"
+title: "Security resources"
 date: 2018-04-19
 publishdate : 2018-04-19
 tags: [security,ssl,certificate,tools,cryptography]
-image: "https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+image: "images/logo/security.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"
 ---
 
-Tools and web ressources about cryptography.
+Tools and web resources about cryptography.
 
 ## Tools
 
@@ -28,7 +28,7 @@ Tools and web ressources about cryptography.
 
 ### Blog posts
 
-* [Pattern](http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:ssl_pki:1_les_bases)
+* [Pattern](http://wiki.linuxwall.info/doku.php/fr:resources:dossiers:ssl_pki:1_les_bases)
 * [Cryptosense whitepapers](https://cryptosense.com/whitepapers/)
 
 ### Videos
@@ -39,5 +39,9 @@ Tools and web ressources about cryptography.
 
 ### Awesome
 
-<iframe  style="border: 0; width: 1000px; height: 1000px;" src="https://awesomelists.top/#/repos/sobolevn/awesome-cryptography"></iframe>
+<iframe  style="border: 0; width: 100%; height: 1000px;" src="https://awesomelists.top/#/repos/sobolevn/awesome-cryptography"></iframe>
+
+<iframe  style="border: 0; width: 100%; height: 1000px;" src="https://simplicable.com/new/information-security"></iframe>
+
+
 

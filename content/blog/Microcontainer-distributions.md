@@ -3,7 +3,7 @@ title: "Microcontainer distributions"
 date: 2019-08-15
 publishdate : 2019-08-15
 tags: [optimization,java,microcontainer,comparative]
-image: "https://img.stackshare.io/service/586/logo_docker.png"
+image: "images/logo/docker.png"
 description: "This is meta description."
 author: "Malys"
 type: "post"
