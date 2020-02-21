@@ -46,3 +46,15 @@ Glossary for cryptography vocabulary.
 ## Algorithms
 
 TODO
+
+## Lexical
+
+* [Certificate pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning): store list of public after the 1st connection, not allow 2nd connection if different public keys
+* [Nonce](https://fr.wikipedia.org/wiki/Nonce_(cryptographie)): random number (one use only)
+* [Salt](https://fr.wikipedia.org/wiki/Salage_(cryptographie)): random number for each data (against rainbow table)
+* [Pepper](https://en.wikipedia.org/wiki/Pepper_(cryptography)): secret(salt) for platform
+* [One Time Pad](https://en.wikipedia.org/wiki/One-time_pad): Perfect secrecy
+* Random number generator
+    * HRNG: hardware (from hardware noise)
+    * PRNG: pseudo (software)
+        * CSPRNG: Cryptographically secure (strong for cryptographic use)
