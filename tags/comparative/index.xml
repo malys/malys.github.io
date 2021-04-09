@@ -1,3 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>comparative on Malys | Portfolio</title><link>https://malys.github.io/tags/comparative/</link><description>Recent content in comparative on Malys | Portfolio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/comparative/index.xml" rel="self" type="application/rss+xml"/><item><title>JVM</title><link>https://malys.github.io/blog/jvm/</link><pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate><guid>https://malys.github.io/blog/jvm/</guid><description>Compare different JVM to improve container performance.
-State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description></item><item><title>Native Java frameworks</title><link>https://malys.github.io/blog/native-java-frameworks/</link><pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate><guid>https://malys.github.io/blog/native-java-frameworks/</guid><description>Compare different Java framework to generate native application.
-Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description></item><item><title>Microcontainer distributions</title><link>https://malys.github.io/blog/microcontainer-distributions/</link><pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate><guid>https://malys.github.io/blog/microcontainer-distributions/</guid><description>Container must include minimal dependencies to run Java application (microservice or legacy application).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>comparative on Malys | Portfolio</title>
+    <link>https://malys.github.io/tags/comparative/</link>
+    <description>Recent content in comparative on Malys | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://malys.github.io/tags/comparative/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JVM</title>
+      <link>https://malys.github.io/blog/jvm/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/jvm/</guid>
+      <description>Compare different JVM to improve container performance.
+State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+    </item>
+    
+    <item>
+      <title>Native Java frameworks</title>
+      <link>https://malys.github.io/blog/native-java-frameworks/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/native-java-frameworks/</guid>
+      <description>Compare different Java framework to generate native application.
+Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
+    </item>
+    
+    <item>
+      <title>Microcontainer distributions</title>
+      <link>https://malys.github.io/blog/microcontainer-distributions/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/microcontainer-distributions/</guid>
+      <description>Container must include minimal dependencies to run Java application (microservice or legacy application).</description>
+    </item>
+    
+  </channel>
+</rss>

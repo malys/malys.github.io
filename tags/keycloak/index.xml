@@ -1,3 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>keycloak on Malys | Portfolio</title><link>https://malys.github.io/tags/keycloak/</link><description>Recent content in keycloak on Malys | Portfolio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/keycloak/index.xml" rel="self" type="application/rss+xml"/><item><title>JVM</title><link>https://malys.github.io/blog/jvm/</link><pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate><guid>https://malys.github.io/blog/jvm/</guid><description>Compare different JVM to improve container performance.
-State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description></item><item><title>Keycloak for advanced developers</title><link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link><pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate><guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid><description>Keycloak / OIDC presentation.
-Slides</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keycloak on Malys | Portfolio</title>
+    <link>https://malys.github.io/tags/keycloak/</link>
+    <description>Recent content in keycloak on Malys | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://malys.github.io/tags/keycloak/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SAML 2.0 Overview</title>
+      <link>https://malys.github.io/blog/saml20/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/saml20/</guid>
+      <description> SAML 2.0 presentation.
+Slides   </description>
+    </item>
+    
+    <item>
+      <title>JVM</title>
+      <link>https://malys.github.io/blog/jvm/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/jvm/</guid>
+      <description>Compare different JVM to improve container performance.
+State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+    </item>
+    
+    <item>
+      <title>Keycloak for advanced developers</title>
+      <link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid>
+      <description> Keycloak / OIDC presentation.
+Slides   </description>
+    </item>
+    
+  </channel>
+</rss>
