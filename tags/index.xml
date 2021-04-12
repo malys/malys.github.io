@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://malys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chrome</title>
+      <link>https://malys.github.io/tags/chrome/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keycloak</title>
+      <link>https://malys.github.io/tags/keycloak/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/keycloak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>same-site</title>
+      <link>https://malys.github.io/tags/same-site/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/same-site/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>authentication</title>
@@ -26,15 +53,6 @@
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/tags/authorization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keycloak</title>
-      <link>https://malys.github.io/tags/keycloak/</link>
-      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/keycloak/</guid>
       <description></description>
     </item>
     

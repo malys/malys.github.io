@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Chrome SameSite feature</title>
+      <link>https://malys.github.io/blog/samesite/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/blog/samesite/</guid>
+      <description>Google Chrome: Same-site
+What is SameSite ? Heroku blog explains very well this feature.</description>
+    </item>
+    
+    <item>
       <title>SAML 2.0 Overview</title>
       <link>https://malys.github.io/blog/saml20/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
