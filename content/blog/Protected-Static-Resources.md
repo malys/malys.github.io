@@ -9,7 +9,7 @@ author: "Malys"
 type: "post"
 ---
 
-Google Chrome: Same-site
+OIDC for static resources
 
 ## OIDC for static resources
 

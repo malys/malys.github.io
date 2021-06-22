@@ -13,7 +13,7 @@
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/protected-static-resources/</guid>
-      <description>Google Chrome: Same-site
+      <description>OIDC for static resources
 OIDC for static resources Use case SPA consummes Rest API in the same business domain.</description>
     </item>
     
