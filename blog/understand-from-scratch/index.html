@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description.">
   <meta name="author" content="Malys">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <!-- plugins -->
   
@@ -98,12 +98,8 @@
           <p class="font-secondary">Published on Aug 19, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
             
-            
-
-<p>How &ldquo;from scratch&rdquo; works ?</p>
-
+            <p>How &ldquo;from scratch&rdquo; works ?</p>
 <h2 id="image">Image</h2>
-
 <pre><code>FROM scratch
 ENV PROXY_LISTEN=0.0.0.0:8443
 ENV PROXY_LISTEN_HTTP=0.0.0.0:8080
@@ -113,9 +109,7 @@ EXPOSE 8080 8443
 ADD keycloak-gatekeeper /
 ADD config.yaml /config.yaml
 CMD [&quot;/keycloak-gatekeeper&quot;,&quot;--config&quot;,&quot;config.yaml&quot;]
-</code></pre>
-
-<pre><code>d build -t keycloak-gatekeeper:scratch .
+</code></pre><pre><code>d build -t keycloak-gatekeeper:scratch .
 
 # No file except keycloak-gatekeeper
 dive keycloak-gatekeeper:scratch
@@ -141,10 +135,7 @@ dive keycloak-gatekeeper:scratch
     &quot;inefficientFiles&quot;: []
   }
 }
-</code></pre>
-
-<h2 id="container">Container</h2>
-
+</code></pre><h2 id="container">Container</h2>
 <pre><code># Run
 d run --rm keycloak-gatekeeper:scratch &amp;
 
@@ -172,12 +163,8 @@ drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..
 -rw-r--r--    1 root     root           174 Aug 12 12:35 hosts
 lrwxrwxrwx    1 root     root            12 Aug 12 12:35 mtab -&gt; /proc/mounts
 -rw-r--r--    1 root     root            92 Aug 12 12:35 resolv.conf
-</code></pre>
-
-<p>Containers includes standard linux folder structure (see specification).</p>
-
+</code></pre><p>Containers includes standard linux folder structure (see specification).</p>
 <h2 id="reference">Reference</h2>
-
 <ul>
 <li><a href="https://www.mgasch.com/post/scratch/">Scratch blog post</a></li>
 </ul>

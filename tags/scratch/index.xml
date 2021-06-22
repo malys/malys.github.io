@@ -6,11 +6,7 @@
     <description>Recent content in scratch on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://malys.github.io/tags/scratch/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/scratch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understand: From scratch</title>
       <link>https://malys.github.io/blog/understand-from-scratch/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://malys.github.io/blog/understand-from-scratch/</guid>
       <description>How &amp;ldquo;from scratch&amp;rdquo; works ?
-Image FROM scratch ENV PROXY_LISTEN=0.</description>
+Image FROM scratch ENV PROXY_LISTEN=0.0.0.0:8443 ENV PROXY_LISTEN_HTTP=0.</description>
     </item>
     
   </channel>

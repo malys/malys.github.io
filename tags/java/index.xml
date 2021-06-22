@@ -6,18 +6,14 @@
     <description>Recent content in java on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://malys.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eclipse Microprofile &#43; Quarkus: new Java player</title>
       <link>https://malys.github.io/blog/microprofile/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/microprofile/</guid>
-      <description> Microprofile + Quarkus; new Java player presentation.
+      <description>Microprofile + Quarkus; new Java player presentation.
 Slides  </description>
     </item>
     
@@ -37,7 +33,7 @@ State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for 
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/blog/java-container-optimization/</guid>
-      <description> Java container optimization.
+      <description>Java container optimization.
 Slides  </description>
     </item>
     

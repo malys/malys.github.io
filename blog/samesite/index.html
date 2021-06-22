@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description.">
   <meta name="author" content="Malys">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <!-- plugins -->
   
@@ -98,81 +98,49 @@
           <p class="font-secondary">Published on Apr 12, 2021 by <span class="text-primary">Malys</span></p>
           <div class="content">
             
-            
-
-<p>Google Chrome: Same-site</p>
-
-<h2 id="what-is-samesite">What is SameSite ?</h2>
-
+            <p>Google Chrome: Same-site</p>
+<h2 id="what-is-samesite-">What is SameSite ?</h2>
 <p><a href="https://blog.heroku.com/chrome-changes-samesite-cookie">Heroku blog</a> explains very well this feature.</p>
-
 <p>Google provides also a webpage with last <a href="https://www.chromium.org/updates/same-site">SameSite updates</a>.</p>
-
 <h2 id="use-cases">Use cases</h2>
-
-<h3 id="iframe-https-web-dev-samesite-cookie-recipes-content-within-an-lessiframegreater"><a href="https://web.dev/samesite-cookie-recipes/#content-within-an-lessiframegreater">IFrame</a></h3>
-
+<h3 id="iframehttpswebdevsamesite-cookie-recipescontent-within-an-lessiframegreater"><a href="https://web.dev/samesite-cookie-recipes/#content-within-an-lessiframegreater">IFrame</a></h3>
 <iframe  style="border: 0; width: 100%; height: 600px;" src="https://web.dev/samesite-cookie-recipes/#content-within-an-lessiframegreater"></iframe>
-
-<h3 id="post-data-https-web-dev-samesite-cookie-recipes-22unsafe-22-requests-across-sites"><a href="https://web.dev/samesite-cookie-recipes/#%22unsafe%22-requests-across-sites">POST data</a></h3>
-
+<h3 id="post-datahttpswebdevsamesite-cookie-recipes22unsafe22-requests-across-sites"><a href="https://web.dev/samesite-cookie-recipes/#%22unsafe%22-requests-across-sites">POST data</a></h3>
 <iframe  style="border: 0; width: 100%; height: 600px;" src="https://web.dev/samesite-cookie-recipes/#%22unsafe%22-requests-across-sites"></iframe>
-
 <h3 id="authentication">Authentication</h3>
-
 <p>Authentication is an sub-usecase of both and it&rsquo;s described in this <a href="https://auth0.com/blog/browser-behavior-changes-what-developers-need-to-know/">Auth0 blog post</a>.</p>
-
 <h2 id="browser-compatibility">Browser compatibility</h2>
-
 <p>THe SameSite solution is <a href="https://caniuse.com/mdn-http_headers_set-cookie_samesite_lax_default">not supported by all browsers</a> and can create problem in Safari.</p>
-
 <iframe  style="border: 0; width: 100%; height: 600px;" src="https://caniuse.com/mdn-http_headers_set-cookie_samesite_lax_default"></iframe>
-
-<h2 id="solutions-workaround">Solutions/Workaround</h2>
-
+<h2 id="solutionsworkaround">Solutions/Workaround</h2>
 <h3 id="cookie-duplication">Cookie duplication</h3>
-
 <p>As these changes to include None and update default behavior are still relatively new, there are inconsistencies amongst browsers as to how these changes are handled. You can refer to the updates page on chromium.org for the issues currently known, however it&rsquo;s not possible to say if this is exhaustive. While this is not ideal, there are workarounds you can employ during this transitionary phase. The general rule though is to treat incompatible clients as the special case. Do not create an exception for browsers implementing the newer rules.</p>
-
 <p>The first option is to set both the new and old style cookies:</p>
-
 <p>Set-cookie: 3pcookie=value; SameSite=None; Secure
-  Set-cookie: 3pcookie-legacy=value; Secure
-  Browsers implementing the newer behavior will set the cookie with the SameSite value, while other browsers may ignore or incorrectly set it. However, those same browsers will set the 3pcookie-legacy cookie. When processing included cookies, the site should first check for the presence of the new style cookie and if it&rsquo;s not found, then fallback to the legacy cookie.</p>
-
+Set-cookie: 3pcookie-legacy=value; Secure
+Browsers implementing the newer behavior will set the cookie with the SameSite value, while other browsers may ignore or incorrectly set it. However, those same browsers will set the 3pcookie-legacy cookie. When processing included cookies, the site should first check for the presence of the new style cookie and if it&rsquo;s not found, then fallback to the legacy cookie.</p>
 <h4 id="reverse-proxy-cookie-rewriting">Reverse Proxy cookie rewriting</h4>
-
 <p>Reverse Proxy can duplicate cookie and rewrite the second one to add <code>SameSite=none; Secure;</code> and not change legacy behavior.</p>
-
 <ul>
-<li><p>NGINX rule</p>
-
+<li>NGINX rule</li>
+</ul>
 <pre><code>proxy_cookie_path ~^/(.+)$ &quot;/$1; SameSite=none; Secure; &quot;;
-</code></pre></li>
-
-<li><p>Apache rule</p>
-
+</code></pre><ul>
+<li>Apache rule
 <ul>
 <li><a href="https://github.com/GoogleChromeLabs/samesite-examples/issues/4">Google Github issue</a></li>
 <li><a href="https://dev.to/pfreitag/samesite-cookies-with-apache-6bd">SameSite cookies with Apache - blog post</a></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="user-agent-detection">User agent detection</h3>
-
 <p>Alternatively at the point of sending the Set-Cookie header, you can choose to detect the client via the user agent string. Refer to the list of incompatible clients and then make use of an appropriate library for your platform, for example ua-parser-js library on Node.js. It&rsquo;s advisable to find a library to handle user agent detection as you most probably don&rsquo;t want to write those regular expressions yourself.</p>
-
 <p>The benefit of this approach is that it only requires making one change at the point of setting the cookie. However, the necessary warning here is that user agent sniffing is inherently fragile and may not catch all of the affected users.</p>
-
 <h3 id="keycloak-implementation">Keycloak implementation</h3>
-
-<p>Keycloak is impacted by <code>SameSite</code> feature when Keycloak adapter tries to checkSSO status to allow *Single Sign Out&rdquo;.
+<p>Keycloak is impacted by <code>SameSite</code> feature when Keycloak adapter tries to checkSSO status to allow *Single Sign Out&quot;.
 An <a href="https://github.com/keycloak/keycloak/blob/master/adapters/oidc/js/src/main/resources/login-status-iframe.html">Iframe</a> checks cookie and session state every 5 minutes.</p>
-
 <p>Keycloak generates 2 cookies for compatibility and reads them in <a href="https://www.keycloak.org/docs/latest/securing_apps/index.html#_modern_browse">Keycloak.js adapter</a> (see <a href="https://github.com/keycloak/keycloak/pull/6658/commits/6b658283da86f5f1cf53b555fca649ade2b9a789">Pull Request</a>)</p>
-
 <h2 id="proactiveness">Proactiveness</h2>
-
 <ul>
 <li><a href="https://www.browserstack.com/">Browserstack</a> test on beta version of browsers</li>
 <li><a href="https://portswigger.net/daily-swig/browsers">Technology intelligence</a></li>

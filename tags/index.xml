@@ -6,10 +6,33 @@
     <description>Recent content in Tags on Malys | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>image</title>
+      <link>https://malys.github.io/tags/image/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/image/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://malys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keycloak</title>
+      <link>https://malys.github.io/tags/keycloak/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/keycloak/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>static</title>
+      <link>https://malys.github.io/tags/static/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://malys.github.io/tags/static/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>chrome</title>
@@ -17,15 +40,6 @@
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://malys.github.io/tags/chrome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keycloak</title>
-      <link>https://malys.github.io/tags/keycloak/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/keycloak/</guid>
       <description></description>
     </item>
     

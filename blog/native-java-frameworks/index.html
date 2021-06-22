@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description.">
   <meta name="author" content="Malys">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <!-- plugins -->
   
@@ -98,129 +98,93 @@
           <p class="font-secondary">Published on Oct 10, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
             
-            
-
-<p>Compare different Java framework to generate native application.</p>
-
+            <p>Compare different Java framework to generate native application.</p>
 <h2 id="native">Native</h2>
-
 <p>Static executable provides best performance on runtime because it&rsquo;s compiled for a specific platform.</p>
-
-<p><img src="https://img.stackshare.io/stack/443157/m1edT_tX_400x400.jpg" alt="" /></p>
-
+<p><img src="https://img.stackshare.io/stack/443157/m1edT_tX_400x400.jpg" alt=""></p>
 <p>With Golang, it&rsquo;s possible to generate a minimalist executable. This solution is perfect for  architectures based on  microservices or functions.</p>
-
-<p><img src="https://miro.medium.com/max/655/1*eIW3gooOD5kApk7qw_82lg.png" alt="" /></p>
-
+<p><img src="https://miro.medium.com/max/655/1*eIW3gooOD5kApk7qw_82lg.png" alt=""></p>
 <p>Before GraalVM (Ahead of time compilation), Java wasn&rsquo;t be able to compete with GoLang or NodeJS. Deploying and running Java application on cloud platforms were not natural and easy.</p>
-
 <p>With the aim of proposing Java cloud solution, community developed <a href="https://www.e4developer.com/2018/06/02/the-rise-of-java-microframeworks/">microframeworks</a>.</p>
-
 <h2 id="candidates">Candidates</h2>
-
 <p>We have selected 4 frameworks to evaluate:</p>
-
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=675234315&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="700px" width="900px" allowfullscreen></iframe>
-
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1937_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"quarkus","geo":"","time":"today 12-m"},{"keyword":"helidon","geo":"","time":"today 12-m"},{"keyword":"micronaut","geo":"","time":"today 12-m"}],"category":5,"property":""}, {"exploreQuery":"cat=5&q=quarkus,helidon,micronaut&date=today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-
 <h3 id="code-comparative">Code comparative</h3>
-
 <ul>
-<li><p>Micronaut vs Quarkus</p>
-
-<pre><code class="language-diff">-import io.micronaut.http.annotation.Controller;
-+import javax.inject.Inject; 
- 
--@Controller(&quot;/conferences&quot;) 
-+@Path(&quot;/conferences&quot;)
-+@Produces(MediaType.APPLICATION_JSON)
-public class ConferenceController {
--    private final ConferenceService conferenceService;
-+    @Inject
-+    private ConferenceService conferenceService;
--    public ConferenceController(ConferenceService conferenceService) {
--        this.conferenceService = conferenceService;
--    }
--    @Get(&quot;/random&quot;) 
--    public Conference randomConf() { 
-+    @Path(&quot;/random&quot;)
-+    @GET
-+    public Conference randomConf() { 
-     return conferenceService.randomConf();
- }
-}
-</code></pre></li>
-
-<li><p>Quarkus vs Spring</p>
-
-<pre><code class="language-diff">-import io.micronaut.http.annotation.Controller;
-+import org.springframework.web.bind.annotation.RequestMapping;
- 
--@Controller(&quot;/conferences&quot;) 
-+@RestController
-public class ConferenceController {
-+    @Autowired
-+    private ConferenceService conferenceService;
--    private final ConferenceService conferenceService;
--    public ConferenceController(ConferenceService conferenceService) { 
--        this.conferenceService = conferenceService;
--    }
--
--    @Get(&quot;/random&quot;) 
--    public Conference randomConf() { 
-+    @RequestMapping(&quot;/conferences/random&quot;)
-+    public Conference randomConf() {
-     return conferenceService.randomConf();
- }
-}
-</code></pre></li>
+<li>Micronaut vs Quarkus</li>
 </ul>
-
-<p>There isn&rsquo;t a big difference about syntaxes. Each selected has been thought to be productive and make happy developers.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">-import io.micronaut.http.annotation.Controller;
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+import javax.inject.Inject; 
+</span><span style="color:#a6e22e"></span> 
+<span style="color:#f92672">-@Controller(&#34;/conferences&#34;) 
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+@Path(&#34;/conferences&#34;)
+</span><span style="color:#a6e22e">+@Produces(MediaType.APPLICATION_JSON)
+</span><span style="color:#a6e22e"></span> public class ConferenceController {
+<span style="color:#f92672">-    private final ConferenceService conferenceService;
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+    @Inject
+</span><span style="color:#a6e22e">+    private ConferenceService conferenceService;
+</span><span style="color:#a6e22e"></span><span style="color:#f92672">-    public ConferenceController(ConferenceService conferenceService) {
+</span><span style="color:#f92672">-        this.conferenceService = conferenceService;
+</span><span style="color:#f92672">-    }
+</span><span style="color:#f92672">-    @Get(&#34;/random&#34;) 
+</span><span style="color:#f92672">-    public Conference randomConf() { 
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+    @Path(&#34;/random&#34;)
+</span><span style="color:#a6e22e">+    @GET
+</span><span style="color:#a6e22e">+    public Conference randomConf() { 
+</span><span style="color:#a6e22e"></span>         return conferenceService.randomConf();
+     }
+ }
+</code></pre></div><ul>
+<li>Quarkus vs Spring</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">-import io.micronaut.http.annotation.Controller;
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+import org.springframework.web.bind.annotation.RequestMapping;
+</span><span style="color:#a6e22e"></span> 
+<span style="color:#f92672">-@Controller(&#34;/conferences&#34;) 
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+@RestController
+</span><span style="color:#a6e22e"></span> public class ConferenceController {
+<span style="color:#a6e22e">+    @Autowired
+</span><span style="color:#a6e22e">+    private ConferenceService conferenceService;
+</span><span style="color:#a6e22e"></span><span style="color:#f92672">-    private final ConferenceService conferenceService;
+</span><span style="color:#f92672">-    public ConferenceController(ConferenceService conferenceService) { 
+</span><span style="color:#f92672">-        this.conferenceService = conferenceService;
+</span><span style="color:#f92672">-    }
+</span><span style="color:#f92672">-
+</span><span style="color:#f92672">-    @Get(&#34;/random&#34;) 
+</span><span style="color:#f92672">-    public Conference randomConf() { 
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+    @RequestMapping(&#34;/conferences/random&#34;)
+</span><span style="color:#a6e22e">+    public Conference randomConf() {
+</span><span style="color:#a6e22e"></span>         return conferenceService.randomConf();
+     }
+ }
+</code></pre></div><p>There isn&rsquo;t a big difference about syntaxes. Each selected has been thought to be productive and make happy developers.</p>
 <h3 id="performance">Performance</h3>
-
 <p><em>Spring</em> is a very popular technology and some frameworks propose partial compatibility with Spring annotation.</p>
-
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=2096152561&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="1100px" allowfullscreen></iframe>
-
 <p>At then end, <em>Spring</em> compatibility is always limited and sometimes unstable. We recommend to not use them.
 <em>Helidon</em> is not yet mature and discarded.</p>
-
 <p><em>Spring</em> doesn&rsquo;t propose native image generation. Pivotal will integrate this feature in 5.3 release.</p>
-
 <p><em>Micronaut</em> is interesting but it isn&rsquo;t base on standard library. It&rsquo;s out of running.</p>
-
 <p><em>Quarkus</em> is young but it was quickly adopted. It&rsquo;s supported by RedHat and community and based on standard library (microprofile) and all RedHat stack (Vertx, &hellip;).
 In the opinion of performance, it&rsquo;s currently the best choice.</p>
-
 <p>Deal with Quarkus in depth!</p>
-
 <h3 id="quarkus">Quarkus</h3>
-
 <p>Quarkus is an Supersonic Subatomic Java framework.</p>
-
 <p>Quarkus rewrites library to be more efficient with AOT of <em>GraalVM</em>.</p>
-
 <p><img class="special-img-class" style="width:50%" src="/images/quarkus_how_to.png" /></p>
-
 <p>This method improves performance drastically.</p>
-
 <p><img class="special-img-class" style="width:50%" src="/images/quarkus_perf.png" /></p>
-
 <p>We have migrate a standard microprofile application to Quarkus.</p>
-
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1079046419&single=true" style="border:0px #ffffff none;" name="Stream" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1100px" allowfullscreen></iframe>
-
-<p>The new application performance is record breaking time of:
-* memory footprint
-* CPU
-* Size
-* Reactivity</p>
-
+<p>The new application performance is record breaking time of:</p>
+<ul>
+<li>memory footprint</li>
+<li>CPU</li>
+<li>Size</li>
+<li>Reactivity</li>
+</ul>
 <h4 id="limitations">Limitations</h4>
-
 <table>
 <thead>
 <tr>
@@ -228,47 +192,38 @@ In the opinion of performance, it&rsquo;s currently the best choice.</p>
 <th>Limited</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Dynamic Classloading</td>
 <td><a href="https://quarkus.io/guides/cdi-reference#limitations">CDI</a></td>
 </tr>
-
 <tr>
 <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/vm/multiple-language-support.html#invokedynamic">Invoke Dynamic</a></td>
 <td>Reflection</td>
 </tr>
-
 <tr>
 <td><a href="https://dzone.com/articles/javas-finalizer-is-still-there">Finalizer</a></td>
 <td><a href="https://www.baeldung.com/java-dynamic-proxies">Dymanic proxy</a></td>
 </tr>
-
 <tr>
 <td><a href="https://docs.oracle.com/javase/tutorial/essential/environment/security.html">Security Manager</a></td>
 <td>JNI</td>
 </tr>
-
 <tr>
 <td><a href="https://docs.oracle.com/javase/8/docs/platform/jvmti/jvmti.html">JVM TI, JMX, &hellip;</a></td>
 <td><a href="https://www.dummies.com/programming/java/how-to-use-static-initializers-in-java/">Static initializer</a></td>
 </tr>
-
 <tr>
 <td></td>
 <td>Native Windows</td>
 </tr>
-
 <tr>
 <td></td>
 <td>Native debug</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p><em>Quarkus + Microcontainer</em> is the future of Java for microservices or function.</p>
 
           </div>

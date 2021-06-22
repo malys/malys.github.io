@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description.">
   <meta name="author" content="Malys">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <!-- plugins -->
   
@@ -98,47 +98,27 @@
           <p class="font-secondary">Published on Aug 15, 2019 by <span class="text-primary">Malys</span></p>
           <div class="content">
             
-            
-
-<p>Container must include minimal dependencies to run Java application (microservice or legacy application).</p>
-
+            <p>Container must include minimal dependencies to run Java application (microservice or legacy application).</p>
 <h2 id="sizing">Sizing</h2>
-
 <p>Creating a minimalist image will decrease size and improve performance to download it. It will also limit disk storage on docker registry and docker host (Layer duplication, automatic pull of base image).</p>
-
 <p>The same service with less resources. (Ubuntu docker base image to alpine, Eclipse to distroless, Kubernetes to distroless)</p>
-
 <h2 id="security">Security</h2>
-
 <p>NIST recommendation: &ldquo;An image should only include the executable and libraries required by the app itself; all other OS functionality is provided by the OS kernel within the underlying host OS&rdquo;.</p>
-
 <p>Attack surface vulnerability are limited.
 Container immutability is guarantee (no manual connection into a container)
 Secure secret variables unreachable (no remote connection, no shell, no exposition)</p>
-
 <h2 id="useful-tools">Useful Tools</h2>
-
 <p>dive: image and layer size
 ex: dive image_name</p>
-
 <h2 id="state-of-play">State of play</h2>
-
 <h3 id="sizing-comparison">Sizing comparison</h3>
-
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=12271636&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="1000px" allowfullscreen></iframe>
-
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubchart?oid=1977800902&format=interactive" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="1000px" allowfullscreen></iframe>
-
 <h2 id="strategies">Strategies</h2>
-
 <h3 id="lightweight-distributions">Lightweight distributions</h3>
-
 <h4 id="base-image-comparison">Base image comparison</h4>
-
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlum2-EkQbcQiR0xuJAatsmiub8ky3MH8ZIjfVT-ZI6Iw2rwisZ9yolP1HPWhLX22afu22EVUUVLOd/pubhtml?gid=1361748970&single=true" style="border:0px #ffffff none;" name="Distribution" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="900px" width="1100px" allowfullscreen></iframe>
-
 <h5 id="distroless">Distroless</h5>
-
 <ul>
 <li>support of Java 8 and 11</li>
 <li>minimalist distribution</li>
@@ -149,17 +129,13 @@ ex: dive image_name</p>
 <li>Quick update</li>
 <li>Limited storage and networking</li>
 </ul>
-
 <h5 id="alpine">Alpine</h5>
-
 <ul>
 <li>most common base image (possibility to use public image)</li>
 <li>musl glibc ⇾ compatibility issue</li>
 <li>java image add glibc</li>
 </ul>
-
 <h5 id="glibc-vs-musl-c">GLIBC vs musl c</h5>
-
 <ul>
 <li>GLIBC: standard C library</li>
 <li>musl c
@@ -167,64 +143,51 @@ ex: dive image_name</p>
 Is musl compatible with glibc?
 Yes and no. At both the source and binary level, musl aims for a degree of feature-compatibility, but not bug-compatibility, with glibc. When applications that work with glibc fail to compile against musl, the cause will usually be one of the following:</li>
 </ul>
-
 <p>Assuming that including one header will cause symbols from another unrelated header to be exposed. This is an application bug, and fixing it is as simple as adding the missing #include directives.
 Using implementation details from the glibc headers which were not meant to be exposed to applications. This is also an application bug, and it can usually be fixed by search-and-replace (e.g. replacing __pid_t with pid_t in the source).
 Use of an interface that’s not implemented in musl. This can only be fixed by making the application’s use of the interface optional, or by extending musl to support the missing interface.
 Binary compatibility is much more limited, but it will steadily increase with new versions of musl. At present, some glibc-linked shared libraries can be loaded with musl, but all but the simplest glibc-linked applications will fail if musl is dropped-in in place of /lib/ld-linux.so.2.</p>
-
 <h3 id="contains-optimization">Contains optimization</h3>
-
 <p><em>New paradigm, Container becomes a part of project packaging.</em></p>
-
-<h4 id="docker-slim-https-github-com-docker-slim-docker-slim">Docker-slim: <a href="https://github.com/docker-slim/docker-slim">https://github.com/docker-slim/docker-slim</a></h4>
-
+<h4 id="docker-slim-httpsgithubcomdocker-slimdocker-slim">Docker-slim: <a href="https://github.com/docker-slim/docker-slim">https://github.com/docker-slim/docker-slim</a></h4>
 <ul>
-<li>Since December 2014</li>
-<li>8 contributors</li>
-
-<li><p>Goal:  Don&rsquo;t change anything in your Docker container image and minify it by up to 30x (and for compiled languages even more) making it secure too! (free and open source)
+<li>
+<p>Since December 2014</p>
+</li>
+<li>
+<p>8 contributors</p>
+</li>
+<li>
+<p>Goal:  Don&rsquo;t change anything in your Docker container image and minify it by up to 30x (and for compiled languages even more) making it secure too! (free and open source)
 Examples
 Keystore
 Based on distroless
 quarkus-keystore-distroless 78.8MB</p>
-
 <p>quarkus-keystore-disroless.slim 65.3MB</p>
-
 <p>Based on CentOS
 quarkus-keystore-centos 248MB</p>
-
 <p>quarkus-keystore-centos.slim 65.7MB</p>
-
 <p>Same target image size.</p>
-
 <p>Keycloak Gatekeeper (Static binary)
 Based on CentOS
 rh-sso/keycloak-gatekeeper60 200 Mo</p>
-
-<p>rh-sso/keycloak-gatekeeper60.slim 20 Mo :  d run -v /D/Developpement/archi/idm/keycloak-gatekeeper-test/config.yaml:/etc/keycloak-gatekeeper/config.yaml  rh-sso/keycloak-gatekeeper60.slim</p></li>
+<p>rh-sso/keycloak-gatekeeper60.slim 20 Mo :  d run -v /D/Developpement/archi/idm/keycloak-gatekeeper-test/config.yaml:/etc/keycloak-gatekeeper/config.yaml  rh-sso/keycloak-gatekeeper60.slim</p>
+</li>
 </ul>
-
 <h5 id="security-1">Security</h5>
-
 <ul>
 <li>selinux ?</li>
 <li>seccomp</li>
 <li>a CVE on image base does not always consequences to redeploy child image (CVE for curl but it&rsquo;s removed by docker-slim =&gt; final image doesn&rsquo;t change =&gt; deployment is no necessary ?)</li>
 </ul>
-
 <h5 id="automation">Automation</h5>
-
 <p>Run container for introspection on build. CI platform runs containers to containers</p>
-
-<h4 id="minicon-https-github-com-grycap-minicon">Minicon <a href="https://github.com/grycap/minicon">https://github.com/grycap/minicon</a></h4>
-
+<h4 id="minicon-httpsgithubcomgrycapminicon">Minicon <a href="https://github.com/grycap/minicon">https://github.com/grycap/minicon</a></h4>
 <ul>
 <li>Since November 2017</li>
 <li>3 contributors</li>
 <li>Goal: Reducing the footprint of one container is of special interest, to redistribute the container images.</li>
 </ul>
-
 <p><em>Not tested because it&rsquo;s the same tool as docker-slim but youngest and less supported.</em></p>
 
           </div>

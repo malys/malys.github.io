@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description.">
   <meta name="author" content="Malys">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <!-- plugins -->
   
@@ -98,23 +98,16 @@
           <p class="font-secondary">Published on Aug 19, 2018 by <span class="text-primary">Malys</span></p>
           <div class="content">
             
-            
-
-<p>Glossary for cryptography vocabulary.</p>
-
+            <p>Glossary for cryptography vocabulary.</p>
 <h2 id="pki">PKI</h2>
-
 <ul>
 <li>PKI Public Key Infrastructure</li>
 <li>CSR</li>
 <li>CLR</li>
 <li>X.509 standard that defines the format of public key certificates</li>
 </ul>
-
 <h2 id="standard">Standard</h2>
-
 <h3 id="public-key-cryptography-standards-pkcs">Public-Key Cryptography Standards (PKCS)</h3>
-
 <ul>
 <li>PKCS#1 <strong>unencrypted</strong> RSA key storage format.</li>
 <li>PKCS#7 Collection of <strong>public certificates</strong>.</li>
@@ -123,16 +116,12 @@
 <li>PKCS#11 Security token / Smart card / <strong>HSM access</strong>.</li>
 <li>PKCS#12 Certificate, Private key and probably a CA chain.</li>
 </ul>
-
 <h2 id="file-formats">File formats</h2>
-
 <ul>
 <li>DER Distinguished Encoding Rules - Binary format</li>
 <li>PEM Privacy Enhanced Mail - Text format</li>
 </ul>
-
 <h3 id="extensions">Extensions</h3>
-
 <ul>
 <li><strong>.pem</strong> (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between &ldquo;&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash;&rdquo; and &ldquo;&mdash;&ndash;END CERTIFICATE&mdash;&ndash;&rdquo;</li>
 <li><strong>.cer, .crt, .der</strong> – usually in binary DER form, but Base64-encoded certificates are common too (see .pem above)</li>
@@ -140,13 +129,9 @@
 <li><strong>.p12</strong> PKCS#12, may contain certificate(s) (public) and private keys (password protected)</li>
 <li><strong>.pfx</strong> PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)</li>
 </ul>
-
 <h2 id="algorithms">Algorithms</h2>
-
 <p>TODO</p>
-
 <h2 id="lexical">Lexical</h2>
-
 <ul>
 <li><a href="https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning">Certificate pinning</a>: store list of public after the 1st connection, not allow 2nd connection if different public keys</li>
 <li><a href="https://fr.wikipedia.org/wiki/Nonce_(cryptographie)">Nonce</a>: random number (one use only)</li>
@@ -154,15 +139,15 @@
 <li><a href="https://en.wikipedia.org/wiki/Pepper_(cryptography)">Pepper</a>: secret(salt) for platform</li>
 <li><a href="https://en.wikipedia.org/wiki/One-time_pad">One Time Pad</a>: Perfect secrecy</li>
 <li>Random number generator
-
 <ul>
 <li>HRNG: hardware (from hardware noise)</li>
 <li>PRNG: pseudo (software)
-
 <ul>
 <li>CSPRNG: Cryptographically secure (strong for cryptographic use)</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
           </div>
