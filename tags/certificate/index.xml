@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>certificate on Malys | Portfolio</title>
-    <link>https://malys.github.io/tags/certificate/</link>
-    <description>Recent content in certificate on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Certificate on Malys | Portfolio</title>
+    <link>./tags/certificate/</link>
+    <description>Recent content in Certificate on Malys | Portfolio</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/certificate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="./tags/certificate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cryptography glossary</title>
-      <link>https://malys.github.io/blog/cryptography-glossary/</link>
+      <link>./blog/cryptography-glossary/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/cryptography-glossary/</guid>
-      <description>Glossary for cryptography vocabulary.
-PKI  PKI Public Key Infrastructure CSR CLR X.</description>
+      <guid>./blog/cryptography-glossary/</guid>
+      <description>Glossary for cryptography vocabulary.&#xA;PKI PKI Public Key Infrastructure CSR CLR X.</description>
     </item>
-    
     <item>
       <title>Security resources</title>
-      <link>https://malys.github.io/blog/security/</link>
+      <link>./blog/security/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/security/</guid>
-      <description>Tools and web resources about cryptography.
-Tools Generic  Openssl Keytool  Windows  Keystore Explorer XCA  Libraries Blog posts  Pattern Cryptosense whitepapers  Videos     Awesome   </description>
+      <guid>./blog/security/</guid>
+      <description>Tools and web resources about cryptography.&#xA;Tools Generic Openssl Keytool Windows Keystore Explorer XCA Libraries Blog posts Pattern Cryptosense whitepapers Videos Awesome </description>
     </item>
-    
   </channel>
 </rss>

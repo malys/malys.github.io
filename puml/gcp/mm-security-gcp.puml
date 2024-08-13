@@ -1,0 +1,10 @@
+
+@startmindmap
+*[#LightCoral] Security Center
+** WebSecurity scanner
+** Container Threat scanner
+** Organization policy
+** VPC Service Control
+** Data Loss Prevention
+** Firewall Insight
+@endmindmap

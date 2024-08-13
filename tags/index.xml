@@ -2,298 +2,249 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Malys | Portfolio</title>
-    <link>https://malys.github.io/tags/</link>
+    <link>./tags/</link>
     <description>Recent content in Tags on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="./tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>image</title>
-      <link>https://malys.github.io/tags/image/</link>
+      <title>Image</title>
+      <link>./tags/image/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/image/</guid>
+      <guid>./tags/image/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>keycloak</title>
-      <link>https://malys.github.io/tags/keycloak/</link>
+      <title>Keycloak</title>
+      <link>./tags/keycloak/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/keycloak/</guid>
+      <guid>./tags/keycloak/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>static</title>
-      <link>https://malys.github.io/tags/static/</link>
+      <title>Static</title>
+      <link>./tags/static/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/static/</guid>
+      <guid>./tags/static/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>chrome</title>
-      <link>https://malys.github.io/tags/chrome/</link>
+      <title>Architecture</title>
+      <link>./tags/architecture/</link>
+      <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+      <guid>./tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plantuml</title>
+      <link>./tags/plantuml/</link>
+      <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+      <guid>./tags/plantuml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chrome</title>
+      <link>./tags/chrome/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/chrome/</guid>
+      <guid>./tags/chrome/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>same-site</title>
-      <link>https://malys.github.io/tags/same-site/</link>
+      <title>Same-Site</title>
+      <link>./tags/same-site/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/same-site/</guid>
+      <guid>./tags/same-site/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>authentication</title>
-      <link>https://malys.github.io/tags/authentication/</link>
+      <title>Authentication</title>
+      <link>./tags/authentication/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/authentication/</guid>
+      <guid>./tags/authentication/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>authorization</title>
-      <link>https://malys.github.io/tags/authorization/</link>
+      <title>Authorization</title>
+      <link>./tags/authorization/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/authorization/</guid>
+      <guid>./tags/authorization/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SAML</title>
-      <link>https://malys.github.io/tags/saml/</link>
+      <link>./tags/saml/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/saml/</guid>
+      <guid>./tags/saml/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>java</title>
-      <link>https://malys.github.io/tags/java/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jee</title>
-      <link>https://malys.github.io/tags/jee/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/jee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>quarkus</title>
-      <link>https://malys.github.io/tags/quarkus/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/quarkus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hacking</title>
-      <link>https://malys.github.io/tags/hacking/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/hacking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>resources</title>
-      <link>https://malys.github.io/tags/resources/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/resources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>comparative</title>
-      <link>https://malys.github.io/tags/comparative/</link>
+      <title>Java</title>
+      <link>./tags/java/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/comparative/</guid>
+      <guid>./tags/java/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hotspot</title>
-      <link>https://malys.github.io/tags/hotspot/</link>
+      <title>Jee</title>
+      <link>./tags/jee/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/jee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quarkus</title>
+      <link>./tags/quarkus/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/quarkus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>./tags/hacking/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resources</title>
+      <link>./tags/resources/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/resources/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comparative</title>
+      <link>./tags/comparative/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/hotspot/</guid>
+      <guid>./tags/comparative/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jvm</title>
-      <link>https://malys.github.io/tags/jvm/</link>
+      <title>Hotspot</title>
+      <link>./tags/hotspot/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/jvm/</guid>
+      <guid>./tags/hotspot/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>openJ9</title>
-      <link>https://malys.github.io/tags/openj9/</link>
+      <title>Jvm</title>
+      <link>./tags/jvm/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/openj9/</guid>
+      <guid>./tags/jvm/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>optimization</title>
-      <link>https://malys.github.io/tags/optimization/</link>
+      <title>OpenJ9</title>
+      <link>./tags/openj9/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/optimization/</guid>
+      <guid>./tags/openj9/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>computing</title>
-      <link>https://malys.github.io/tags/computing/</link>
+      <title>Optimization</title>
+      <link>./tags/optimization/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computing</title>
+      <link>./tags/computing/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/computing/</guid>
+      <guid>./tags/computing/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>quantum</title>
-      <link>https://malys.github.io/tags/quantum/</link>
+      <title>Quantum</title>
+      <link>./tags/quantum/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/quantum/</guid>
+      <guid>./tags/quantum/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>RH-SSO</title>
-      <link>https://malys.github.io/tags/rh-sso/</link>
+      <link>./tags/rh-sso/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/rh-sso/</guid>
+      <guid>./tags/rh-sso/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>docker</title>
-      <link>https://malys.github.io/tags/docker/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/docker/</guid>
+      <title>Docker</title>
+      <link>./tags/docker/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>framework</title>
-      <link>https://malys.github.io/tags/framework/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/framework/</guid>
+      <title>Framework</title>
+      <link>./tags/framework/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/framework/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>graalvm</title>
-      <link>https://malys.github.io/tags/graalvm/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/graalvm/</guid>
+      <title>Graalvm</title>
+      <link>./tags/graalvm/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>./tags/graalvm/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jre</title>
-      <link>https://malys.github.io/tags/jre/</link>
+      <title>Jre</title>
+      <link>./tags/jre/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/jre/</guid>
+      <guid>./tags/jre/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>scratch</title>
-      <link>https://malys.github.io/tags/scratch/</link>
+      <title>Scratch</title>
+      <link>./tags/scratch/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/scratch/</guid>
+      <guid>./tags/scratch/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>microcontainer</title>
-      <link>https://malys.github.io/tags/microcontainer/</link>
+      <title>Microcontainer</title>
+      <link>./tags/microcontainer/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/microcontainer/</guid>
+      <guid>./tags/microcontainer/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>certificate</title>
-      <link>https://malys.github.io/tags/certificate/</link>
+      <title>Certificate</title>
+      <link>./tags/certificate/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/certificate/</guid>
+      <guid>./tags/certificate/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>security</title>
-      <link>https://malys.github.io/tags/security/</link>
+      <title>Security</title>
+      <link>./tags/security/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/security/</guid>
+      <guid>./tags/security/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ssl</title>
-      <link>https://malys.github.io/tags/ssl/</link>
+      <title>Ssl</title>
+      <link>./tags/ssl/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/ssl/</guid>
+      <guid>./tags/ssl/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cryptography</title>
-      <link>https://malys.github.io/tags/cryptography/</link>
+      <title>Cryptography</title>
+      <link>./tags/cryptography/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/cryptography/</guid>
+      <guid>./tags/cryptography/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tools</title>
-      <link>https://malys.github.io/tags/tools/</link>
+      <title>Tools</title>
+      <link>./tags/tools/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/tags/tools/</guid>
+      <guid>./tags/tools/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

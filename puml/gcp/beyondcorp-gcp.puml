@@ -1,0 +1,51 @@
+
+
+@startuml(id=BeyondCorp)
+title Beyond Corp
+    !include _deps-gcp.iuml
+
+    !include <office/Users/mobile_user>
+    !include <gcp/Networking/Cloud_Load_Balancing>
+    !include <gcp/Management_Tools/Cloud_APIs>
+    !include <gcp/Security/Cloud_IAM>
+    !include <material/lock>
+    !include <office/Services/3rd_party_service>
+    !include <office/Security/active_directory>
+    !include <office/Services/access_services>
+
+    Entity(user,"Employee","person","cloud service consumer",GCP_COLOR,mobile_user,"person")
+    
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        Cloud_Load_Balancing(lb,"Load Balancer","Global Load Balancer")
+        user --> lb
+
+        VPCGroup(vpc,"VPC"){
+            Entity(iap,"Proxy","Identity Aware Proxy","",GCP_COLOR,lock,"IAP")
+            lb --> iap
+            
+            Cloud_IAM(iam,"IAM","Cloud IAM")
+            iap ..> iam
+            Entity(ad,"Directory","Active Directory","",GCP_COLOR,active_directory,"AD")
+            iap ..> ad
+            
+            Entity(acm,"Perimeter Management","Access Context Manager","",GCP_COLOR,access_services,"ACM")
+            iap ..> acm
+
+            Cloud_APIs(apis,"GCP services","gcp")
+            iap --> apis
+            Cloud_APIs(internalapis,"Extranet service","extranet")
+            iap --> internalapis
+
+            Entity(iappremise,"Proxy","Identity Aware Proxy","on premise proxy",GCP_COLOR,lock,"IAP Connector")
+            lb --> iappremise
+        }
+        lb -[hidden]d-> vpc
+    }
+
+    GenericGroup(premise,"On premise")#LightCoral{
+        vpc <--> premise : Cloud Connect
+        Entity(servicepremise,"Service","API","extranet",GCP_COLOR,3rd_party_service,"API")
+        iappremise --> servicepremise
+    }
+
+@enduml

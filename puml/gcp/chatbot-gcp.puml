@@ -1,0 +1,44 @@
+
+
+
+@startuml(id=chatbotWithDLP)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Chatbot with Data Loss Prevention
+!include _deps-gcp.iuml
+
+!include <gcp/Data_Analytics/Cloud_Dataflow>
+!include <gcp/AI_and_Machine_Learning/Dialog_Flow_Enterprise_Edition>
+!include <gcp/Compute/Cloud_Functions>
+!include <gcp/Data_Analytics/BigQuery>
+!include <gcp/Management_Tools/Cloud_APIs>
+!include <gcp/Management_Tools/Logging>
+!include <tupadr3/font-awesome/mobile_phone>
+
+Entity(mobile,"Chatbot","phone","",GCP_COLOR, mobile_phone,phone)
+
+GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+    Dialog_Flow_Enterprise_Edition(dialogflow,"Charbot Service","DialogFlow")
+    Cloud_Functions(ft,"Function","Cloud Function", "Technical")
+    Cloud_Functions(fb,"Function","Cloud Function", "Business")
+    Logging(log,"Logging","Cloud Logging","Secure centralization of logs")
+    BigQuery(bq,"Data WareHouse","Big Query")
+    Cloud_APIs(dlp,"Anonymization","DLP API","Mask sensitive data")
+
+    dialogflow -D-> ft
+    ft -L-> fb
+    fb -U-> dlp
+    dlp -U-> bq
+
+    dialogflow ..> log
+    ft ..> log
+    fb ..> log
+    dlp ..> log
+
+}
+
+mobile -L-> dialogflow
+@enduml

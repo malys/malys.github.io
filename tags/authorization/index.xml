@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>authorization on Malys | Portfolio</title>
-    <link>https://malys.github.io/tags/authorization/</link>
-    <description>Recent content in authorization on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Authorization on Malys | Portfolio</title>
+    <link>./tags/authorization/</link>
+    <description>Recent content in Authorization on Malys | Portfolio</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/authorization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="./tags/authorization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SAML 2.0 Overview</title>
-      <link>https://malys.github.io/blog/saml20/</link>
+      <link>./blog/saml20/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/saml20/</guid>
-      <description>SAML 2.0 presentation.
-Slides   </description>
+      <guid>./blog/saml20/</guid>
+      <description>SAML 2.0 presentation.&#xA;Slides </description>
     </item>
-    
     <item>
       <title>Keycloak for advanced developers</title>
-      <link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link>
+      <link>./blog/keycloak-for-advanced-developers/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid>
-      <description>Keycloak / OIDC presentation.
-Slides   </description>
+      <guid>./blog/keycloak-for-advanced-developers/</guid>
+      <description>Keycloak / OIDC presentation.&#xA;Slides </description>
     </item>
-    
   </channel>
 </rss>

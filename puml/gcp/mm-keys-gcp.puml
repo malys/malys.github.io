@@ -1,0 +1,11 @@
+
+@startmindmap
+*[#LightCoral] Key Management System
+** Customer Managed Encryption Key
+** Customer Supplied Encryption Key
+*** Cloud Storage
+*** GCE
+** Cloud HSM
+** External Key Management
+*** some partner products (double encryptions)
+@endmindmap

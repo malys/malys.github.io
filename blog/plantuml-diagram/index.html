@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en-us">  <meta charset="utf-8"/>
+  <title>Malys | Portfolio</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="description" content="This is meta description."/>
+  
+  <meta name="author" content="Malys"/>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css "/>
+  
+  <link rel="stylesheet" href="/plugins/slick/slick.css "/>
+  
+  <link rel="stylesheet" href="/plugins/themify-icons/themify-icons.css "/>
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" data-relative="./css/style.min.css"  integrity="" media="screen"/>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Malys | Portfolio"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/"> Home </a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/glossary">Glossary</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Architecture diagram as code</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/images/illustrations/page-title.svg" alt="illustrations" class="bg-shape-1 w-100"/>
+  <img src="/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2"/>
+  <img src="/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3"/>
+  <img src="/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4"/>
+  <img src="/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5"/>
+  <img src="/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6"/>
+  <img src="/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7"/>
+</section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Architecture diagram as code</h3>
+          <p class="font-secondary">Published on May 07, 2024 by <span class="text-primary">Malys</span></p>
+          <div class="content">
+            
+            <p>For many years, I use Plantuml to create architecture and other kind of diagram. I will the reason of this.</p>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<p>Pros:</p>
+<ul>
+<li>Plantuml is a DSL (Domain Specific Language) for diagrams that means that you can manage your diagrams as a code:
+<ul>
+<li>using GIT for versioning and sharing</li>
+<li>creating automation to generate easily diagrams (see my project <a href="https://github.com/malys/krepresentation">KRepresentation</a> to describe graphically Keycloak configuration)</li>
+<li>creating snippets</li>
+<li>reuse of code</li>
+</ul>
+</li>
+<li>Plantuml supports many kind of diagrams (C4, uml, components, mindmap &hellip;)</li>
+<li>VSCode extension is very fine</li>
+<li>Large community to share and find example of use
+<ul>
+<li>to create library (aws, GCP, &hellip;) of components</li>
+</ul>
+</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Plantuml diagrams look like 80&rsquo;s even if you customize it (see skinparams) but for me, the most important is to communicate easily with my team and not to be pretty.</li>
+<li>Plantuml layout is sometimes very tricky</li>
+<li>Syntaxes between  different kind of diagrams and external libraries are not the same and It&rsquo;s very to learn them and keep them in mind because I use often plantuml but not every day</li>
+<li>VSCode extension doesn&rsquo;t support intellisense, autocomplete</li>
+<li>Language Server Protocol is not available for plantuml</li>
+</ul>
+<p>For these last three points, it&rsquo;s very difficult for me to be productive using it.</p>
+<h2 id="productivity">Productivity</h2>
+<p>To solve my problem, I have created some snippets, templates and ium files to reuse some configuration anor d components.
+But it was not enough, because of new releases of plantuml or stdlib break syntaxes and my snippets were not compatible.
+Many times , community documentation was outdated.</p>
+<p>To my mind, the unique reference is source code of plantuml with its documentation.
+That &rsquo;s why I decided to parse documentation to generate static autocompletion.</p>
+<p><a href="https://github.com/malys/plantuml-helpers">Plantuml Helpers</a> associated with VSCode and <a href="https://github.com/rioj7/vscode-complete-from-file">vscode-complete-from-file</a> extension helps users to import more easily &lsquo;include&rsquo; and provides autocompletion for plantuml files and many official snippets.</p>
+<p><img src="https://raw.githubusercontent.com/malys/plantuml-helpers/main/media/readme_usage.gif" alt="In Action"></p>
+<p>It&rsquo;s not perfect but helpful and updated every week from official documentation.</p>
+<h2 id="gcp-diagram-in-the-real-world">GCP Diagram in the real world</h2>
+<p>GCP&rsquo;s stdlib for is not so rich as AWS stdlib that &rsquo;s why is a use a mix of both (GCP components with AWS grouping)</p>
+<h3 id="step-by-step-processus">Step by step processus</h3>
+<p>I have create iuml file to import easily my global configuration.</p>
+<pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml
+    !include &lt;awslib14/AWSCommon&gt;
+    !include &lt;awslib14/Groups/all&gt;
+    !include &lt;gcp/GCPCommon&gt;
+
+    skinparam linetype ortho
+    skinparam nodesep 230
+@enduml
+</code></pre>
+<p>After that, I have created my final plantuml file</p>
+<pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml(id=terraEarth)
+title Terra Earth
+    !include _deps-gcp.iuml
+
+    !include &lt;gcp/API_Management/Apigee_API_Platform&gt;
+    !include &lt;gcp/Compute/Kubernetes_Engine&gt;
+    !include &lt;gcp/Compute/Cloud_Run&gt;
+    !include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+
+    map Contraints #LightCoral {
+    Architecture =&gt; HA-DR, Hybrid
+    Components =&gt; IOT, BigData, Analytics, Monitoring
+    Security =&gt; Key, Secret, Identity, Remote Access
+    }
+    map Features #LightGreen{
+    ML =&gt; Predict Malfunction
+    API =&gt; public, internal portal
+    Cost =&gt; limited
+    }
+
+    !include cicd-gcp.puml
+    !include iot-gcp.puml
+
+    device -[hidden]-&gt; dev
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        Cloud_Load_Balancing(lb,&#34;Load Balancer&#34;,&#34;Global Load Balancer&#34;)
+
+        VPCGroup(vpc,&#34;VPC&#34;){
+            Apigee_API_Platform(apigee,&#34;API Management&#34;,&#34;APIGee&#34;)
+            lb --&gt; apigee
+            Kubernetes_Engine(kub,&#34;Orchestrator&#34;,&#34;Kubernetes&#34;,&#34;cluster auto-pilot&#34;)
+            apigee --&gt; kub
+            Cloud_Run(run,&#34;Managed Orchestrator&#34;,&#34;Cloud Run&#34;)
+            apigee --&gt; run
+        }
+
+    }
+@enduml
+
+
+@startmindmap
+    !include mm-security-gcp.puml
+    !include mm-monitoring-gcp.puml
+    !include mm-keys-gcp.puml
+    !include mm-cost-gcp.puml
+@endmindmap
+</code></pre>
+<h3 id="gcp-use-cases-examples">GCP Use Cases examples</h3>
+
+
+
+
+    
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+
+@startuml(id=BeyondCorp)
+title Beyond Corp
+    !include _deps-gcp.iuml
+
+    !include &lt;office/Users/mobile_user&gt;
+    !include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+    !include &lt;gcp/Management_Tools/Cloud_APIs&gt;
+    !include &lt;gcp/Security/Cloud_IAM&gt;
+    !include &lt;material/lock&gt;
+    !include &lt;office/Services/3rd_party_service&gt;
+    !include &lt;office/Security/active_directory&gt;
+    !include &lt;office/Services/access_services&gt;
+
+    Entity(user,&#34;Employee&#34;,&#34;person&#34;,&#34;cloud service consumer&#34;,GCP_COLOR,mobile_user,&#34;person&#34;)
+    
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        Cloud_Load_Balancing(lb,&#34;Load Balancer&#34;,&#34;Global Load Balancer&#34;)
+        user --&gt; lb
+
+        VPCGroup(vpc,&#34;VPC&#34;){
+            Entity(iap,&#34;Proxy&#34;,&#34;Identity Aware Proxy&#34;,&#34;&#34;,GCP_COLOR,lock,&#34;IAP&#34;)
+            lb --&gt; iap
+            
+            Cloud_IAM(iam,&#34;IAM&#34;,&#34;Cloud IAM&#34;)
+            iap ..&gt; iam
+            Entity(ad,&#34;Directory&#34;,&#34;Active Directory&#34;,&#34;&#34;,GCP_COLOR,active_directory,&#34;AD&#34;)
+            iap ..&gt; ad
+            
+            Entity(acm,&#34;Perimeter Management&#34;,&#34;Access Context Manager&#34;,&#34;&#34;,GCP_COLOR,access_services,&#34;ACM&#34;)
+            iap ..&gt; acm
+
+            Cloud_APIs(apis,&#34;GCP services&#34;,&#34;gcp&#34;)
+            iap --&gt; apis
+            Cloud_APIs(internalapis,&#34;Extranet service&#34;,&#34;extranet&#34;)
+            iap --&gt; internalapis
+
+            Entity(iappremise,&#34;Proxy&#34;,&#34;Identity Aware Proxy&#34;,&#34;on premise proxy&#34;,GCP_COLOR,lock,&#34;IAP Connector&#34;)
+            lb --&gt; iappremise
+        }
+        lb -[hidden]d-&gt; vpc
+    }
+
+    GenericGroup(premise,&#34;On premise&#34;)#LightCoral{
+        vpc &lt;--&gt; premise : Cloud Connect
+        Entity(servicepremise,&#34;Service&#34;,&#34;API&#34;,&#34;extranet&#34;,GCP_COLOR,3rd_party_service,&#34;API&#34;)
+        iappremise --&gt; servicepremise
+    }
+
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/beyondcorp-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+
+
+@startuml(id=chatbotWithDLP)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Chatbot with Data Loss Prevention
+!include _deps-gcp.iuml
+
+!include &lt;gcp/Data_Analytics/Cloud_Dataflow&gt;
+!include &lt;gcp/AI_and_Machine_Learning/Dialog_Flow_Enterprise_Edition&gt;
+!include &lt;gcp/Compute/Cloud_Functions&gt;
+!include &lt;gcp/Data_Analytics/BigQuery&gt;
+!include &lt;gcp/Management_Tools/Cloud_APIs&gt;
+!include &lt;gcp/Management_Tools/Logging&gt;
+!include &lt;tupadr3/font-awesome/mobile_phone&gt;
+
+Entity(mobile,&#34;Chatbot&#34;,&#34;phone&#34;,&#34;&#34;,GCP_COLOR, mobile_phone,phone)
+
+GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+    Dialog_Flow_Enterprise_Edition(dialogflow,&#34;Charbot Service&#34;,&#34;DialogFlow&#34;)
+    Cloud_Functions(ft,&#34;Function&#34;,&#34;Cloud Function&#34;, &#34;Technical&#34;)
+    Cloud_Functions(fb,&#34;Function&#34;,&#34;Cloud Function&#34;, &#34;Business&#34;)
+    Logging(log,&#34;Logging&#34;,&#34;Cloud Logging&#34;,&#34;Secure centralization of logs&#34;)
+    BigQuery(bq,&#34;Data WareHouse&#34;,&#34;Big Query&#34;)
+    Cloud_APIs(dlp,&#34;Anonymization&#34;,&#34;DLP API&#34;,&#34;Mask sensitive data&#34;)
+
+    dialogflow -D-&gt; ft
+    ft -L-&gt; fb
+    fb -U-&gt; dlp
+    dlp -U-&gt; bq
+
+    dialogflow ..&gt; log
+    ft ..&gt; log
+    fb ..&gt; log
+    dlp ..&gt; log
+
+}
+
+mobile -L-&gt; dialogflow
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/chatbot-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml(id=cicd)
+    !include _deps-gcp.iuml
+
+    !include &lt;gcp/Developer_Tools/Cloud_Source_Repositories&gt;
+    !include &lt;gcp/Developer_Tools/Cloud_Build&gt;
+    !include &lt;gcp/Developer_Tools/Container_Registry&gt;
+    !include &lt;gcp/Management_Tools/Cloud_Deployment_Manager&gt;
+    !include &lt;logos/google-developers&gt;
+
+    Entity(dev,&#34;Developper&#34;,&#34;Person&#34;,&#34;&#34;,GCP_COLOR,google-developers,&#34;Person&#34;)
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        dev -[hidden]R-&gt; gcp
+        Cloud_Source_Repositories(src,&#34;Source code repository&#34;,&#34;GIT&#34;)
+        note top of src: IAM
+        dev -R-&gt; src : Push source
+
+        Cloud_Build(build,&#34;Builder&#34;,&#34;Cloud build&#34;)
+        note top of build: Dynamic/Static Analysis + Tests\nSign Artifact
+        src -R-&gt; build: Build source
+
+        Container_Registry(artifact,&#34;Registry&#34;,&#34;Artifact registry&#34;)
+        note top of artifact: IAM
+        build -R-&gt; artifact : Push artifact
+
+        Cloud_Deployment_Manager(deploy,&#34;Deployment manager&#34;,&#34;Cloud deploy&#34;)
+        artifact -R-&gt; deploy: Deploy artifact
+        note top of deploy: Authorization Binary
+    }
+
+
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/cicd-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startuml(id=DataLake)
+title Data Lake
+    !include _deps-gcp.iuml
+
+    !include &lt;tupadr3/font-awesome-5/truck_loading&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_PubSub&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_Dataflow&gt;
+    !include &lt;gcp/Databases/Cloud_Bigtable&gt;
+    !include &lt;gcp/Compute/Compute_Engine&gt;
+    !include &lt;office/Servers/application_server&gt;
+    !include &lt;tupadr3/material/storage&gt;
+    !include &lt;gcp/Migration/Transfer_Appliance&gt;
+    !include &lt;office/Services/3rd_party_service&gt;
+    !include &lt;awslib14/DeveloperTools/CommandLineInterface&gt;
+    !include &lt;gcp/Storage/Cloud_Storage&gt;
+    !include &lt;gcp/Data_Analytics/BigQuery&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_Dataprep&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_Dataproc&gt;
+    !include &lt;gcp/Databases/Cloud_Spanner&gt;
+    !include &lt;gcp/AI_and_Machine_Learning/Cloud_AutoML&gt;
+
+    together{
+        GenericGroup(iot,&#34;IOT&#34;)#LightGreen{
+            Entity(sensor,&#34;Mobile device&#34;,&#34;trucks&#34;,&#34;Fleet&#34;,GCP_COLOR,truck_loading,&#34;sensor&#34;)
+        }
+
+        GenericGroup(onprem,&#34;On premise&#34;)#LightCoral{
+            Entity(server,&#34;Server&#34;,&#34;VM&#34;,&#34;Business service&#34;,GCP_COLOR ,application_server,&#34;application&#34;)
+            Entity(storage,&#34;Storage&#34;,&#34;disk&#34;,&#34;Users activities&#34;,GCP_COLOR ,storage,&#34;local&#34;)
+        }
+        iot -[hidden]R-&gt; onprem
+    }
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        onprem -R-&gt; gcp: &#34;Cloud Connect&#34;
+
+        Cloud_PubSub(broker,&#34;Broker&#34;,&#34;PubSub&#34;) #LightGreen
+        sensor =[#red]R=&gt; broker: &#34;Realtime&#34;
+        Cloud_Dataflow(df,&#34;Data Processing&#34;,&#34;Cloud Dataflow&#34;)  #LightGreen
+        broker -[#red]-&gt; df
+        Cloud_Bigtable(bt,&#34;Database&#34;,&#34;NoSQL Key/Value&#34;)  #LightGreen
+        df -[#red]-&gt; bt
+
+        Transfer_Appliance(txapp,&#34;Transfer&#34;,&#34;Transfer appliance&#34;,&#34;huge amount of data&#34;)
+        Entity(txservice,&#34;Transfer&#34;,&#34;Transfer service&#34;,&#34;small amount of data&#34;,GCP_COLOR ,3rd_party_service,&#34;service&#34;)
+        Entity(gsutil,&#34;Transfer&#34;,&#34;gsutil&#34;,&#34;sample of data&#34;,GCP_COLOR,CommandLineInterface,&#34;cli&#34;)
+        storage --&gt; txapp
+        storage --&gt; txservice
+        storage --&gt; gsutil
+
+        Cloud_Storage(gcs,&#34;Storage&#34;,&#34;Cloud Storage&#34;,&#34;data lake&#34;) #LightYellow
+        txapp --&gt; gcs
+        txservice --&gt; gcs
+        gsutil --&gt; gcs
+
+        BigQuery(bq,&#34;Data warehouse&#34;,&#34;BigQuery&#34;)
+        gcs --&gt; bq: &#34;Analyse&#34;
+        Cloud_Dataprep(dprep,&#34;Data Visualization&#34;,&#34;Cloud DataPrep&#34;)
+        gcs --&gt; dprep: &#34;Visualize&#34;
+        Cloud_Spanner(spanner,&#34;Database&#34;,&#34;Cloud Spanner&#34;)
+        gcs --&gt; spanner: &#34;Prediction&#34;
+        Cloud_Dataproc(dproc,&#34;Massive Processor&#34;,&#34;Cloud DataProc&#34;)
+        gcs --&gt; dproc: &#34;Bulk massive processing&#34;
+        Cloud_AutoML(automl,&#34;AI&#34;,&#34;Cloud AutoML&#34;)
+        gcs --&gt; automl: &#34;Mining&#34;
+    }
+
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/datalake-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startuml(id=hybridArchitecture)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Hybrid architecture
+!include _deps-gcp.iuml
+
+!include &lt;gcp/Compute/Cloud_Functions&gt;
+!include &lt;gcp/Networking/Cloud_Firewall_Rules&gt;
+!include &lt;gcp/Compute/Compute_Engine&gt;
+!include &lt;gcp/Storage/Cloud_Storage&gt;
+!include &lt;gcp/Compute/Kubernetes_Engine&gt;
+!include &lt;tupadr3/material/computer&gt;
+!include &lt;office/Servers/database_server&gt;
+!include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+!include &lt;awslib14/General/Internet&gt;
+
+
+Internet(internet,&#34;Internet&#34;,&#34;WAN&#34;)
+
+GenericGroup(gcp,&#34;Google Cloud Platform&#34;)#LightBlue{
+
+    Cloud_Load_Balancing(lb,&#34;Load Balancer&#34;,&#34;Global Load Balancer&#34;)
+
+    VPCGroup(vpc,&#34;VPC&#34;){
+        Compute_Engine(ce,&#34;VMs&#34;,&#34;GCE&#34;)
+        Kubernetes_Engine(ke,&#34;Kubernetes&#34;,&#34;GKE&#34;)
+    }
+    lb -[hidden]d-&gt; vpc
+}
+
+GenericGroup(premise,&#34;On premise&#34;)#LightCoral{
+    PublicSubnetGroup(public,&#34;Public Subnet&#34;){
+        Entity(vm,&#34;VMs&#34;,&#34;Virtualization&#34;,WhiteSmoke,&#34;&#34;,$computer)
+    }
+    PrivateSubnetGroup(private,&#34;Private Subnet&#34;){
+        Entity(db,&#34;Database&#34;,&#34;DBMS&#34;,WhiteSmoke,&#34;&#34;,$database_server)
+    }
+
+    public -[hidden]L-&gt; private
+
+}
+internet -D-&gt; lb
+vpc &lt;======R====&gt;premise : &#34;Cloud\nInterconnect&#34;
+lb -&gt; ce
+lb -&gt; ke
+lb -&gt; vm
+ce -&gt; db
+vm -&gt; db
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/hybrid-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startuml(id=IoT)
+    !include _deps-gcp.iuml
+
+    !include &lt;gcp/Internet_of_Things/Cloud_IoT_Core&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_PubSub&gt;
+    !include &lt;office/Devices/cell_phone_generic&gt;
+    !include &lt;gcp/Databases/Cloud_Bigtable&gt;
+    !include &lt;gcp/Data_Analytics/BigQuery&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_Dataflow&gt;
+    !include &lt;office/Servers/monitoring_sql_reporting_services&gt;
+    !include &lt;gcp/AI_and_Machine_Learning/AI_Platform&gt;
+    !include &lt;gcp/Compute/Cloud_Functions&gt;
+
+
+    Entity(device,&#34;Device&#34;,&#34;IoT&#34;,&#34;iot device&#34;,GCP_COLOR,cell_phone_generic,&#34;iot device&#34;)
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        device -[hidden]R-&gt; gcp 
+        Cloud_IoT_Core(iotcore,&#34;IoT Management&#34;,&#34;IoT&#34;,&#34;Data &amp; Configuration&#34;) #LightYellow
+        device -[#red]-&gt; iotcore : Data
+        iotcore -[#green]-&gt; device : Configuration
+
+        Cloud_PubSub(pubsub,&#34;Broker&#34;,&#34;Cloud PubSub&#34;)
+        iotcore -[#red]R-&gt; pubsub : Data
+
+        Cloud_Dataflow(df,&#34;Data transformation&#34;,&#34;Dataflow&#34;)
+        pubsub -[#red]R-&gt; df
+
+        BigQuery(bq,&#34;Data Warehouse&#34;,&#34;BigQuery&#34;)
+        df -[#red]R-&gt; bq: Analyse
+
+        AI_Platform(ai,&#34;AI processing&#34;,&#34;AI Platform&#34;)
+        bq -[#red]R-&gt; ai: Mining
+
+        Entity(report,&#34;Reporting&#34;,&#34;Data Studio&#34;,&#34;&#34;,GCP_COLOR,monitoring_sql_reporting_services,&#34;Data Studio&#34;)
+        ai -[#red]R-&gt; report: Visual reporting
+
+        Cloud_Bigtable(bt,&#34;Database&#34;,&#34;NoSQL Key/Value&#34;)
+        df -[#red]R-&gt; bt: Store\nhuge amount\nof data
+
+        ai -[#blue]-&gt; df: AI results
+        df -[#blue]-&gt; iotcore
+
+        Cloud_Functions(func,&#34;Apps&#34;,&#34;Cloud Functions&#34;,&#34;Configuration management&#34;)
+        func -[#green]-&gt; iotcore: Update configuration
+    }
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/iot-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startuml(id=MigrateDatabasetoCloudSpanner)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Migrate Database to Cloud Spanner
+    !include _deps-gcp.iuml
+
+    !include &lt;gcp/Databases/Cloud_SQL&gt;
+    !include &lt;gcp/Storage/Cloud_Storage&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_Dataflow&gt;
+    !include &lt;gcp/Databases/Cloud_Spanner&gt;
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        Cloud_SQL(db,&#34;Database&#34;,&#34;RDBMS&#34;)
+        Cloud_Storage(storage,&#34;Storage&#34;,&#34;Cloud storage&#34;)
+        Cloud_Dataflow(dataflow,&#34;Convertor&#34;,&#34;Cloud DataFlow&#34;)
+        Cloud_Spanner(spanner,&#34;Cloud Spanner&#34;,&#34;NoSQL&#34;)
+        db -&gt; storage : &#34;Export&#34;
+        storage -&gt; dataflow: &#34;Convert&#34;
+        dataflow -&gt; spanner: &#34;Import&#34;
+        
+        note right of spanner #LightCoral: Manage errors and replay
+    }
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/migrateSpanner-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startmindmap
+*[#LightCoral] Cost
+** GCE
+*** Commitment
+*** Spot nodes
+** Cost Calculator
+** Cloud storage
+*** Lifecycle
+@endmindmap
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/mm-cost-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startmindmap
+*[#LightCoral] Key Management System
+** Customer Managed Encryption Key
+** Customer Supplied Encryption Key
+*** Cloud Storage
+*** GCE
+** Cloud HSM
+** External Key Management
+*** some partner products (double encryptions)
+@endmindmap
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/mm-keys-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startmindmap
+*[#LightCoral] Monitoring
+** Cloud Logging
+*** Security Information and Event Management:SIEM
+**** Chronicle
+** VPC Flow Logs
+*** Subnet
+** Network Intelligence center
+** VPC Service Control
+*** Context Manager
+** Data Loss Prevention
+** Packet Mirroring
+*** Intrusion Detection System PaloAlto
+@endmindmap
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/mm-monitoring-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startmindmap
+*[#LightCoral] Security Center
+** WebSecurity scanner
+** Container Threat scanner
+** Organization policy
+** VPC Service Control
+** Data Loss Prevention
+** Firewall Insight
+@endmindmap
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/mm-security-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml(id=SRE)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title  Site Reliability Engineering - SRE
+
+state &#34;Product&#34; as P #Blue 
+state &#34;Development&#34; as D #Green 
+state &#34;Capacity Planning&#34; as C #LimeGreen 
+state &#34;Testing/Release Procedure&#34; as T #GreenYellow
+state &#34;Post Mortem/Root cause&#34; as R #gold
+state &#34;Incident Response&#34; as I #orange
+state &#34;Monitoring&#34; as M #red 
+
+P --&gt; D
+D --&gt; C
+C --&gt; T
+T --&gt; R
+R --&gt; I
+I --&gt; M
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/sre-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startuml(id=cardholder)
+title: full GCP 
+!include _deps-gcp.iuml
+
+!include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+!include &lt;gcp/Networking/Cloud_Armor&gt;
+!include &lt;gcp/Compute/Compute_Engine&gt;
+!include &lt;gcp/Compute/Kubernetes_Engine&gt;
+!include &lt;gcp/API_Management/Apigee_API_Platform&gt;
+!include &lt;awslib14/General/Client&gt;
+!include &lt;gcp/Developer_Tools/IDE_Plugins&gt;
+!include &lt;gcp/Security/Key_Management_Service&gt;
+
+Client(client,&#34;Customer&#34;,&#34;HTTP&#34;,&#34;Business API consummer&#34;) #LightSlateGrey
+
+GenericGroup(gcp,&#34;GCP&#34;) #MOTIVATION{
+
+    Cloud_Armor(waf,&#34;WAF&#34;,&#34;Cloud Armor&#34;,&#34;Public Web protection&#34;)
+    Cloud_Load_Balancing(globallb,&#34;Loadbalancer&#34;,&#34;HTTP loadbalancer&#34;,&#34;external&#34;)
+    waf &lt;.d.&gt; globallb
+
+    GenericGroup(pcidss,&#34;PCIDSS scope&#34;) #LightCoral{
+        package &#34;Project: Cardholder&#34;#Snow{
+            RegionGroup(euWS,&#34;Region: Europe West&#34;) #Lavender {
+                Apigee_API_Platform(apigeeW,&#34;API Gateway&#34;,&#34;apigee&#34;,&#34;regional&#34;)
+                IDE_Plugins(dlpW,&#34;Tokenizator&#34;,&#34;Data Loss Prevention&#34;,&#34;APIGee extension&#34;)
+            }
+
+            Key_Management_Service(kms,&#34;Key Manager&#34;,&#34;KMS with HSM&#34;,&#34;Multiregional&#34;)
+            note left #LightSalmon
+            The same DEK in multregional area to be able to decrypt reversible token
+            Generated token is a cypher of sensitive data. &lt;i&gt;Quid PCIDSS?&lt;/i&gt;
+            Use &lt;b&gt;CMKS&lt;/b&gt; to to manage key lifecycle 
+            end note
+
+            RegionGroup(euES,&#34;Region: Europe East&#34;) #MistyRose {
+                Apigee_API_Platform(apigeeE,&#34;API Gateway&#34;,&#34;apigee&#34;,&#34;regional&#34;)
+                IDE_Plugins(dlpE,&#34;Tokenizator&#34;,&#34;Data Loss Prevention&#34;,&#34;APIGee extension&#34;)
+            }
+
+            euWS -[hidden]d--&gt; euES
+
+            kms &lt;-d- dlpE:&#34;Unwrap DEK&#34;
+            kms &lt;-u- dlpW:&#34;Unwrap DEK&#34;
+            dlpE .d.&gt; apigeeE
+            dlpW .u.&gt; apigeeW
+        }
+    }
+
+    GenericGroup(nopcidss,&#34;Not PCIDSS scope&#34;) #LightSkyBlue{
+        package &#34;Project: Business&#34;#Snow{
+            RegionGroup(euW,&#34;Region: Europe West&#34;) #Lavender {
+                PrivateSubnetGroup(euSubW,&#34;Private Subnet&#34;){
+                    Cloud_Load_Balancing(euwlb,&#34;LoadBalancer &#34;,&#34;HTTP loadbalancer&#34;,&#34;internal&#34;)
+                    AutoScalingGroupGroup(migEuW,&#34;Managed Instance Group&#34;){
+                        Compute_Engine(bizEuW,&#34;Business logic&#34;,&#34;Virtual Machine&#34;,&#34;Business services&#34;)
+                    }
+                }
+            }
+
+            RegionGroup(euE,&#34;Region: Europe East&#34;) #MistyRose {
+                PrivateSubnetGroup(euSubE,&#34;Private Subnet&#34;){
+                    Kubernetes_Engine(gke,&#34;Orchestrator&#34;,&#34;Kubernetes cluster&#34;,&#34;private&#34;)
+                }
+            }
+            euW -[hidden]d--&gt; euE
+        }
+    }
+    
+    
+}
+
+client -R-&gt;  globallb
+
+pcidss &lt;--R--&gt; nopcidss #Red:&#34;VPC Service Connect&#34;
+globallb -R-&gt; apigeeE
+globallb -R-&gt; apigeeW
+apigeeW -R-&gt; euwlb
+apigeeE -R-&gt; gke
+
+euwlb -R-&gt; migEuW
+@enduml
+
+@startuml datavault like
+
+!include _deps-gcp.iuml
+
+!include &lt;awslib14/AWSCommon&gt;
+!include &lt;awslib14/Groups/all&gt;
+!include &lt;gcp/GCPCommon&gt;
+!include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+!include &lt;gcp/Networking/Cloud_Armor&gt;
+!include &lt;gcp/Compute/Compute_Engine&gt;
+!include &lt;gcp/Compute/Kubernetes_Engine&gt;
+!include &lt;gcp/API_Management/Apigee_API_Platform&gt;
+!include &lt;awslib14/General/Client&gt;
+!include &lt;gcp/Developer_Tools/IDE_Plugins&gt;
+!include &lt;gcp/Security/Key_Management_Service&gt;
+!include &lt;gcp/Compute/Cloud_Run&gt;
+!include &lt;gcp/Databases/Cloud_Spanner&gt;
+
+Client(client,&#34;Customer&#34;,&#34;HTTP&#34;,&#34;Business API consummer&#34;) #LightSlateGrey
+
+GenericGroup(gcp,&#34;GCP&#34;) #MOTIVATION{
+
+    Cloud_Armor(waf,&#34;WAF&#34;,&#34;Cloud Armor&#34;,&#34;Public Web protection&#34;)
+    Cloud_Load_Balancing(globallb,&#34;Loadbalancer&#34;,&#34;HTTP loadbalancer&#34;,&#34;external&#34;)
+    waf &lt;.d.&gt; globallb
+    client -R-&gt;  globallb
+
+    GenericGroup(pcidss,&#34;PCIDSS scope&#34;) #LightCoral{
+        package &#34;Project: Cardholder&#34;#Snow{
+
+            RegionGroup(euWS,&#34;Region: Europe West&#34;) #Lavender {
+                Apigee_API_Platform(apigeeW,&#34;API Gateway&#34;,&#34;apigee&#34;,&#34;regional&#34;)
+                Cloud_Run(dtvtW,&#34;Tokenizator&#34;,&#34;DataVault&#34;,&#34;Java microservice&#34;)
+                note right #LightSalmon
+                Create UUID/card number unique pair
+                end note
+            }
+
+            together {
+                Key_Management_Service(kms,&#34;Key Manager&#34;,&#34;KMS&#34;,&#34;Multiregional&#34;)
+                note right #LightSalmon
+                The same DEK in multregional area to be able to decrypt reversible token
+                Use &lt;b&gt;CMKS&lt;/b&gt; to to manage key lifecycle 
+                end note
+
+                Cloud_Spanner(db,&#34;Database&#34;,&#34;Cloud Spanner&#34;,&#34;multiregional&#34;)
+            }
+
+            RegionGroup(euES,&#34;Region: Europe East&#34;) #MistyRose {
+                Apigee_API_Platform(apigeeE,&#34;API Gateway&#34;,&#34;apigee&#34;,&#34;regional&#34;)
+                Cloud_Run(dtvtE,&#34;Tokenizator&#34;,&#34;DataVault&#34;,&#34;Java microservice&#34;)
+            }
+
+            euWS -[hidden]d--&gt; euES
+            db -[hidden]r--&gt; kms
+
+            kms &lt;-d- dtvtE:&#34;Unwrap DEK&#34;
+            kms &lt;-u- dtvtW:&#34;Unwrap DEK&#34;
+            dtvtE &lt;-d- apigeeE:&#34;un/tokenize service&#34;
+            dtvtW &lt;-u- apigeeW:&#34;un/tokenize service&#34;
+
+            db &lt;-d-&gt; dtvtE 
+            db &lt;-u-&gt; dtvtW 
+        }
+    }
+
+    GenericGroup(nopcidss,&#34;Not PCIDSS scope&#34;) #LightSkyBlue{
+        package &#34;Project: Business&#34;#Snow{
+            RegionGroup(euW,&#34;Region: Europe West&#34;) #Lavender {
+                PrivateSubnetGroup(euSubW,&#34;Private Subnet&#34;){
+                    Cloud_Load_Balancing(euwlb,&#34;LoadBalancer &#34;,&#34;HTTP loadbalancer&#34;,&#34;internal&#34;)
+                    AutoScalingGroupGroup(migEuW,&#34;Managed Instance Group&#34;){
+                        Compute_Engine(bizEuW,&#34;Business logic&#34;,&#34;Virtual Machine&#34;,&#34;Business services&#34;)
+                    }
+                }
+            }
+
+            RegionGroup(euE,&#34;Region: Europe East&#34;) #MistyRose {
+                PrivateSubnetGroup(euSubE,&#34;Private Subnet&#34;){
+                    Kubernetes_Engine(gke,&#34;Orchestrator&#34;,&#34;Kubernetes cluster&#34;,&#34;private&#34;)
+                }
+            }
+            euW -[hidden]d--&gt; euE
+        }
+    }
+}
+
+
+pcidss &lt;--R--&gt; nopcidss #Red:&#34;VPC Service Connect&#34;
+globallb -R-&gt; apigeeE
+globallb -R-&gt; apigeeW
+apigeeW -R-&gt; euwlb:&#34;business service&#34;
+apigeeE -R-&gt; gke:&#34;business service&#34;
+
+euwlb -R-&gt; migEuW
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/uc-cardholder-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml(id=healthCare)
+title Health Care
+
+    map Contraints #LightCoral {
+    Architecture =&gt; HA-DR, Hybrid
+    Components =&gt; IOT, BigData, Analytics, Monitoring
+    Security =&gt; Key, Secret, Identity, Remote Access
+    }
+    map Features #LightGreen{
+    ML =&gt; Predict Malfunction
+    API =&gt; public, internal portal
+    Cost =&gt; limited
+    }
+
+    !include cicd-gcp.puml
+    !include iot-gcp.puml
+
+    device -[hidden]-&gt; dev
+
+@enduml
+
+
+
+@startmindmap
+    !include mm-security-gcp.puml
+    !include mm-monitoring-gcp.puml
+    !include mm-keys-gcp.puml
+    !include mm-cost-gcp.puml
+@endmindmap
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/uc-healthcare-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml(id=terraEarth)
+title Terra Earth
+    !include _deps-gcp.iuml
+
+    !include &lt;gcp/API_Management/Apigee_API_Platform&gt;
+    !include &lt;gcp/Compute/Kubernetes_Engine&gt;
+    !include &lt;gcp/Compute/Cloud_Run&gt;
+    !include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+
+    map Contraints #LightCoral {
+    Architecture =&gt; HA-DR, Hybrid
+    Components =&gt; IOT, BigData, Analytics, Monitoring
+    Security =&gt; Key, Secret, Identity, Remote Access
+    }
+    map Features #LightGreen{
+    ML =&gt; Predict Malfunction
+    API =&gt; public, internal portal
+    Cost =&gt; limited
+    }
+
+    !include cicd-gcp.puml
+    !include iot-gcp.puml
+
+    device -[hidden]-&gt; dev
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        Cloud_Load_Balancing(lb,&#34;Load Balancer&#34;,&#34;Global Load Balancer&#34;)
+
+        VPCGroup(vpc,&#34;VPC&#34;){
+            Apigee_API_Platform(apigee,&#34;API Management&#34;,&#34;APIGee&#34;)
+            lb --&gt; apigee
+            Kubernetes_Engine(kub,&#34;Orchestrator&#34;,&#34;Kubernetes&#34;,&#34;cluster auto-pilot&#34;)
+            apigee --&gt; kub
+            Cloud_Run(run,&#34;Managed Orchestrator&#34;,&#34;Cloud Run&#34;)
+            apigee --&gt; run
+        }
+
+    }
+@enduml
+
+
+@startmindmap
+    !include mm-security-gcp.puml
+    !include mm-monitoring-gcp.puml
+    !include mm-keys-gcp.puml
+    !include mm-cost-gcp.puml
+@endmindmap
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/uc-terraearth-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">
+@startuml(id=ServerlessVideoProcessing)
+title Serverless video processing
+    !include _deps-gcp.iuml
+
+    !include &lt;office/Servers/application_server&gt;
+    !include &lt;awslib14/General/Client&gt;
+    !include &lt;gcp/Data_Analytics/Cloud_PubSub&gt;
+    !include &lt;gcp/Storage/Cloud_Storage&gt;
+    !include &lt;gcp/Compute/Cloud_Functions&gt;
+    !include &lt;gcp/AI_and_Machine_Learning/Cloud_Vision_API&gt;
+    !include &lt;gcp/Management_Tools/Cloud_APIs&gt;
+    !include &lt;gcp/AI_and_Machine_Learning/Cloud_Video_Intelligence_API&gt;
+    !include &lt;gcp/Data_Analytics/BigQuery&gt;
+    !include &lt;office/Servers/monitoring_sql_reporting_services&gt;
+
+    together{
+        Entity(videoinlive,&#34;Video Acquisition&#34;,&#34;camera&#34;,&#34;inlive acquisition&#34;,GCP_COLOR,application_server,&#34;source&#34;)
+        Client(videopreprocessed,&#34;Video Acquisition&#34;,&#34;camera&#34;,&#34;offline acquisition&#34;)
+        videoinlive -[hidden]U-&gt; videopreprocessed
+    }
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+        together{
+            Cloud_PubSub(pubsub,&#34;Broker&#34;,&#34;Cloud Pub Sub&#34;)
+            videoinlive -[#red]R-&gt; pubsub: streaming
+            Cloud_Storage(storage,&#34;Storage&#34;,&#34;Cloud Storage&#34;)
+            videopreprocessed --&gt; storage: copying
+
+            pubsub -[hidden]U-&gt; storage
+        }
+
+        Cloud_Functions(func,&#34;Function&#34;,&#34;Cloud Function&#34;)
+        pubsub -R-&gt; func: Trigger
+        storage -R-&gt; func: Trigger
+        together{
+            Cloud_Vision_API(visionapi,&#34;Image Processing&#34;,&#34;Cloud Vision API&#34;)
+            func .D.-&gt; visionapi : image processing
+
+            Cloud_APIs(dlp,&#34;Sensitive Data&#34;,&#34;Data Loss Prevention&#34;)
+            func .D.-&gt; dlp : sensitive data masking
+
+            Cloud_Video_Intelligence_API(videoapi,&#34;Video Processing&#34;,&#34;Cloud Video Intelligence API&#34;)
+            func .D.-&gt; videoapi : image processing
+        }
+        BigQuery(bq,&#34;Data Warehouse&#34;,&#34;BigQuery&#34;)
+        func -R-&gt; bq: analysing
+
+        Entity(report,&#34;Reporting&#34;,&#34;Data Studio&#34;,&#34;&#34;,GCP_COLOR,monitoring_sql_reporting_services,&#34;Data Studio&#34;)
+        bq -R-&gt; report
+
+    }
+
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/video-gcp.png />
+
+
+
+
+
+    <pre tabindex="0"><code class="language-puml" data-lang="puml">@startuml(id=Website)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Website
+    !include _deps-gcp.iuml
+
+    !include &lt;awslib14/General/Mobileclient&gt;
+    !include &lt;gcp/Networking/Cloud_Load_Balancing&gt;
+    !include &lt;gcp/Networking/Cloud_Armor&gt;
+    !include &lt;gcp/Compute/App_Engine&gt;
+    !include &lt;gcp/Networking/Cloud_CDN&gt;
+    !include &lt;gcp/Storage/Cloud_Storage&gt;
+    !include &lt;gcp/Compute/Compute_Engine&gt;
+    !include &lt;gcp/Databases/Cloud_SQL&gt;
+    !include &lt;gcp/Databases/Cloud_Firestore&gt;
+    !include &lt;awslib14/GroupIcons/AutoScalingGroup&gt;
+    !include &lt;awslib14/Groups/VPC&gt;
+
+    Mobileclient(client,&#34;Client&#34;,&#34;browser&#34;)
+
+    GenericGroup(gcp,&#34;Google Cloud Platform&#34;) #LightBlue{
+
+        together{
+            Cloud_Load_Balancing(glb,&#34;Load Balancer&#34;,&#34;Global Load Balancer&#34;)
+            client -R-&gt; glb
+            Cloud_Armor(waf,&#34;WAF&#34;,&#34;Cloud Armor&#34;)
+            Cloud_CDN(cdn,&#34;Local CDN&#34;,&#34;CDNs&#34;)
+            
+        }
+
+        glb .U.&gt; waf
+        glb .D.&gt; cdn
+        
+        VPCGroup(vpc,&#34;VPC&#34;)#SkyBlue{
+            Cloud_Storage(static,&#34;Statics&#34;,&#34;Cloud Storage&#34;)
+            glb --&gt; static
+
+            Cloud_Load_Balancing(ilb,&#34;Internal Load Balancer&#34;,&#34;Regional Load Balancer&#34;)
+            glb -R-&gt; ilb
+            together{
+                GenericGroup(mig,&#34;MIG&#34;) #AliceBlue{
+                    Compute_Engine(gce,&#34;Server Web&#34;,&#34;VMs&#34;)
+                }
+                App_Engine(gae,&#34;Server Web&#34;,&#34;Google App Engine&#34;)
+
+                mig -[hidden]U-&gt; gae
+            }
+
+            ilb -R-&gt; gae
+            ilb -R-&gt; mig
+
+            together{
+                Cloud_SQL(rdbms,&#34;Database&#34;,&#34;SQL&#34;)
+                Cloud_Firestore(nosql,&#34;Database&#34;,&#34;NoSQL&#34;)
+                rdbms -[hidden]L-&gt; nosql
+            }
+            mig --&gt; rdbms
+            gae --&gt; rdbms
+            gae --&gt; nosql
+            mig --&gt; nosql
+        }
+    }
+
+@enduml
+</code></pre><img class='special-img-class' style='width:70%' src=/images/puml/website-gcp.png />
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+  </div>
+</footer>
+
+
+<!-- Google Map API -->
+<script src="./"></script>
+<!-- JS Plugins -->
+
+<script src="/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/plugins/slick/slick.min.js"></script>
+
+<script src="/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js" data-relative="./js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-149870475-1', 'auto');
+  ga('send', 'pageview');
+</script></body>
+    
+</html>

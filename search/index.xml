@@ -2,9 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Search on Malys | Portfolio</title>
-    <link>https://malys.github.io/search/</link>
+    <link>./search/</link>
     <description>Recent content in Search on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://malys.github.io/search/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="./search/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

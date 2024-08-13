@@ -1,0 +1,32 @@
+@startuml(id=cicd)
+    !include _deps-gcp.iuml
+
+    !include <gcp/Developer_Tools/Cloud_Source_Repositories>
+    !include <gcp/Developer_Tools/Cloud_Build>
+    !include <gcp/Developer_Tools/Container_Registry>
+    !include <gcp/Management_Tools/Cloud_Deployment_Manager>
+    !include <logos/google-developers>
+
+    Entity(dev,"Developper","Person","",GCP_COLOR,google-developers,"Person")
+
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        dev -[hidden]R-> gcp
+        Cloud_Source_Repositories(src,"Source code repository","GIT")
+        note top of src: IAM
+        dev -R-> src : Push source
+
+        Cloud_Build(build,"Builder","Cloud build")
+        note top of build: Dynamic/Static Analysis + Tests\nSign Artifact
+        src -R-> build: Build source
+
+        Container_Registry(artifact,"Registry","Artifact registry")
+        note top of artifact: IAM
+        build -R-> artifact : Push artifact
+
+        Cloud_Deployment_Manager(deploy,"Deployment manager","Cloud deploy")
+        artifact -R-> deploy: Deploy artifact
+        note top of deploy: Authorization Binary
+    }
+
+
+@enduml

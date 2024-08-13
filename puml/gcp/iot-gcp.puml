@@ -1,0 +1,48 @@
+
+@startuml(id=IoT)
+    !include _deps-gcp.iuml
+
+    !include <gcp/Internet_of_Things/Cloud_IoT_Core>
+    !include <gcp/Data_Analytics/Cloud_PubSub>
+    !include <office/Devices/cell_phone_generic>
+    !include <gcp/Databases/Cloud_Bigtable>
+    !include <gcp/Data_Analytics/BigQuery>
+    !include <gcp/Data_Analytics/Cloud_Dataflow>
+    !include <office/Servers/monitoring_sql_reporting_services>
+    !include <gcp/AI_and_Machine_Learning/AI_Platform>
+    !include <gcp/Compute/Cloud_Functions>
+
+
+    Entity(device,"Device","IoT","iot device",GCP_COLOR,cell_phone_generic,"iot device")
+
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        device -[hidden]R-> gcp 
+        Cloud_IoT_Core(iotcore,"IoT Management","IoT","Data & Configuration") #LightYellow
+        device -[#red]-> iotcore : Data
+        iotcore -[#green]-> device : Configuration
+
+        Cloud_PubSub(pubsub,"Broker","Cloud PubSub")
+        iotcore -[#red]R-> pubsub : Data
+
+        Cloud_Dataflow(df,"Data transformation","Dataflow")
+        pubsub -[#red]R-> df
+
+        BigQuery(bq,"Data Warehouse","BigQuery")
+        df -[#red]R-> bq: Analyse
+
+        AI_Platform(ai,"AI processing","AI Platform")
+        bq -[#red]R-> ai: Mining
+
+        Entity(report,"Reporting","Data Studio","",GCP_COLOR,monitoring_sql_reporting_services,"Data Studio")
+        ai -[#red]R-> report: Visual reporting
+
+        Cloud_Bigtable(bt,"Database","NoSQL Key/Value")
+        df -[#red]R-> bt: Store\nhuge amount\nof data
+
+        ai -[#blue]-> df: AI results
+        df -[#blue]-> iotcore
+
+        Cloud_Functions(func,"Apps","Cloud Functions","Configuration management")
+        func -[#green]-> iotcore: Update configuration
+    }
+@enduml

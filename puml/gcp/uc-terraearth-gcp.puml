@@ -1,0 +1,47 @@
+@startuml(id=terraEarth)
+title Terra Earth
+    !include _deps-gcp.iuml
+
+    !include <gcp/API_Management/Apigee_API_Platform>
+    !include <gcp/Compute/Kubernetes_Engine>
+    !include <gcp/Compute/Cloud_Run>
+    !include <gcp/Networking/Cloud_Load_Balancing>
+
+    map Contraints #LightCoral {
+    Architecture => HA-DR, Hybrid
+    Components => IOT, BigData, Analytics, Monitoring
+    Security => Key, Secret, Identity, Remote Access
+    }
+    map Features #LightGreen{
+    ML => Predict Malfunction
+    API => public, internal portal
+    Cost => limited
+    }
+
+    !include cicd-gcp.puml
+    !include iot-gcp.puml
+
+    device -[hidden]-> dev
+
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        Cloud_Load_Balancing(lb,"Load Balancer","Global Load Balancer")
+
+        VPCGroup(vpc,"VPC"){
+            Apigee_API_Platform(apigee,"API Management","APIGee")
+            lb --> apigee
+            Kubernetes_Engine(kub,"Orchestrator","Kubernetes","cluster auto-pilot")
+            apigee --> kub
+            Cloud_Run(run,"Managed Orchestrator","Cloud Run")
+            apigee --> run
+        }
+
+    }
+@enduml
+
+
+@startmindmap
+    !include mm-security-gcp.puml
+    !include mm-monitoring-gcp.puml
+    !include mm-keys-gcp.puml
+    !include mm-cost-gcp.puml
+@endmindmap

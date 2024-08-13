@@ -1,0 +1,29 @@
+@startuml(id=healthCare)
+title Health Care
+
+    map Contraints #LightCoral {
+    Architecture => HA-DR, Hybrid
+    Components => IOT, BigData, Analytics, Monitoring
+    Security => Key, Secret, Identity, Remote Access
+    }
+    map Features #LightGreen{
+    ML => Predict Malfunction
+    API => public, internal portal
+    Cost => limited
+    }
+
+    !include cicd-gcp.puml
+    !include iot-gcp.puml
+
+    device -[hidden]-> dev
+
+@enduml
+
+
+
+@startmindmap
+    !include mm-security-gcp.puml
+    !include mm-monitoring-gcp.puml
+    !include mm-keys-gcp.puml
+    !include mm-cost-gcp.puml
+@endmindmap

@@ -1,0 +1,13 @@
+---
+title: Graceful degradation
+
+tags: [architecture,gcp]
+type: "post"
+date: "2023-01-01"
+ref: url
+description: fr
+acronyms: GD
+---
+
+Le système est résilient à la panne en fournissant un système dégradé qui fonctionne quand même.
+ex: Service des virements HS -> portail de la banque fonctionne mais l’onglet virement a disparu.

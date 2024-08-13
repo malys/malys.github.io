@@ -1,0 +1,181 @@
+
+@startuml(id=cardholder)
+title: full GCP 
+!include _deps-gcp.iuml
+
+!include <gcp/Networking/Cloud_Load_Balancing>
+!include <gcp/Networking/Cloud_Armor>
+!include <gcp/Compute/Compute_Engine>
+!include <gcp/Compute/Kubernetes_Engine>
+!include <gcp/API_Management/Apigee_API_Platform>
+!include <awslib14/General/Client>
+!include <gcp/Developer_Tools/IDE_Plugins>
+!include <gcp/Security/Key_Management_Service>
+
+Client(client,"Customer","HTTP","Business API consummer") #LightSlateGrey
+
+GenericGroup(gcp,"GCP") #MOTIVATION{
+
+    Cloud_Armor(waf,"WAF","Cloud Armor","Public Web protection")
+    Cloud_Load_Balancing(globallb,"Loadbalancer","HTTP loadbalancer","external")
+    waf <.d.> globallb
+
+    GenericGroup(pcidss,"PCIDSS scope") #LightCoral{
+        package "Project: Cardholder"#Snow{
+            RegionGroup(euWS,"Region: Europe West") #Lavender {
+                Apigee_API_Platform(apigeeW,"API Gateway","apigee","regional")
+                IDE_Plugins(dlpW,"Tokenizator","Data Loss Prevention","APIGee extension")
+            }
+
+            Key_Management_Service(kms,"Key Manager","KMS with HSM","Multiregional")
+            note left #LightSalmon
+            The same DEK in multregional area to be able to decrypt reversible token
+            Generated token is a cypher of sensitive data. <i>Quid PCIDSS?</i>
+            Use <b>CMKS</b> to to manage key lifecycle 
+            end note
+
+            RegionGroup(euES,"Region: Europe East") #MistyRose {
+                Apigee_API_Platform(apigeeE,"API Gateway","apigee","regional")
+                IDE_Plugins(dlpE,"Tokenizator","Data Loss Prevention","APIGee extension")
+            }
+
+            euWS -[hidden]d--> euES
+
+            kms <-d- dlpE:"Unwrap DEK"
+            kms <-u- dlpW:"Unwrap DEK"
+            dlpE .d.> apigeeE
+            dlpW .u.> apigeeW
+        }
+    }
+
+    GenericGroup(nopcidss,"Not PCIDSS scope") #LightSkyBlue{
+        package "Project: Business"#Snow{
+            RegionGroup(euW,"Region: Europe West") #Lavender {
+                PrivateSubnetGroup(euSubW,"Private Subnet"){
+                    Cloud_Load_Balancing(euwlb,"LoadBalancer ","HTTP loadbalancer","internal")
+                    AutoScalingGroupGroup(migEuW,"Managed Instance Group"){
+                        Compute_Engine(bizEuW,"Business logic","Virtual Machine","Business services")
+                    }
+                }
+            }
+
+            RegionGroup(euE,"Region: Europe East") #MistyRose {
+                PrivateSubnetGroup(euSubE,"Private Subnet"){
+                    Kubernetes_Engine(gke,"Orchestrator","Kubernetes cluster","private")
+                }
+            }
+            euW -[hidden]d--> euE
+        }
+    }
+    
+    
+}
+
+client -R->  globallb
+
+pcidss <--R--> nopcidss #Red:"VPC Service Connect"
+globallb -R-> apigeeE
+globallb -R-> apigeeW
+apigeeW -R-> euwlb
+apigeeE -R-> gke
+
+euwlb -R-> migEuW
+@enduml
+
+@startuml datavault like
+
+!include _deps-gcp.iuml
+
+!include <awslib14/AWSCommon>
+!include <awslib14/Groups/all>
+!include <gcp/GCPCommon>
+!include <gcp/Networking/Cloud_Load_Balancing>
+!include <gcp/Networking/Cloud_Armor>
+!include <gcp/Compute/Compute_Engine>
+!include <gcp/Compute/Kubernetes_Engine>
+!include <gcp/API_Management/Apigee_API_Platform>
+!include <awslib14/General/Client>
+!include <gcp/Developer_Tools/IDE_Plugins>
+!include <gcp/Security/Key_Management_Service>
+!include <gcp/Compute/Cloud_Run>
+!include <gcp/Databases/Cloud_Spanner>
+
+Client(client,"Customer","HTTP","Business API consummer") #LightSlateGrey
+
+GenericGroup(gcp,"GCP") #MOTIVATION{
+
+    Cloud_Armor(waf,"WAF","Cloud Armor","Public Web protection")
+    Cloud_Load_Balancing(globallb,"Loadbalancer","HTTP loadbalancer","external")
+    waf <.d.> globallb
+    client -R->  globallb
+
+    GenericGroup(pcidss,"PCIDSS scope") #LightCoral{
+        package "Project: Cardholder"#Snow{
+
+            RegionGroup(euWS,"Region: Europe West") #Lavender {
+                Apigee_API_Platform(apigeeW,"API Gateway","apigee","regional")
+                Cloud_Run(dtvtW,"Tokenizator","DataVault","Java microservice")
+                note right #LightSalmon
+                Create UUID/card number unique pair
+                end note
+            }
+
+            together {
+                Key_Management_Service(kms,"Key Manager","KMS","Multiregional")
+                note right #LightSalmon
+                The same DEK in multregional area to be able to decrypt reversible token
+                Use <b>CMKS</b> to to manage key lifecycle 
+                end note
+
+                Cloud_Spanner(db,"Database","Cloud Spanner","multiregional")
+            }
+
+            RegionGroup(euES,"Region: Europe East") #MistyRose {
+                Apigee_API_Platform(apigeeE,"API Gateway","apigee","regional")
+                Cloud_Run(dtvtE,"Tokenizator","DataVault","Java microservice")
+            }
+
+            euWS -[hidden]d--> euES
+            db -[hidden]r--> kms
+
+            kms <-d- dtvtE:"Unwrap DEK"
+            kms <-u- dtvtW:"Unwrap DEK"
+            dtvtE <-d- apigeeE:"un/tokenize service"
+            dtvtW <-u- apigeeW:"un/tokenize service"
+
+            db <-d-> dtvtE 
+            db <-u-> dtvtW 
+        }
+    }
+
+    GenericGroup(nopcidss,"Not PCIDSS scope") #LightSkyBlue{
+        package "Project: Business"#Snow{
+            RegionGroup(euW,"Region: Europe West") #Lavender {
+                PrivateSubnetGroup(euSubW,"Private Subnet"){
+                    Cloud_Load_Balancing(euwlb,"LoadBalancer ","HTTP loadbalancer","internal")
+                    AutoScalingGroupGroup(migEuW,"Managed Instance Group"){
+                        Compute_Engine(bizEuW,"Business logic","Virtual Machine","Business services")
+                    }
+                }
+            }
+
+            RegionGroup(euE,"Region: Europe East") #MistyRose {
+                PrivateSubnetGroup(euSubE,"Private Subnet"){
+                    Kubernetes_Engine(gke,"Orchestrator","Kubernetes cluster","private")
+                }
+            }
+            euW -[hidden]d--> euE
+        }
+    }
+}
+
+
+pcidss <--R--> nopcidss #Red:"VPC Service Connect"
+globallb -R-> apigeeE
+globallb -R-> apigeeW
+apigeeW -R-> euwlb:"business service"
+apigeeE -R-> gke:"business service"
+
+euwlb -R-> migEuW
+@enduml
+

@@ -1,0 +1,54 @@
+
+@startuml(id=ServerlessVideoProcessing)
+title Serverless video processing
+    !include _deps-gcp.iuml
+
+    !include <office/Servers/application_server>
+    !include <awslib14/General/Client>
+    !include <gcp/Data_Analytics/Cloud_PubSub>
+    !include <gcp/Storage/Cloud_Storage>
+    !include <gcp/Compute/Cloud_Functions>
+    !include <gcp/AI_and_Machine_Learning/Cloud_Vision_API>
+    !include <gcp/Management_Tools/Cloud_APIs>
+    !include <gcp/AI_and_Machine_Learning/Cloud_Video_Intelligence_API>
+    !include <gcp/Data_Analytics/BigQuery>
+    !include <office/Servers/monitoring_sql_reporting_services>
+
+    together{
+        Entity(videoinlive,"Video Acquisition","camera","inlive acquisition",GCP_COLOR,application_server,"source")
+        Client(videopreprocessed,"Video Acquisition","camera","offline acquisition")
+        videoinlive -[hidden]U-> videopreprocessed
+    }
+
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        together{
+            Cloud_PubSub(pubsub,"Broker","Cloud Pub Sub")
+            videoinlive -[#red]R-> pubsub: streaming
+            Cloud_Storage(storage,"Storage","Cloud Storage")
+            videopreprocessed --> storage: copying
+
+            pubsub -[hidden]U-> storage
+        }
+
+        Cloud_Functions(func,"Function","Cloud Function")
+        pubsub -R-> func: Trigger
+        storage -R-> func: Trigger
+        together{
+            Cloud_Vision_API(visionapi,"Image Processing","Cloud Vision API")
+            func .D.-> visionapi : image processing
+
+            Cloud_APIs(dlp,"Sensitive Data","Data Loss Prevention")
+            func .D.-> dlp : sensitive data masking
+
+            Cloud_Video_Intelligence_API(videoapi,"Video Processing","Cloud Video Intelligence API")
+            func .D.-> videoapi : image processing
+        }
+        BigQuery(bq,"Data Warehouse","BigQuery")
+        func -R-> bq: analysing
+
+        Entity(report,"Reporting","Data Studio","",GCP_COLOR,monitoring_sql_reporting_services,"Data Studio")
+        bq -R-> report
+
+    }
+
+@enduml

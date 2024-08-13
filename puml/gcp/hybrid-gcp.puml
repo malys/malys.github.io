@@ -1,0 +1,53 @@
+
+@startuml(id=hybridArchitecture)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Hybrid architecture
+!include _deps-gcp.iuml
+
+!include <gcp/Compute/Cloud_Functions>
+!include <gcp/Networking/Cloud_Firewall_Rules>
+!include <gcp/Compute/Compute_Engine>
+!include <gcp/Storage/Cloud_Storage>
+!include <gcp/Compute/Kubernetes_Engine>
+!include <tupadr3/material/computer>
+!include <office/Servers/database_server>
+!include <gcp/Networking/Cloud_Load_Balancing>
+!include <awslib14/General/Internet>
+
+
+Internet(internet,"Internet","WAN")
+
+GenericGroup(gcp,"Google Cloud Platform")#LightBlue{
+
+    Cloud_Load_Balancing(lb,"Load Balancer","Global Load Balancer")
+
+    VPCGroup(vpc,"VPC"){
+        Compute_Engine(ce,"VMs","GCE")
+        Kubernetes_Engine(ke,"Kubernetes","GKE")
+    }
+    lb -[hidden]d-> vpc
+}
+
+GenericGroup(premise,"On premise")#LightCoral{
+    PublicSubnetGroup(public,"Public Subnet"){
+        Entity(vm,"VMs","Virtualization",WhiteSmoke,"",$computer)
+    }
+    PrivateSubnetGroup(private,"Private Subnet"){
+        Entity(db,"Database","DBMS",WhiteSmoke,"",$database_server)
+    }
+
+    public -[hidden]L-> private
+
+}
+internet -D-> lb
+vpc <======R====>premise : "Cloud\nInterconnect"
+lb -> ce
+lb -> ke
+lb -> vm
+ce -> db
+vm -> db
+@enduml

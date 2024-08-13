@@ -1,0 +1,28 @@
+
+@startuml(id=MigrateDatabasetoCloudSpanner)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Migrate Database to Cloud Spanner
+    !include _deps-gcp.iuml
+
+    !include <gcp/Databases/Cloud_SQL>
+    !include <gcp/Storage/Cloud_Storage>
+    !include <gcp/Data_Analytics/Cloud_Dataflow>
+    !include <gcp/Databases/Cloud_Spanner>
+
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        Cloud_SQL(db,"Database","RDBMS")
+        Cloud_Storage(storage,"Storage","Cloud storage")
+        Cloud_Dataflow(dataflow,"Convertor","Cloud DataFlow")
+        Cloud_Spanner(spanner,"Cloud Spanner","NoSQL")
+        db -> storage : "Export"
+        storage -> dataflow: "Convert"
+        dataflow -> spanner: "Import"
+        
+        note right of spanner #LightCoral: Manage errors and replay
+    }
+@enduml
+

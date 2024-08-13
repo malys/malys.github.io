@@ -1,0 +1,15 @@
+
+@startmindmap
+*[#LightCoral] Monitoring
+** Cloud Logging
+*** Security Information and Event Management:SIEM
+**** Chronicle
+** VPC Flow Logs
+*** Subnet
+** Network Intelligence center
+** VPC Service Control
+*** Context Manager
+** Data Loss Prevention
+** Packet Mirroring
+*** Intrusion Detection System PaloAlto
+@endmindmap

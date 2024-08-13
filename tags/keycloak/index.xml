@@ -1,61 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>keycloak on Malys | Portfolio</title>
-    <link>https://malys.github.io/tags/keycloak/</link>
-    <description>Recent content in keycloak on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Keycloak on Malys | Portfolio</title>
+    <link>./tags/keycloak/</link>
+    <description>Recent content in Keycloak on Malys | Portfolio</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/keycloak/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="./tags/keycloak/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OIDC for static resources</title>
-      <link>https://malys.github.io/blog/protected-static-resources/</link>
+      <link>./blog/protected-static-resources/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/protected-static-resources/</guid>
-      <description>OIDC for static resources
-OIDC for static resources Use case SPA consummes Rest API in the same business domain.</description>
+      <guid>./blog/protected-static-resources/</guid>
+      <description>OIDC for static resources&#xA;OIDC for static resources Use case SPA consummes Rest API in the same business domain.</description>
     </item>
-    
     <item>
       <title>Chrome SameSite feature</title>
-      <link>https://malys.github.io/blog/samesite/</link>
+      <link>./blog/samesite/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/samesite/</guid>
-      <description>Google Chrome: Same-site
-What is SameSite ? Heroku blog explains very well this feature.</description>
+      <guid>./blog/samesite/</guid>
+      <description>Google Chrome: Same-site&#xA;What is SameSite ? Heroku blog explains very well this feature.</description>
     </item>
-    
     <item>
       <title>SAML 2.0 Overview</title>
-      <link>https://malys.github.io/blog/saml20/</link>
+      <link>./blog/saml20/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/saml20/</guid>
-      <description>SAML 2.0 presentation.
-Slides   </description>
+      <guid>./blog/saml20/</guid>
+      <description>SAML 2.0 presentation.&#xA;Slides </description>
     </item>
-    
     <item>
       <title>JVM</title>
-      <link>https://malys.github.io/blog/jvm/</link>
+      <link>./blog/jvm/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/jvm/</guid>
-      <description>Compare different JVM to improve container performance.
-State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+      <guid>./blog/jvm/</guid>
+      <description>Compare different JVM to improve container performance.&#xA;State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
     </item>
-    
     <item>
       <title>Keycloak for advanced developers</title>
-      <link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link>
+      <link>./blog/keycloak-for-advanced-developers/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid>
-      <description>Keycloak / OIDC presentation.
-Slides   </description>
+      <guid>./blog/keycloak-for-advanced-developers/</guid>
+      <description>Keycloak / OIDC presentation.&#xA;Slides </description>
     </item>
-    
   </channel>
 </rss>

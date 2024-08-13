@@ -1,0 +1,69 @@
+
+@startuml(id=DataLake)
+title Data Lake
+    !include _deps-gcp.iuml
+
+    !include <tupadr3/font-awesome-5/truck_loading>
+    !include <gcp/Data_Analytics/Cloud_PubSub>
+    !include <gcp/Data_Analytics/Cloud_Dataflow>
+    !include <gcp/Databases/Cloud_Bigtable>
+    !include <gcp/Compute/Compute_Engine>
+    !include <office/Servers/application_server>
+    !include <tupadr3/material/storage>
+    !include <gcp/Migration/Transfer_Appliance>
+    !include <office/Services/3rd_party_service>
+    !include <awslib14/DeveloperTools/CommandLineInterface>
+    !include <gcp/Storage/Cloud_Storage>
+    !include <gcp/Data_Analytics/BigQuery>
+    !include <gcp/Data_Analytics/Cloud_Dataprep>
+    !include <gcp/Data_Analytics/Cloud_Dataproc>
+    !include <gcp/Databases/Cloud_Spanner>
+    !include <gcp/AI_and_Machine_Learning/Cloud_AutoML>
+
+    together{
+        GenericGroup(iot,"IOT")#LightGreen{
+            Entity(sensor,"Mobile device","trucks","Fleet",GCP_COLOR,truck_loading,"sensor")
+        }
+
+        GenericGroup(onprem,"On premise")#LightCoral{
+            Entity(server,"Server","VM","Business service",GCP_COLOR ,application_server,"application")
+            Entity(storage,"Storage","disk","Users activities",GCP_COLOR ,storage,"local")
+        }
+        iot -[hidden]R-> onprem
+    }
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+        onprem -R-> gcp: "Cloud Connect"
+
+        Cloud_PubSub(broker,"Broker","PubSub") #LightGreen
+        sensor =[#red]R=> broker: "Realtime"
+        Cloud_Dataflow(df,"Data Processing","Cloud Dataflow")  #LightGreen
+        broker -[#red]-> df
+        Cloud_Bigtable(bt,"Database","NoSQL Key/Value")  #LightGreen
+        df -[#red]-> bt
+
+        Transfer_Appliance(txapp,"Transfer","Transfer appliance","huge amount of data")
+        Entity(txservice,"Transfer","Transfer service","small amount of data",GCP_COLOR ,3rd_party_service,"service")
+        Entity(gsutil,"Transfer","gsutil","sample of data",GCP_COLOR,CommandLineInterface,"cli")
+        storage --> txapp
+        storage --> txservice
+        storage --> gsutil
+
+        Cloud_Storage(gcs,"Storage","Cloud Storage","data lake") #LightYellow
+        txapp --> gcs
+        txservice --> gcs
+        gsutil --> gcs
+
+        BigQuery(bq,"Data warehouse","BigQuery")
+        gcs --> bq: "Analyse"
+        Cloud_Dataprep(dprep,"Data Visualization","Cloud DataPrep")
+        gcs --> dprep: "Visualize"
+        Cloud_Spanner(spanner,"Database","Cloud Spanner")
+        gcs --> spanner: "Prediction"
+        Cloud_Dataproc(dproc,"Massive Processor","Cloud DataProc")
+        gcs --> dproc: "Bulk massive processing"
+        Cloud_AutoML(automl,"AI","Cloud AutoML")
+        gcs --> automl: "Mining"
+    }
+
+@enduml
+

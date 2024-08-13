@@ -1,0 +1,8 @@
+@startuml
+    !include <awslib14/AWSCommon>
+    !include <awslib14/Groups/all>
+    !include <gcp/GCPCommon>
+
+    skinparam linetype ortho
+    skinparam nodesep 230
+@enduml

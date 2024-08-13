@@ -1,0 +1,67 @@
+@startuml(id=Website)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title Website
+    !include _deps-gcp.iuml
+
+    !include <awslib14/General/Mobileclient>
+    !include <gcp/Networking/Cloud_Load_Balancing>
+    !include <gcp/Networking/Cloud_Armor>
+    !include <gcp/Compute/App_Engine>
+    !include <gcp/Networking/Cloud_CDN>
+    !include <gcp/Storage/Cloud_Storage>
+    !include <gcp/Compute/Compute_Engine>
+    !include <gcp/Databases/Cloud_SQL>
+    !include <gcp/Databases/Cloud_Firestore>
+    !include <awslib14/GroupIcons/AutoScalingGroup>
+    !include <awslib14/Groups/VPC>
+
+    Mobileclient(client,"Client","browser")
+
+    GenericGroup(gcp,"Google Cloud Platform") #LightBlue{
+
+        together{
+            Cloud_Load_Balancing(glb,"Load Balancer","Global Load Balancer")
+            client -R-> glb
+            Cloud_Armor(waf,"WAF","Cloud Armor")
+            Cloud_CDN(cdn,"Local CDN","CDNs")
+            
+        }
+
+        glb .U.> waf
+        glb .D.> cdn
+        
+        VPCGroup(vpc,"VPC")#SkyBlue{
+            Cloud_Storage(static,"Statics","Cloud Storage")
+            glb --> static
+
+            Cloud_Load_Balancing(ilb,"Internal Load Balancer","Regional Load Balancer")
+            glb -R-> ilb
+            together{
+                GenericGroup(mig,"MIG") #AliceBlue{
+                    Compute_Engine(gce,"Server Web","VMs")
+                }
+                App_Engine(gae,"Server Web","Google App Engine")
+
+                mig -[hidden]U-> gae
+            }
+
+            ilb -R-> gae
+            ilb -R-> mig
+
+            together{
+                Cloud_SQL(rdbms,"Database","SQL")
+                Cloud_Firestore(nosql,"Database","NoSQL")
+                rdbms -[hidden]L-> nosql
+            }
+            mig --> rdbms
+            gae --> rdbms
+            gae --> nosql
+            mig --> nosql
+        }
+    }
+
+@enduml

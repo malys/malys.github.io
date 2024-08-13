@@ -1,0 +1,23 @@
+@startuml(id=SRE)
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor LightGray
+skinparam titleBackgroundColor SkyBlue
+skinparam titleFontColor WhiteSmoke
+title  Site Reliability Engineering - SRE
+
+state "Product" as P #Blue 
+state "Development" as D #Green 
+state "Capacity Planning" as C #LimeGreen 
+state "Testing/Release Procedure" as T #GreenYellow
+state "Post Mortem/Root cause" as R #gold
+state "Incident Response" as I #orange
+state "Monitoring" as M #red 
+
+P --> D
+D --> C
+C --> T
+T --> R
+R --> I
+I --> M
+@enduml

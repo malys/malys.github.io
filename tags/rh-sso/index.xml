@@ -2,20 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RH-SSO on Malys | Portfolio</title>
-    <link>https://malys.github.io/tags/rh-sso/</link>
+    <link>./tags/rh-sso/</link>
     <description>Recent content in RH-SSO on Malys | Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://malys.github.io/tags/rh-sso/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="./tags/rh-sso/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Keycloak for advanced developers</title>
-      <link>https://malys.github.io/blog/keycloak-for-advanced-developers/</link>
+      <link>./blog/keycloak-for-advanced-developers/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://malys.github.io/blog/keycloak-for-advanced-developers/</guid>
-      <description>Keycloak / OIDC presentation.
-Slides   </description>
+      <guid>./blog/keycloak-for-advanced-developers/</guid>
+      <description>Keycloak / OIDC presentation.&#xA;Slides </description>
     </item>
-    
   </channel>
 </rss>
