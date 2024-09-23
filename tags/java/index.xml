@@ -13,42 +13,42 @@
       <link>./blog/microprofile/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       <guid>./blog/microprofile/</guid>
-      <description>Microprofile + Quarkus; new Java player presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;&lt;code&gt;Microprofile + Quarkus; new Java player&lt;/code&gt; presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/microprofile-quarkus-slides/#/&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>JVM</title>
       <link>./blog/jvm/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/jvm/</guid>
-      <description>Compare different JVM to improve container performance.&#xA;State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+      <description>&lt;p&gt;Compare different JVM to improve container performance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;state-of-play&#34;&gt;State of play&lt;/h2&gt;&#xA;&lt;p&gt;We will focus on OpenJDK because it&amp;rsquo;s the reference  for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Java container optimization</title>
       <link>./blog/java-container-optimization/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/java-container-optimization/</guid>
-      <description>Java container optimization.&#xA;Slides </description>
+      <description>&lt;p&gt;Java container optimization.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/java-native-framework-slides/#/&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Native Java frameworks</title>
       <link>./blog/native-java-frameworks/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/native-java-frameworks/</guid>
-      <description>Compare different Java framework to generate native application.&#xA;Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
+      <description>&lt;p&gt;Compare different Java framework to generate native application.&lt;/p&gt;&#xA;&lt;h2 id=&#34;native&#34;&gt;Native&lt;/h2&gt;&#xA;&lt;p&gt;Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.&lt;/p&gt;</description>
     </item>
     <item>
       <title>JRE Dependencies with host</title>
       <link>./blog/jre-dependencies-with-host/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       <guid>./blog/jre-dependencies-with-host/</guid>
-      <description>What are JRE depencies with host OS ?&#xA;Dependencies ldd /usr/bin/java linux-vdso.</description>
+      <description>&lt;p&gt;What are JRE depencies with host OS ?&lt;/p&gt;&#xA;&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ldd /usr/bin/java&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        linux-vdso.so.1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt;  &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007ffff917a000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libpthread.so.0 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libpthread.so.0 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb946000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libz.so.1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libz.so.1 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb730000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libjli.so &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; not found&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libdl.so.2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libdl.so.2 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb52c000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libc.so.6 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libc.so.6 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb15f000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        /lib64/ld-linux-x86-64.so.2 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcbb62000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;vdso: a kernel mechanism for exporting a carefully selected set of kernel space routines to user space applications so that applications can call these kernel space routines in-process, without incurring the performance penalty of a context switch that is inherent when calling these same kernel space routines by means of the system call interface&lt;/li&gt;&#xA;&lt;li&gt;libpthread: multithreadinf&lt;/li&gt;&#xA;&lt;li&gt;libz: zlib (compression)&lt;/li&gt;&#xA;&lt;li&gt;libjli: JNI alternative (??)&lt;/li&gt;&#xA;&lt;li&gt;libdl: dynamic linkind support&lt;/li&gt;&#xA;&lt;li&gt;libc: C language standard library&lt;/li&gt;&#xA;&lt;li&gt;ld-linux: dynamic linker/loader&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Microcontainer distributions</title>
       <link>./blog/microcontainer-distributions/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       <guid>./blog/microcontainer-distributions/</guid>
-      <description>Container must include minimal dependencies to run Java application (microservice or legacy application).</description>
+      <description>&lt;p&gt;Container must include minimal dependencies to run Java application (microservice or legacy application).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

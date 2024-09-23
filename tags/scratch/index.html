@@ -104,8 +104,72 @@
             <div class="card-body">
               <h4 class="card-title"><a class="text-dark" href="/./blog/understand-from-scratch/">Understand: From scratch</a>
               </h4>
-              <p class="cars-text">How &ldquo;from scratch&rdquo; works ?
-Image FROM scratch ENV PROXY_LISTEN=0.0.0.0:8443 ENV PROXY_LISTEN_HTTP=0.</p>
+              <p class="cars-text"><p>How &ldquo;from scratch&rdquo; works ?</p>
+<h2 id="image">Image</h2>
+<pre tabindex="0"><code>FROM scratch
+ENV PROXY_LISTEN=0.0.0.0:8443
+ENV PROXY_LISTEN_HTTP=0.0.0.0:8080
+
+EXPOSE 8080 8443
+
+ADD keycloak-gatekeeper /
+ADD config.yaml /config.yaml
+CMD [&#34;/keycloak-gatekeeper&#34;,&#34;--config&#34;,&#34;config.yaml&#34;]
+</code></pre><pre tabindex="0"><code>d build -t keycloak-gatekeeper:scratch .
+
+# No file except keycloak-gatekeeper
+dive keycloak-gatekeeper:scratch
+{
+  &#34;layer&#34;: [
+    {
+      &#34;index&#34;: 0,
+      &#34;digestId&#34;: &#34;sha256:5615180f624e082f675261de139dca5eefe09ced8653bf25e02cb1075ace24dc&#34;,
+      &#34;sizeBytes&#34;: 12768011,
+      &#34;command&#34;: &#34;#(nop) ADD file:40e67ed7d86014658f5b01316b9193210dc93bfe2bdf1ee9ae9c714635c9699c in / &#34;
+    },
+    {
+      &#34;index&#34;: 1,
+      &#34;digestId&#34;: &#34;sha256:bd785d8e829b3305fc45051b901d54805e1c536404359eb1084d754cf643b69c&#34;,
+      &#34;sizeBytes&#34;: 501,
+      &#34;command&#34;: &#34;#(nop) ADD file:3704f000080497680b5aeae92f9cfadddbc385c4dacc87df1b8d0b072d46e63e in /config.yaml &#34;
+    }
+  ],
+  &#34;image&#34;: {
+    &#34;sizeBytes&#34;: 12768512,
+    &#34;inefficientBytes&#34;: 0,
+    &#34;efficiencyScore&#34;: 1,
+    &#34;inefficientFiles&#34;: []
+  }
+}
+</code></pre><h2 id="container">Container</h2>
+<pre tabindex="0"><code># Run
+d run --rm keycloak-gatekeeper:scratch &amp;
+
+## Attach alpine
+doatt determined_haibt
+/ # ls -al /proc/1/root
+lrwxrwxrwx    1 root     root             0 Aug 12 12:36 /proc/1/root -&gt; /
+/ # ls -al /proc/1/root/
+total 12476
+drwxr-xr-x    7 root     root           126 Aug 12 12:35 .
+drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..
+-rwxr-xr-x    1 root     root             0 Aug 12 12:35 .dockerenv
+-rwxr-xr-x    1 root     root           501 Aug 12 12:27 config.yaml        
+drwxr-xr-x    5 root     root           340 Aug 12 12:35 dev
+drwxr-xr-x    2 root     root            66 Aug 12 12:35 etc
+-rwxr-xr-x    1 root     root      12768011 Aug 12 12:26 keycloak-gatekeeper
+dr-xr-xr-x  147 root     root             0 Aug 12 12:35 proc
+drwxr-xr-x    3 root     root            21 Aug 12 12:35 run
+dr-xr-xr-x   13 root     root             0 Aug 12 11:37 sys
+/ # ls -al /proc/1/root/etc
+total 12
+drwxr-xr-x    2 root     root            66 Aug 12 12:35 .
+drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..
+-rw-r--r--    1 root     root            13 Aug 12 12:35 hostname
+-rw-r--r--    1 root     root           174 Aug 12 12:35 hosts
+lrwxrwxrwx    1 root     root            12 Aug 12 12:35 mtab -&gt; /proc/mounts
+-rw-r--r--    1 root     root            92 Aug 12 12:35 resolv.conf
+</code></pre><p>Containers includes standard linux folder structure (see specification).</p></p>
               <a href="/./blog/understand-from-scratch/" class="btn btn-xs btn-primary">Read More</a>
             </div>
           </article>

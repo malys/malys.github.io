@@ -13,7 +13,7 @@
       <link>./blog/native-java-frameworks/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/native-java-frameworks/</guid>
-      <description>Compare different Java framework to generate native application.&#xA;Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
+      <description>&lt;p&gt;Compare different Java framework to generate native application.&lt;/p&gt;&#xA;&lt;h2 id=&#34;native&#34;&gt;Native&lt;/h2&gt;&#xA;&lt;p&gt;Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

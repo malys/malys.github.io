@@ -13,7 +13,7 @@
       <link>./blog/protected-static-resources/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       <guid>./blog/protected-static-resources/</guid>
-      <description>OIDC for static resources&#xA;OIDC for static resources Use case SPA consummes Rest API in the same business domain.</description>
+      <description>&lt;p&gt;OIDC for static resources&lt;/p&gt;&#xA;&lt;h2 id=&#34;oidc-for-static-resources&#34;&gt;OIDC for static resources&lt;/h2&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use case&lt;/h3&gt;&#xA;&lt;img class=&#34;special-img-class&#34; style=&#34;width:40%&#34; src=&#34;./images/ConsumeProtectedStaticResourceUC.png&#34; /&gt;&#xA;&lt;p&gt;SPA consummes Rest API in the &lt;strong&gt;same business domain&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

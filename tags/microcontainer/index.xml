@@ -13,7 +13,7 @@
       <link>./blog/microcontainer-distributions/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       <guid>./blog/microcontainer-distributions/</guid>
-      <description>Container must include minimal dependencies to run Java application (microservice or legacy application).</description>
+      <description>&lt;p&gt;Container must include minimal dependencies to run Java application (microservice or legacy application).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

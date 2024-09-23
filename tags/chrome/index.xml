@@ -13,7 +13,7 @@
       <link>./blog/samesite/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       <guid>./blog/samesite/</guid>
-      <description>Google Chrome: Same-site&#xA;What is SameSite ? Heroku blog explains very well this feature.</description>
+      <description>&lt;p&gt;Google Chrome: Same-site&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-samesite-&#34;&gt;What is SameSite ?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.heroku.com/chrome-changes-samesite-cookie&#34;&gt;Heroku blog&lt;/a&gt; explains very well this feature.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

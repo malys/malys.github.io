@@ -723,46 +723,46 @@ Une stratégie de retry, fallback, bulck head ou timeout peut être ajouter pour
 10.1.0.0/10 -&gt; 0.63(1100 0000 -&gt; 2⁶-1).255.255 -&gt; [10.0.0.0,10.63.255.255].</p>
 <p><strong>4 car deux adresses sont toujours réservées dans chaque réseau : l’adresse réseau (seulement 0s dans la partie hôte), qui sert à identifier le réseau, et l’adresse de diffusion (seulement 1s dans la partie hôte), qui est utilisée pour la transmission à tous les participants au réseau.</strong></p>
 <table>
-<thead>
-<tr>
-<th>RFC 1918 name</th>
-<th>IP address range</th>
-<th>Number of addresses</th>
-<th>Largest CIDR block (subnet mask)</th>
-<th>Host ID size</th>
-<th>Mask bits</th>
-<th>Classful description[Note 1]</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>24-bit block</td>
-<td>10000 – 10255255255</td>
-<td>16777216</td>
-<td>10000/8 (255000)</td>
-<td>24 bits</td>
-<td>8 bits</td>
-<td>single class A network</td>
-</tr>
-<tr>
-<td>20-bit block</td>
-<td>1721600 – 17231255255</td>
-<td>1048576</td>
-<td>1721600/12 (25524000)</td>
-<td>20 bits</td>
-<td>12 bits</td>
-<td>16 contiguous class B networks</td>
-</tr>
-<tr>
-<td>16-bit block</td>
-<td>19216800 – 192168255255</td>
-<td>65536</td>
-<td>19216800/16 (25525500)</td>
-<td>16 bits</td>
-<td>16 bits</td>
-<td>256 contiguous class C networks</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">RFC 1918 name</th>
+          <th style="text-align: left">IP address range</th>
+          <th style="text-align: left">Number of addresses</th>
+          <th style="text-align: left">Largest CIDR block (subnet mask)</th>
+          <th style="text-align: left">Host ID size</th>
+          <th style="text-align: left">Mask bits</th>
+          <th style="text-align: left">Classful description[Note 1]</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">24-bit block</td>
+          <td style="text-align: left">10000 – 10255255255</td>
+          <td style="text-align: left">16777216</td>
+          <td style="text-align: left">10000/8 (255000)</td>
+          <td style="text-align: left">24 bits</td>
+          <td style="text-align: left">8 bits</td>
+          <td style="text-align: left">single class A network</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">20-bit block</td>
+          <td style="text-align: left">1721600 – 17231255255</td>
+          <td style="text-align: left">1048576</td>
+          <td style="text-align: left">1721600/12 (25524000)</td>
+          <td style="text-align: left">20 bits</td>
+          <td style="text-align: left">12 bits</td>
+          <td style="text-align: left">16 contiguous class B networks</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">16-bit block</td>
+          <td style="text-align: left">19216800 – 192168255255</td>
+          <td style="text-align: left">65536</td>
+          <td style="text-align: left">19216800/16 (25525500)</td>
+          <td style="text-align: left">16 bits</td>
+          <td style="text-align: left">16 bits</td>
+          <td style="text-align: left">256 contiguous class C networks</td>
+      </tr>
+  </tbody>
 </table>
 </dd>
             
@@ -962,55 +962,55 @@ Monitorer l’indisponibilité.</p>
             
             <dd aria-labelledby="google-remote-procedure-call"><p>Protocole concurrent à REST orienté performance (UC: microservice, haute performance, non UC: API publique car prise en charge limité par les navigateurs, non lisible par l’être humain: payload en binaire).</p>
 <table>
-<thead>
-<tr>
-<th>Fonctionnalité</th>
-<th>gRPC</th>
-<th>API HTTP avec JSON</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Contrat</td>
-<td>Obligatoire (proto)</td>
-<td>Facultatif (OpenAPI)</td>
-</tr>
-<tr>
-<td>Protocol</td>
-<td>HTTP/2</td>
-<td>HTTP</td>
-</tr>
-<tr>
-<td>Payload</td>
-<td>Protobuf (petit, binaire)</td>
-<td>JSON (grande, lisible par l’homme)</td>
-</tr>
-<tr>
-<td>Prescriptiveness</td>
-<td>Spécification stricte</td>
-<td>Lâche Tout HTTP est valide</td>
-</tr>
-<tr>
-<td>Diffusion en continu</td>
-<td>Client, serveur, bidirectionnel</td>
-<td>Client, serveur</td>
-</tr>
-<tr>
-<td>Prise en charge des navigateurs</td>
-<td>Non (nécessite grpc-web)</td>
-<td>Oui</td>
-</tr>
-<tr>
-<td>Sécurité</td>
-<td>Transport (TLS)</td>
-<td>Transport (TLS)</td>
-</tr>
-<tr>
-<td>Génération de code client</td>
-<td>Oui</td>
-<td>Outils OpenAPI + tiers</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Fonctionnalité</th>
+          <th style="text-align: left">gRPC</th>
+          <th style="text-align: left">API HTTP avec JSON</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Contrat</td>
+          <td style="text-align: left">Obligatoire (proto)</td>
+          <td style="text-align: left">Facultatif (OpenAPI)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Protocol</td>
+          <td style="text-align: left">HTTP/2</td>
+          <td style="text-align: left">HTTP</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Payload</td>
+          <td style="text-align: left">Protobuf (petit, binaire)</td>
+          <td style="text-align: left">JSON (grande, lisible par l’homme)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Prescriptiveness</td>
+          <td style="text-align: left">Spécification stricte</td>
+          <td style="text-align: left">Lâche Tout HTTP est valide</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Diffusion en continu</td>
+          <td style="text-align: left">Client, serveur, bidirectionnel</td>
+          <td style="text-align: left">Client, serveur</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Prise en charge des navigateurs</td>
+          <td style="text-align: left">Non (nécessite grpc-web)</td>
+          <td style="text-align: left">Oui</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Sécurité</td>
+          <td style="text-align: left">Transport (TLS)</td>
+          <td style="text-align: left">Transport (TLS)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Génération de code client</td>
+          <td style="text-align: left">Oui</td>
+          <td style="text-align: left">Outils OpenAPI + tiers</td>
+      </tr>
+  </tbody>
 </table>
 </dd>
             
@@ -1206,108 +1206,108 @@ ex d&rsquo;équivalence:
 2001:0db8:0000:85a3:0000:0000:ac1f:8001
 2001:db8:0:85a3::ac1f:8001</p>
 <table>
-<thead>
-<tr>
-<th>Préfixe IPv6</th>
-<th>Description</th>
-<th>Terme anglais</th>
-<th>Détail</th>
-<th>Équivalent IPv4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>::1/128</td>
-<td>Boucle Locale</td>
-<td>Node-local</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Loopback</td>
-<td>Adresse de bouclage, utilisée lorsqu&rsquo;un hôte se parle à lui-même (ex : envoi de données entre 2 programmes sur cet hôte).</td>
-<td>127.0.0.0/8 (principalement 127.0.0.1)[28]</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>fe80::/10</td>
-<td>Liaison Locale</td>
-<td>Link-Local</td>
-<td>Envoi individuel sur liaison locale (RFC 4291[29]). Obligatoire et indispensable au bon fonctionnement du protocole.</td>
-<td>169.254.0.0/16</td>
-</tr>
-<tr>
-<td>2000::/3</td>
-<td>Monodiffusion Mondiale</td>
-<td>Global Unicast</td>
-<td>Plage d&rsquo;adresse publique, routable sur Internet, globalement uniques (doublon impossible) - Hors exceptions mentionnées ci-dessous.</td>
-<td></td>
-</tr>
-<tr>
-<td>fc00::/7</td>
-<td><a href="https://en.wikipedia.org/wiki/Unique_local_address">Localement Unique</a></td>
-<td>Unique Local</td>
-<td>Plage d&rsquo;adresse privée, réservée à l&rsquo;utilisation sur les réseaux locaux domestiques et d&rsquo;entreprises. Elles ne sont pas globalement uniques (doublon possible, réutilisées sur plusieurs réseaux IP privés).</td>
-<td>10.0.0.0/8</td>
-</tr>
-<tr>
-<td>172.16.0.0/12</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>192.168.0.0/16</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>ff00::/8</td>
-<td>Multidiffusion</td>
-<td>Multicast</td>
-<td>Diffusion groupée (RFC 4291[29])</td>
-<td>224.0.0.0/4</td>
-</tr>
-<tr>
-<td>2001:db8::/32</td>
-<td>Documentation</td>
-<td>Documentation</td>
-<td>Plage réservée pour utilisation comme valeurs d&rsquo;exemple ou dans de la documentation technique. Ne devrait jamais être utilisée sur de vrais réseaux.</td>
-<td>192.0.2.0/24</td>
-</tr>
-<tr>
-<td>198.51.100.0/24</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>203.0.113.0/24</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>::/128</td>
-<td>Non spécifié</td>
-<td>Unspecified</td>
-<td>Utilisée comme adresse source par un hôte en cours d&rsquo;acquisition de son adresse réseau.</td>
-<td>0.0.0.0</td>
-</tr>
-<tr>
-<td>::/8</td>
-<td>Réservé</td>
-<td>Reserved</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Préfixe IPv6</th>
+          <th style="text-align: left">Description</th>
+          <th style="text-align: left">Terme anglais</th>
+          <th style="text-align: left">Détail</th>
+          <th style="text-align: left">Équivalent IPv4</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">::1/128</td>
+          <td style="text-align: left">Boucle Locale</td>
+          <td style="text-align: left">Node-local</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Loopback</td>
+          <td style="text-align: left">Adresse de bouclage, utilisée lorsqu&rsquo;un hôte se parle à lui-même (ex : envoi de données entre 2 programmes sur cet hôte).</td>
+          <td style="text-align: left">127.0.0.0/8 (principalement 127.0.0.1)[28]</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">fe80::/10</td>
+          <td style="text-align: left">Liaison Locale</td>
+          <td style="text-align: left">Link-Local</td>
+          <td style="text-align: left">Envoi individuel sur liaison locale (RFC 4291[29]). Obligatoire et indispensable au bon fonctionnement du protocole.</td>
+          <td style="text-align: left">169.254.0.0/16</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2000::/3</td>
+          <td style="text-align: left">Monodiffusion Mondiale</td>
+          <td style="text-align: left">Global Unicast</td>
+          <td style="text-align: left">Plage d&rsquo;adresse publique, routable sur Internet, globalement uniques (doublon impossible) - Hors exceptions mentionnées ci-dessous.</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">fc00::/7</td>
+          <td style="text-align: left"><a href="https://en.wikipedia.org/wiki/Unique_local_address">Localement Unique</a></td>
+          <td style="text-align: left">Unique Local</td>
+          <td style="text-align: left">Plage d&rsquo;adresse privée, réservée à l&rsquo;utilisation sur les réseaux locaux domestiques et d&rsquo;entreprises. Elles ne sont pas globalement uniques (doublon possible, réutilisées sur plusieurs réseaux IP privés).</td>
+          <td style="text-align: left">10.0.0.0/8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">172.16.0.0/12</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">192.168.0.0/16</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ff00::/8</td>
+          <td style="text-align: left">Multidiffusion</td>
+          <td style="text-align: left">Multicast</td>
+          <td style="text-align: left">Diffusion groupée (RFC 4291[29])</td>
+          <td style="text-align: left">224.0.0.0/4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2001:db8::/32</td>
+          <td style="text-align: left">Documentation</td>
+          <td style="text-align: left">Documentation</td>
+          <td style="text-align: left">Plage réservée pour utilisation comme valeurs d&rsquo;exemple ou dans de la documentation technique. Ne devrait jamais être utilisée sur de vrais réseaux.</td>
+          <td style="text-align: left">192.0.2.0/24</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">198.51.100.0/24</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">203.0.113.0/24</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">::/128</td>
+          <td style="text-align: left">Non spécifié</td>
+          <td style="text-align: left">Unspecified</td>
+          <td style="text-align: left">Utilisée comme adresse source par un hôte en cours d&rsquo;acquisition de son adresse réseau.</td>
+          <td style="text-align: left">0.0.0.0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">::/8</td>
+          <td style="text-align: left">Réservé</td>
+          <td style="text-align: left">Reserved</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
 </table>
 <p>ex CIDR:</p>
 <p>2001:db8:1f89::/48

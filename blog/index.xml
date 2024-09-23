@@ -13,112 +13,112 @@
       <link>./blog/protected-static-resources/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       <guid>./blog/protected-static-resources/</guid>
-      <description>OIDC for static resources&#xA;OIDC for static resources Use case SPA consummes Rest API in the same business domain.</description>
+      <description>&lt;p&gt;OIDC for static resources&lt;/p&gt;&#xA;&lt;h2 id=&#34;oidc-for-static-resources&#34;&gt;OIDC for static resources&lt;/h2&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use case&lt;/h3&gt;&#xA;&lt;img class=&#34;special-img-class&#34; style=&#34;width:40%&#34; src=&#34;./images/ConsumeProtectedStaticResourceUC.png&#34; /&gt;&#xA;&lt;p&gt;SPA consummes Rest API in the &lt;strong&gt;same business domain&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Architecture diagram as code</title>
       <link>./blog/plantuml-diagram/</link>
       <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
       <guid>./blog/plantuml-diagram/</guid>
-      <description>For many years, I use Plantuml to create architecture and other kind of diagram.</description>
+      <description>&lt;p&gt;For many years, I use Plantuml to create architecture and other kind of diagram. I will the reason of this.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chrome SameSite feature</title>
       <link>./blog/samesite/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       <guid>./blog/samesite/</guid>
-      <description>Google Chrome: Same-site&#xA;What is SameSite ? Heroku blog explains very well this feature.</description>
+      <description>&lt;p&gt;Google Chrome: Same-site&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-samesite-&#34;&gt;What is SameSite ?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.heroku.com/chrome-changes-samesite-cookie&#34;&gt;Heroku blog&lt;/a&gt; explains very well this feature.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SAML 2.0 Overview</title>
       <link>./blog/saml20/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       <guid>./blog/saml20/</guid>
-      <description>SAML 2.0 presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;SAML 2.0 presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;div class=&#34;shortcode-iframe-wrapper&#34;&gt;&#xA;    &lt;iframe  class=&#34;shortcode-iframe&#34;  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/saml20-slides/#/&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Eclipse Microprofile &#43; Quarkus: new Java player</title>
       <link>./blog/microprofile/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       <guid>./blog/microprofile/</guid>
-      <description>Microprofile + Quarkus; new Java player presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;&lt;code&gt;Microprofile + Quarkus; new Java player&lt;/code&gt; presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/microprofile-quarkus-slides/#/&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Hacking</title>
       <link>./blog/hacking/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       <guid>./blog/hacking/</guid>
-      <description>Tools and web resources about hacking.&#xA;Libraries Blog Directory of blog Directory of tools Awesome list Videos Tools file: recognizing the type of data contained in a computer file strings: finds and prints text strings embedded in binary files such as executables xxd: hex dump binwalk: Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.</description>
+      <description>&lt;p&gt;Tools and web resources about hacking.&lt;/p&gt;&#xA;&lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;&#xA;&lt;h3 id=&#34;blog&#34;&gt;Blog&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ctf.courgettes.club/&#34;&gt;Directory of blog&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://medium.com/@int0x33/day-18-essential-ctf-tools-1f9af1552214&#34;&gt;Directory of tools&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://apsdehal.in/awesome-ctf/&#34;&gt;Awesome list&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/File_(command)&#34;&gt;file&lt;/a&gt;:  recognizing the type of data contained in a computer file&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Strings_(Unix)&#34;&gt;strings&lt;/a&gt;:  finds and prints text strings embedded in binary files such as executables&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://wiki.christophchamp.com/index.php?title=Xxd&#34;&gt;xxd&lt;/a&gt;: hex dump&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ReFirmLabs/binwalk/wiki/Quick-Start-Guide&#34;&gt;binwalk&lt;/a&gt;: Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve&#34;&gt;Stegsolve&lt;/a&gt;: Steganography&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://upx.github.io/&#34;&gt;upx&lt;/a&gt;: Linux executable packer&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ghidra-sre.org/&#34;&gt;Ghildra&lt;/a&gt;: software reverse engineering&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/slimm609/checksec.sh&#34;&gt;checksec&lt;/a&gt;: Checksec is a bash script to check the properties of executables (like PIE, RELRO, PaX, Canaries, ASLR, Fortify Source).&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/Gallopsled/pwntools#readme&#34;&gt;pwntools&lt;/a&gt;: Pwntools is a CTF framework and exploit development library (manipulate running program)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://frida.re/&#34;&gt;frida&lt;/a&gt;: Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>JVM</title>
       <link>./blog/jvm/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/jvm/</guid>
-      <description>Compare different JVM to improve container performance.&#xA;State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+      <description>&lt;p&gt;Compare different JVM to improve container performance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;state-of-play&#34;&gt;State of play&lt;/h2&gt;&#xA;&lt;p&gt;We will focus on OpenJDK because it&amp;rsquo;s the reference  for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quantum computing resources</title>
       <link>./blog/quantum-ressources/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/quantum-ressources/</guid>
-      <description>Tools and web resources about quantum computing.&#xA;Libraries Blog ToutEstQuantique Videos No Limit Secu - audio Awesome </description>
+      <description>&lt;p&gt;Tools and web resources about quantum computing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;&#xA;&lt;h3 id=&#34;blog&#34;&gt;Blog&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://toutestquantique.fr/&#34;&gt;ToutEstQuantique&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.nolimitsecu.fr/informatique-quantique/&#34;&gt;No Limit Secu&lt;/a&gt; - &lt;a href=&#34;https://www.nolimitsecu.fr/wp-content/uploads/NoLimistSecu-Informatique-Quantique-avec-Renaud-Lifchitz.mp3&#34;&gt;audio&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;awesome&#34;&gt;Awesome&lt;/h3&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 1000px;&#34; src=&#34;https://awesomelists.top/#/repos/desireevl/awesome-quantum-computing&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Keycloak for advanced developers</title>
       <link>./blog/keycloak-for-advanced-developers/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       <guid>./blog/keycloak-for-advanced-developers/</guid>
-      <description>Keycloak / OIDC presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;Keycloak / OIDC presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;div class=&#34;shortcode-iframe-wrapper&#34;&gt;&#xA;    &lt;iframe  class=&#34;shortcode-iframe&#34;  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/keycloak-slides/#/&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Java container optimization</title>
       <link>./blog/java-container-optimization/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/java-container-optimization/</guid>
-      <description>Java container optimization.&#xA;Slides </description>
+      <description>&lt;p&gt;Java container optimization.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/java-native-framework-slides/#/&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Native Java frameworks</title>
       <link>./blog/native-java-frameworks/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/native-java-frameworks/</guid>
-      <description>Compare different Java framework to generate native application.&#xA;Native Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.</description>
+      <description>&lt;p&gt;Compare different Java framework to generate native application.&lt;/p&gt;&#xA;&lt;h2 id=&#34;native&#34;&gt;Native&lt;/h2&gt;&#xA;&lt;p&gt;Static executable provides best performance on runtime because it&amp;rsquo;s compiled for a specific platform.&lt;/p&gt;</description>
     </item>
     <item>
       <title>JRE Dependencies with host</title>
       <link>./blog/jre-dependencies-with-host/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       <guid>./blog/jre-dependencies-with-host/</guid>
-      <description>What are JRE depencies with host OS ?&#xA;Dependencies ldd /usr/bin/java linux-vdso.</description>
+      <description>&lt;p&gt;What are JRE depencies with host OS ?&lt;/p&gt;&#xA;&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ldd /usr/bin/java&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        linux-vdso.so.1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt;  &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007ffff917a000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libpthread.so.0 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libpthread.so.0 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb946000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libz.so.1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libz.so.1 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb730000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libjli.so &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; not found&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libdl.so.2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libdl.so.2 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb52c000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        libc.so.6 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;gt; /lib64/libc.so.6 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcb15f000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        /lib64/ld-linux-x86-64.so.2 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0x00007f6fcbb62000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;vdso: a kernel mechanism for exporting a carefully selected set of kernel space routines to user space applications so that applications can call these kernel space routines in-process, without incurring the performance penalty of a context switch that is inherent when calling these same kernel space routines by means of the system call interface&lt;/li&gt;&#xA;&lt;li&gt;libpthread: multithreadinf&lt;/li&gt;&#xA;&lt;li&gt;libz: zlib (compression)&lt;/li&gt;&#xA;&lt;li&gt;libjli: JNI alternative (??)&lt;/li&gt;&#xA;&lt;li&gt;libdl: dynamic linkind support&lt;/li&gt;&#xA;&lt;li&gt;libc: C language standard library&lt;/li&gt;&#xA;&lt;li&gt;ld-linux: dynamic linker/loader&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Understand: From scratch</title>
       <link>./blog/understand-from-scratch/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       <guid>./blog/understand-from-scratch/</guid>
-      <description>How &amp;ldquo;from scratch&amp;rdquo; works ?&#xA;Image FROM scratch ENV PROXY_LISTEN=0.0.0.0:8443 ENV PROXY_LISTEN_HTTP=0.</description>
+      <description>&lt;p&gt;How &amp;ldquo;from scratch&amp;rdquo; works ?&lt;/p&gt;&#xA;&lt;h2 id=&#34;image&#34;&gt;Image&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM scratch&#xA;ENV PROXY_LISTEN=0.0.0.0:8443&#xA;ENV PROXY_LISTEN_HTTP=0.0.0.0:8080&#xA;&#xA;EXPOSE 8080 8443&#xA;&#xA;ADD keycloak-gatekeeper /&#xA;ADD config.yaml /config.yaml&#xA;CMD [&amp;#34;/keycloak-gatekeeper&amp;#34;,&amp;#34;--config&amp;#34;,&amp;#34;config.yaml&amp;#34;]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;d build -t keycloak-gatekeeper:scratch .&#xA;&#xA;# No file except keycloak-gatekeeper&#xA;dive keycloak-gatekeeper:scratch&#xA;{&#xA;  &amp;#34;layer&amp;#34;: [&#xA;    {&#xA;      &amp;#34;index&amp;#34;: 0,&#xA;      &amp;#34;digestId&amp;#34;: &amp;#34;sha256:5615180f624e082f675261de139dca5eefe09ced8653bf25e02cb1075ace24dc&amp;#34;,&#xA;      &amp;#34;sizeBytes&amp;#34;: 12768011,&#xA;      &amp;#34;command&amp;#34;: &amp;#34;#(nop) ADD file:40e67ed7d86014658f5b01316b9193210dc93bfe2bdf1ee9ae9c714635c9699c in / &amp;#34;&#xA;    },&#xA;    {&#xA;      &amp;#34;index&amp;#34;: 1,&#xA;      &amp;#34;digestId&amp;#34;: &amp;#34;sha256:bd785d8e829b3305fc45051b901d54805e1c536404359eb1084d754cf643b69c&amp;#34;,&#xA;      &amp;#34;sizeBytes&amp;#34;: 501,&#xA;      &amp;#34;command&amp;#34;: &amp;#34;#(nop) ADD file:3704f000080497680b5aeae92f9cfadddbc385c4dacc87df1b8d0b072d46e63e in /config.yaml &amp;#34;&#xA;    }&#xA;  ],&#xA;  &amp;#34;image&amp;#34;: {&#xA;    &amp;#34;sizeBytes&amp;#34;: 12768512,&#xA;    &amp;#34;inefficientBytes&amp;#34;: 0,&#xA;    &amp;#34;efficiencyScore&amp;#34;: 1,&#xA;    &amp;#34;inefficientFiles&amp;#34;: []&#xA;  }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;container&#34;&gt;Container&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Run&#xA;d run --rm keycloak-gatekeeper:scratch &amp;amp;&#xA;&#xA;## Attach alpine&#xA;doatt determined_haibt&#xA;/ # ls -al /proc/1/root&#xA;lrwxrwxrwx    1 root     root             0 Aug 12 12:36 /proc/1/root -&amp;gt; /&#xA;/ # ls -al /proc/1/root/&#xA;total 12476&#xA;drwxr-xr-x    7 root     root           126 Aug 12 12:35 .&#xA;drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..&#xA;-rwxr-xr-x    1 root     root             0 Aug 12 12:35 .dockerenv&#xA;-rwxr-xr-x    1 root     root           501 Aug 12 12:27 config.yaml        &#xA;drwxr-xr-x    5 root     root           340 Aug 12 12:35 dev&#xA;drwxr-xr-x    2 root     root            66 Aug 12 12:35 etc&#xA;-rwxr-xr-x    1 root     root      12768011 Aug 12 12:26 keycloak-gatekeeper&#xA;dr-xr-xr-x  147 root     root             0 Aug 12 12:35 proc&#xA;drwxr-xr-x    3 root     root            21 Aug 12 12:35 run&#xA;dr-xr-xr-x   13 root     root             0 Aug 12 11:37 sys&#xA;/ # ls -al /proc/1/root/etc&#xA;total 12&#xA;drwxr-xr-x    2 root     root            66 Aug 12 12:35 .&#xA;drwxr-xr-x    7 root     root           126 Aug 12 12:35 ..&#xA;-rw-r--r--    1 root     root            13 Aug 12 12:35 hostname&#xA;-rw-r--r--    1 root     root           174 Aug 12 12:35 hosts&#xA;lrwxrwxrwx    1 root     root            12 Aug 12 12:35 mtab -&amp;gt; /proc/mounts&#xA;-rw-r--r--    1 root     root            92 Aug 12 12:35 resolv.conf&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Containers includes standard linux folder structure (see specification).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microcontainer distributions</title>
       <link>./blog/microcontainer-distributions/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       <guid>./blog/microcontainer-distributions/</guid>
-      <description>Container must include minimal dependencies to run Java application (microservice or legacy application).</description>
+      <description>&lt;p&gt;Container must include minimal dependencies to run Java application (microservice or legacy application).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cryptography glossary</title>
       <link>./blog/cryptography-glossary/</link>
       <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       <guid>./blog/cryptography-glossary/</guid>
-      <description>Glossary for cryptography vocabulary.&#xA;PKI PKI Public Key Infrastructure CSR CLR X.</description>
+      <description>&lt;p&gt;Glossary for cryptography vocabulary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pki&#34;&gt;PKI&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PKI Public Key Infrastructure&lt;/li&gt;&#xA;&lt;li&gt;CSR&lt;/li&gt;&#xA;&lt;li&gt;CLR&lt;/li&gt;&#xA;&lt;li&gt;X.509 standard that defines the format of public key certificates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;standard&#34;&gt;Standard&lt;/h2&gt;&#xA;&lt;h3 id=&#34;public-key-cryptography-standards-pkcs&#34;&gt;Public-Key Cryptography Standards (PKCS)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PKCS#1 &lt;strong&gt;unencrypted&lt;/strong&gt; RSA key storage format.&lt;/li&gt;&#xA;&lt;li&gt;PKCS#7 Collection of &lt;strong&gt;public certificates&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;PKCS#8 Encrypted &lt;strong&gt;private key&lt;/strong&gt; format for RSA DSA EC keys.&lt;/li&gt;&#xA;&lt;li&gt;PKCS#10 Certificate signing request (&lt;strong&gt;CSR&lt;/strong&gt;).&lt;/li&gt;&#xA;&lt;li&gt;PKCS#11 Security token / Smart card / &lt;strong&gt;HSM access&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;PKCS#12 Certificate, Private key and probably a CA chain.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;file-formats&#34;&gt;File formats&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;DER Distinguished Encoding Rules - Binary format&lt;/li&gt;&#xA;&lt;li&gt;PEM Privacy Enhanced Mail - Text format&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;extensions&#34;&gt;Extensions&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;.pem&lt;/strong&gt; (Privacy-enhanced Electronic Mail) Base64 encoded DER certificate, enclosed between &amp;ldquo;&amp;mdash;&amp;ndash;BEGIN CERTIFICATE&amp;mdash;&amp;ndash;&amp;rdquo; and &amp;ldquo;&amp;mdash;&amp;ndash;END CERTIFICATE&amp;mdash;&amp;ndash;&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;.cer, .crt, .der&lt;/strong&gt; – usually in binary DER form, but Base64-encoded certificates are common too (see .pem above)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;.p7b, .p7c&lt;/strong&gt; PKCS#7 SignedData structure without data, just certificate(s) or CRL(s)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;.p12&lt;/strong&gt; PKCS#12, may contain certificate(s) (public) and private keys (password protected)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;.pfx&lt;/strong&gt; PFX, predecessor of PKCS#12 (usually contains data in PKCS#12 format, e.g., with PFX files generated in IIS)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;</description>
     </item>
     <item>
       <title>Security resources</title>
       <link>./blog/security/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
       <guid>./blog/security/</guid>
-      <description>Tools and web resources about cryptography.&#xA;Tools Generic Openssl Keytool Windows Keystore Explorer XCA Libraries Blog posts Pattern Cryptosense whitepapers Videos Awesome </description>
+      <description>&lt;p&gt;Tools and web resources about cryptography.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;h3 id=&#34;generic&#34;&gt;Generic&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.openssl.org/&#34;&gt;Openssl&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html&#34;&gt;Keytool&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://keystore-explorer.org/features.html&#34;&gt;Keystore Explorer&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://hohnstaedt.de/xca/&#34;&gt;XCA&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;&#xA;&lt;h3 id=&#34;blog-posts&#34;&gt;Blog posts&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://wiki.linuxwall.info/doku.php/fr:resources:dossiers:ssl_pki:1_les_bases&#34;&gt;Pattern&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://cryptosense.com/whitepapers/&#34;&gt;Cryptosense whitepapers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/jMIAoAVbcsw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/FSq-FXx5dxU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h3 id=&#34;awesome&#34;&gt;Awesome&lt;/h3&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 1000px;&#34; src=&#34;https://awesomelists.top/#/repos/sobolevn/awesome-cryptography&#34;&gt;&lt;/iframe&gt;&#xA;&lt;iframe  style=&#34;border: 0; width: 100%; height: 1000px;&#34; src=&#34;https://simplicable.com/new/information-security&#34;&gt;&lt;/iframe&gt;</description>
     </item>
   </channel>
 </rss>

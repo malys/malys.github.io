@@ -13,7 +13,7 @@
       <link>./blog/keycloak-for-advanced-developers/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       <guid>./blog/keycloak-for-advanced-developers/</guid>
-      <description>Keycloak / OIDC presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;Keycloak / OIDC presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;div class=&#34;shortcode-iframe-wrapper&#34;&gt;&#xA;    &lt;iframe  class=&#34;shortcode-iframe&#34;  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/keycloak-slides/#/&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

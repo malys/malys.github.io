@@ -13,35 +13,35 @@
       <link>./blog/protected-static-resources/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       <guid>./blog/protected-static-resources/</guid>
-      <description>OIDC for static resources&#xA;OIDC for static resources Use case SPA consummes Rest API in the same business domain.</description>
+      <description>&lt;p&gt;OIDC for static resources&lt;/p&gt;&#xA;&lt;h2 id=&#34;oidc-for-static-resources&#34;&gt;OIDC for static resources&lt;/h2&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use case&lt;/h3&gt;&#xA;&lt;img class=&#34;special-img-class&#34; style=&#34;width:40%&#34; src=&#34;./images/ConsumeProtectedStaticResourceUC.png&#34; /&gt;&#xA;&lt;p&gt;SPA consummes Rest API in the &lt;strong&gt;same business domain&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chrome SameSite feature</title>
       <link>./blog/samesite/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       <guid>./blog/samesite/</guid>
-      <description>Google Chrome: Same-site&#xA;What is SameSite ? Heroku blog explains very well this feature.</description>
+      <description>&lt;p&gt;Google Chrome: Same-site&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-samesite-&#34;&gt;What is SameSite ?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.heroku.com/chrome-changes-samesite-cookie&#34;&gt;Heroku blog&lt;/a&gt; explains very well this feature.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SAML 2.0 Overview</title>
       <link>./blog/saml20/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       <guid>./blog/saml20/</guid>
-      <description>SAML 2.0 presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;SAML 2.0 presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;div class=&#34;shortcode-iframe-wrapper&#34;&gt;&#xA;    &lt;iframe  class=&#34;shortcode-iframe&#34;  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/saml20-slides/#/&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>JVM</title>
       <link>./blog/jvm/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/jvm/</guid>
-      <description>Compare different JVM to improve container performance.&#xA;State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+      <description>&lt;p&gt;Compare different JVM to improve container performance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;state-of-play&#34;&gt;State of play&lt;/h2&gt;&#xA;&lt;p&gt;We will focus on OpenJDK because it&amp;rsquo;s the reference  for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keycloak for advanced developers</title>
       <link>./blog/keycloak-for-advanced-developers/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       <guid>./blog/keycloak-for-advanced-developers/</guid>
-      <description>Keycloak / OIDC presentation.&#xA;Slides </description>
+      <description>&lt;p&gt;Keycloak / OIDC presentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;&#xA;&lt;div class=&#34;shortcode-iframe-wrapper&#34;&gt;&#xA;    &lt;iframe  class=&#34;shortcode-iframe&#34;  style=&#34;border: 0; width: 100%; height: 600px;&#34; src=&#34;https://malys.github.io/keycloak-slides/#/&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

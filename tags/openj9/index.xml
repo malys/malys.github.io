@@ -13,7 +13,7 @@
       <link>./blog/jvm/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       <guid>./blog/jvm/</guid>
-      <description>Compare different JVM to improve container performance.&#xA;State of play We will focus on OpenJDK because it&amp;rsquo;s the reference for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).</description>
+      <description>&lt;p&gt;Compare different JVM to improve container performance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;state-of-play&#34;&gt;State of play&lt;/h2&gt;&#xA;&lt;p&gt;We will focus on OpenJDK because it&amp;rsquo;s the reference  for JDK, it&amp;rsquo;s an open project and many companies are contributors (Oracle, RedHat, &amp;hellip;).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
